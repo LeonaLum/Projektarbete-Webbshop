@@ -11,4 +11,11 @@
   width: 500px;
   background-color: #ce00bd;
 }
+
+.nav {
+  height: 300px;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
 /*# sourceMappingURL=styles.css.map */

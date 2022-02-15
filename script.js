@@ -1,20 +1,13 @@
 
-let products = [];
 
-async function getJsonData() {
+async function getAllProducts() {
   const response = await fetch('./products.json');
   const productData = await response.json();
   console.log(productData)
-  getEveryProduct(productData)
+  const productsArray = [...productData.products];
+  console.log(productsArray)
+    return productsArray;
   
-
 }
-getJsonData();
+getAllProducts();
 
-
-function getEveryProduct(arr) {
-  arr.forEach(product => {
-    console.log(product);
-    return product;
-  });
-}

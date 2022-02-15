@@ -1,0 +1,14 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rosa {
+  height: 500px;
+  width: 500px;
+  background-color: #ce00bd;
+}
+/*# sourceMappingURL=styles.css.map */

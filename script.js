@@ -1,17 +1,9 @@
-// test
-
-
+// För att nå produkterna så behöver du gå in på products i json objektet.
 async function getAllProducts() {
   const response = await fetch('./products.json');
   const productData = await response.json();
-  console.log(productData);
-  getEveryProduct(productData);
+  const productsArray = [...productData.products];
+  console.log(productsArray);
+  return productsArray;
 }
-getJsonData();
-
-function getEveryProduct(arr) {
-  arr.forEach((product) => {
-    console.log(product);
-    return product;
-  });
-}
+getAllProducts();

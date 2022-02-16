@@ -1,3 +1,42 @@
 .detailContainer{
   width: 100%;
+  .detail-Card{
+    @include flexBox(row, center, center);
+    background-color: rgb(209, 123, 123);
+    height: 100%;
+    width: 100%;
+  }
+  h2{
+    font-size: 40px;
+    text-align: left;
+  }
+    .product-Detail-Desc{
+      height: 100%;
+      flex:1;
+      background-color: white;
+      padding: 20px;
+    }
+  .price-Container-Detail{
+    @include flexBox(column, center, space-around);
+    padding:50px;
+    text-align: center;
+    font-size: 50px;
+    height: 100px;
+    width:150px;
+    background-color: yellow;
+    font-weight: bold;
+  }
+  .button-Purchase{
+    background-color: red;
+    font-size: 20px;
+    height: 100%;
+    width: 30%;
+    cursor: pointer;
+  }
+  .product-Detail-Picture{
+    background-color: green;
+    height: 100%;
+    width:50%;
+
+  }
 }

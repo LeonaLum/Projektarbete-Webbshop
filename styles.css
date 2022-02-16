@@ -4,6 +4,12 @@
   text-decoration: none;
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
 }
 
 main {
@@ -136,5 +142,9 @@ main {
   width: 100%;
   padding: 50px;
   background-color: black;
+}
+
+.detailContainer {
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */

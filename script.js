@@ -9,7 +9,11 @@ async function getAllProducts() {
 }
 getJsonData();
 
-function getEveryProduct(arr) {
+
+
+
+function createProductCard(arr){
+
   arr.forEach((product) => {
     console.log(product);
     return product;

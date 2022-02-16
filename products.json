@@ -1,67 +1,67 @@
 {
- "products": [
-  {
-    "id": "1",
-    "name":"Macbook Pro",
-    "type":"computer",
-    "price":"20.000",
-    "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
-  },
-  {
-    "id": "2",
-    "name":"Macbook Air",
-    "type":"computer",
-    "price":"15.000",
-    "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
-  },
-  {
-    "id": "3",
-    "name":"iMac",
-    "type":"computer",
-    "price":"40.000",
-    "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
-  },
-  {
-    "id": "4",
-    "name":"Huawei P40",
-    "type":"phone",
-    "price":"3.900",
-    "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
-  },
-  {
-    "id": "5",
-    "name":"Nokia 3310",
-    "type":"phone",
-    "price":"9000",
-    "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
-  },
-  {
-    "id": "6",
-    "name":"iPhone 13 PRO",
-    "type":"phone",
-    "price":"13.000",
-    "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
-  },
-  {
-    "id": "7",
-    "name":"Nintendo Switch",
-    "type":"console",
-    "price":"4000",
-    "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
-  },
-  {
-    "id": "8",
-    "name":"Playstation 5",
-    "type":"console",
-    "price":"6000",
-    "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
-  },
-  {
-    "id": "9",
-    "name":"Xbox series X",
-    "type":"console",
-    "price":"5000",
-    "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
-  }
-]
+  "products": [
+    {
+      "id": "1",
+      "name": "Macbook Pro",
+      "type": "computer",
+      "price": "20.000",
+      "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
+    },
+    {
+      "id": "2",
+      "name": "Macbook Air",
+      "type": "computer",
+      "price": "15.000",
+      "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
+    },
+    {
+      "id": "3",
+      "name": "iMac",
+      "type": "computer",
+      "price": "40.000",
+      "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
+    },
+    {
+      "id": "4",
+      "name": "Huawei P40",
+      "type": "phone",
+      "price": "3.900",
+      "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
+    },
+    {
+      "id": "5",
+      "name": "Nokia 3310",
+      "type": "phone",
+      "price": "9001",
+      "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
+    },
+    {
+      "id": "6",
+      "name": "iPhone 13 PRO",
+      "type": "phone",
+      "price": "13.000",
+      "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
+    },
+    {
+      "id": "7",
+      "name": "Nintendo Switch",
+      "type": "console",
+      "price": "4000",
+      "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
+    },
+    {
+      "id": "8",
+      "name": "Playstation 5",
+      "type": "console",
+      "price": "6000",
+      "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
+    },
+    {
+      "id": "9",
+      "name": "Xbox series X",
+      "type": "console",
+      "price": "5000",
+      "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
+    }
+  ]
 }

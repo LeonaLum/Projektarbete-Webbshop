@@ -1,0 +1,13 @@
+.form {
+  &--number-field::-webkit-outer-spin-button,
+  &--number-field::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  &--number-field {
+    -moz-appearance: textfield;
+  }
+  &--comment-field {
+    resize: none;
+  }
+}

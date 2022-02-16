@@ -137,4 +137,17 @@ main {
   padding: 50px;
   background-color: black;
 }
+
+.form--number-field::-webkit-outer-spin-button, .form--number-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form--number-field {
+  -moz-appearance: textfield;
+}
+
+.form--comment-field {
+  resize: none;
+}
 /*# sourceMappingURL=styles.css.map */

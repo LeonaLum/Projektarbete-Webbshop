@@ -68,6 +68,8 @@ async function getProductsConsoles() {
     createProductCard(consoleProducts);
 }
 
+
+
 function createProductCard(arr){
   arr.forEach((product) => {
     let productCard = document.createElement("div");

@@ -171,6 +171,11 @@ main {
   background-color: black;
 }
 
+.footer a {
+  display: block;
+  padding: 20px;
+}
+
 .detailContainer {
   width: 100%;
 }
@@ -195,7 +200,7 @@ main {
 }
 
 .detailContainer .product-Detail-Picture {
-  background-color: green;
+  background-color: orange;
   padding: 20px;
   height: 100%;
   -webkit-box-flex: 1;
@@ -209,11 +214,24 @@ main {
 }
 
 .detailContainer .product-Detail-Desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: default;
+      -ms-flex-align: default;
+          align-items: default;
+  -webkit-box-pack: default;
+      -ms-flex-pack: default;
+          justify-content: default;
   height: 100%;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-color: white;
+  background-color: silver;
   padding: 20px;
 }
 
@@ -230,7 +248,7 @@ main {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: grey;
+  justify-self: flex-end;
 }
 
 .detailContainer .product-Detail-Desc-Bottom .price-Container-Detail {

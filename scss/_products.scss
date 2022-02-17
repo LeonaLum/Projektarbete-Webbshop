@@ -1,9 +1,21 @@
 .productsList{
+  @include flexBox(column, center, space-around);
+  width: 100%;
+  background-color: rgb(167, 167, 167);
+}
+.products-List-Head{
+  @include flexBox(row, center, space-around);
+  font-size: 30px;
+  background-color: rgb(201, 201, 201);
+  height: 150px;
+  width: 100%;
+  text-align: center;
+}
+.products-List-Main{
   @include flexBox(row, center, space-around);
   flex-wrap: wrap;
   width: 100%;
   padding:20px;
-  background-color: rgb(167, 167, 167);
 }
 
 .productCard{

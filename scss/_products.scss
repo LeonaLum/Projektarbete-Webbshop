@@ -8,13 +8,21 @@
 
 .productCard{
   @include flexBox(column, center, flex-end);
-  padding: 20px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   border:rgb(150, 150, 150) solid 2px;
   color: rgb(0, 0, 0);
-  width:400px;
-  height: 400px;
+  width:500px;
+  height: 500px;
+  .clickableProductCard{
+    @include flexBox(column, center, flex-end);
+    background-color: green;
+    border-radius: 10px;
+    display: block;
+    height: 100%;
+    width:100%;
+    z-index:1;
+  }
   .priceContainer{
     border-radius: 10px;
     background-color: yellow;

@@ -1,45 +1,30 @@
 // För att nå produkterna så behöver du gå in på products i json objektet.
 
-<<<<<<< HEAD
-
-
-let productsList = document.getElementById("productsList");
-let detailContainer = document.getElementById("detailContainer");
+let productsList = document.getElementById('productsList');
+let detailContainer = document.getElementById('detailContainer');
 
 let shoppingCart = [];
 
-
-
-
 const params = new URLSearchParams(location.search);
-let currentCategory = params.get("category");
-let currentId = params.get("id");
+let currentCategory = params.get('category');
+let currentId = params.get('id');
 
-=======
-let productsList = document.getElementById("productsList");
-
-const params = new URLSearchParams(location.search);
-let currentCategory = params.get("category");
->>>>>>> 82b2af2c7b2f2768fa21d9b8f708557b3690a2a7
-
-switch(currentCategory){
-  case"phones":
+switch (currentCategory) {
+  case 'phones':
     getProductsPhones();
-  break;
-  case"computers":
+    break;
+  case 'computers':
     getProductsComputers();
-  break;
-  case"consoles":
-    getProductsConsoles()
-  break;
-  case"all":
+    break;
+  case 'consoles':
+    getProductsConsoles();
+    break;
+  case 'all':
     getAllProducts();
-  break;
+    break;
 }
 
-<<<<<<< HEAD
-
-if(currentId){
+if (currentId) {
   getProductsForDetails();
 }
 
@@ -47,20 +32,14 @@ async function getProductsForDetails() {
   const response = await fetch('./products.json');
   const productData = await response.json();
   const productsArray = [...productData.products];
-    showCardDetails(productsArray);
+  showCardDetails(productsArray);
 }
-
-
-=======
->>>>>>> 82b2af2c7b2f2768fa21d9b8f708557b3690a2a7
-
 
 async function getAllProducts() {
   const response = await fetch('./products.json');
   const productData = await response.json();
   const productsArray = [...productData.products];
-    createProductCard(productsArray);
-<<<<<<< HEAD
+  createProductCard(productsArray);
 }
 
 async function getProductsPhones() {
@@ -69,11 +48,11 @@ async function getProductsPhones() {
   const productsArray = [...productData.products];
   const phoneProducts = [];
   productsArray.filter((product) => {
-   if(product.type == "phone"){
-     phoneProducts.push(product);
-   }
-  })
-    createProductCard(phoneProducts);
+    if (product.type == 'phone') {
+      phoneProducts.push(product);
+    }
+  });
+  createProductCard(phoneProducts);
 }
 
 async function getProductsComputers() {
@@ -82,82 +61,45 @@ async function getProductsComputers() {
   const productsArray = [...productData.products];
   const computerProducts = [];
   productsArray.filter((product) => {
-   if(product.type == "computer"){
-     computerProducts.push(product);
-   }
-  })
-    createProductCard(computerProducts);
+    if (product.type == 'computer') {
+      computerProducts.push(product);
+    }
+  });
+  createProductCard(computerProducts);
 }
 
-=======
-}
-
-async function getProductsPhones() {
-  const response = await fetch('./products.json');
-  const productData = await response.json();
-  const productsArray = [...productData.products];
-  const phoneProducts = [];
-  productsArray.filter((product) => {
-   if(product.type == "phone"){
-     phoneProducts.push(product);
-   }
-  })
-    createProductCard(phoneProducts);
-}
-
-async function getProductsComputers() {
-  const response = await fetch('./products.json');
-  const productData = await response.json();
-  const productsArray = [...productData.products];
-  const computerProducts = [];
-  productsArray.filter((product) => {
-   if(product.type == "computer"){
-     computerProducts.push(product);
-   }
-  })
-    createProductCard(computerProducts);
-}
-
->>>>>>> 82b2af2c7b2f2768fa21d9b8f708557b3690a2a7
 async function getProductsConsoles() {
   const response = await fetch('./products.json');
   const productData = await response.json();
   const productsArray = [...productData.products];
   const consoleProducts = [];
   productsArray.filter((product) => {
-   if(product.type == "console"){
-     consoleProducts.push(product);
-   }
-  })
-    createProductCard(consoleProducts);
+    if (product.type == 'console') {
+      consoleProducts.push(product);
+    }
+  });
+  createProductCard(consoleProducts);
 }
 
-
-
-function createProductCard(arr){
+function createProductCard(arr) {
   arr.forEach((product) => {
-    let productCard = document.createElement("div");
-    productCard.innerHTML=`
-<<<<<<< HEAD
+    let productCard = document.createElement('div');
+    productCard.innerHTML = `
     <a id="${product.id}"class="clickableProductCard"
     href="productDetail.html?id=${product.id}">
     <h2>${product.name}</h2>
     <div class="priceContainer"><p>${product.price}</p><div>
     </a>`;
-    productCard.classList.add("productCard");
+    productCard.classList.add('productCard');
     productsList.appendChild(productCard);
- })
- 
+  });
 }
 
-
-
-
-function showCardDetails(arr){
+function showCardDetails(arr) {
   arr.filter((product) => {
-   if(product.id == currentId){
-     let detailCard = document.createElement("div");
-     detailCard.innerHTML = `
+    if (product.id == currentId) {
+      let detailCard = document.createElement('div');
+      detailCard.innerHTML = `
    
      <article class="detail-Card">
      <div class="product-Detail-Picture"></div>
@@ -184,24 +126,13 @@ function showCardDetails(arr){
  
 
      `;
-     detailContainer.appendChild(detailCard);
+      detailContainer.appendChild(detailCard);
 
-     const buttonPurchase = document.getElementById("buttonPurchase")
-     buttonPurchase.addEventListener("click", () => {
-       shoppingCart.push(product);
-       console.log(shoppingCart)
-     })
-   }
-  })
- }
-=======
-    <h2>${product.name}</h2>
-    <div class="priceContainer"><p>${product.price}</p><div>`;
-
-    productCard.classList.add("productCard");
-    productsList.appendChild(productCard)
-  })
-
-
+      const buttonPurchase = document.getElementById('buttonPurchase');
+      buttonPurchase.addEventListener('click', () => {
+        shoppingCart.push(product);
+        console.log(shoppingCart);
+      });
+    }
+  });
 }
->>>>>>> 82b2af2c7b2f2768fa21d9b8f708557b3690a2a7

@@ -33,7 +33,7 @@ main {
       flex-wrap: wrap;
   width: 100%;
   padding: 20px;
-  background-color: #ff3737;
+  background-color: #a7a7a7;
 }
 
 .productCard {
@@ -58,6 +58,13 @@ main {
   height: 500px;
 }
 
+.productCard h2 {
+  font-size: 30px;
+  text-align: center;
+  padding: 30px;
+  color: black;
+}
+
 .productCard .clickableProductCard {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,12 +79,11 @@ main {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-color: green;
+  background-color: orange;
   border-radius: 10px;
   display: block;
   height: 100%;
   width: 100%;
-  z-index: 1;
 }
 
 .productCard .priceContainer {

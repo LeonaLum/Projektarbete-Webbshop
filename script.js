@@ -100,8 +100,8 @@ function createProductCard(arr){
     <a id="${product.id}"class="clickableProductCard"
     href="productDetail.html?id=${product.id}">
     <h2>${product.name}</h2>
-    <div class="priceContainer"><p>${product.price}</p><div>
-    </a>`;
+    </a>
+    <div class="priceContainer"><p>Pris: ${product.price}</p><div>`;
     productCard.classList.add("productCard");
     productsList.appendChild(productCard);
  })

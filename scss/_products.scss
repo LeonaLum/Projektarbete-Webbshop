@@ -3,18 +3,31 @@
   flex-wrap: wrap;
   width: 100%;
   padding:20px;
-  background-color: rgb(255, 55, 55);
+  background-color: rgb(167, 167, 167);
 }
 
 .productCard{
   @include flexBox(column, center, flex-end);
-  padding: 20px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   border:rgb(150, 150, 150) solid 2px;
   color: rgb(0, 0, 0);
-  width:400px;
-  height: 400px;
+  width:500px;
+  height: 500px;
+  h2{
+    font-size: 30px;
+    text-align: center;
+    padding:30px;
+    color: black;
+  }
+  .clickableProductCard{
+    @include flexBox(column, center, flex-end);
+    background-color: orange;
+    border-radius: 10px;
+    display: block;
+    height: 100%;
+    width:100%;
+  }
   .priceContainer{
     border-radius: 10px;
     background-color: yellow;

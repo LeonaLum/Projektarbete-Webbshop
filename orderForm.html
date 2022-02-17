@@ -1,98 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
-</head>
-<body>
- <header class="header">
-  <hero class="logo">
-    <a href="index.html"><h1>Logo</h1></a>
-  </hero>
-  <nav class="navMenu">
-    <a href="products.html?category=all">(Infinity-symbol)</a>
-    <a href="products.html?category=phones">(Telefon-symbol)</a>
-    <a href="products.html?category=computers">(computer-symbol)</a>
-    <a href="products.html?category=consoles">(console-symbol)</a>
-    <a href="shoppingCart.html">(SHOPPINGCART)</a>
-  </nav>
- </header>
-<main>
-  <main>
-    <div class="form-container" id="form_container">
-      <form action="get" id="form">
-        <input
-          class="form form--name-field"
-          type="text"
-          name="name"
-          placeholder="Förnamn"
-          required
-        />
-        <input
-          class="form form--name-field"
-          type="text"
-          name="name"
-          placeholder="Efternamn"
-          required
-        />
-        <input
-          class="form form--adress-field"
-          type="text"
-          name="adress"
-          placeholder="Gatuadress och gatunummer"
-          required
-        />
-        <input
-          class="form form--number-field"
-          type="number"
-          name="adress"
-          placeholder="Postkod"
-        />
-        <input
-          class="form form--adress-field"
-          type="text"
-          name="adress"
-          placeholder="Ort"
-          required
-        />
-        <input
-          class="form form--email-field"
-          type="email"
-          name="email"
-          placeholder="Epost"
-          required
-        />
-        <input
-          class="form form--number-field"
-          type="number"
-          name="phone"
-          placeholder="Telefonnummer"
-        />
-        <textarea
-          class="form form--comment-field"
-          name="comments"
-          cols="30"
-          rows="10"
-          placeholder="Övriga kommentarer"
-        ></textarea>
-        <button class="btn btn--submit" type="submit" id="order_submit">
-          Skicka beställning
-        </button>
-      </form>
-    </div>
-</main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/be475255e6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Beställningssida</title>
+  </head>
+  <body>
+    <header class="header">
+      <hero class="logo">
+        <a href="index.html"><h1>Logo</h1></a>
+      </hero>
+      <nav class="navMenu">
+        <a href="products.html?category=all">(Infinity-symbol)</a>
+        <a href="products.html?category=phones">(Telefon-symbol)</a>
+        <a href="products.html?category=computers">(computer-symbol)</a>
+        <a href="products.html?category=consoles">(console-symbol)</a>
+        <a href="shoppingCart.html">(SHOPPINGCART)</a>
+      </nav>
+    </header>
+    <main class="form-main">
+      <div class="form-container" id="form-container">
+        <div class="form-header">
+          <h2>Beställningsformulär</h2>
+        </div>
+        <form action="/" method="GET" id="form" class="form">
+          <div class="form-control success japp">
+            <input
+              class="form form--name-field"
+              type="text"
+              name="name"
+              placeholder="*Förnamn"
+              required
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
 
-<footer class="footer">
-  <h3>Footer</h3>
-  <a>(socialMedia-Symbol)</a>
-  <a>(socialMedia-Symbol)</a>
-  <a>(socialMedia-Symbol)</a>
-</footer>
-  <script src="script.js"></script>
-  <script src="order.js"></script>
-  
-</body>
+          <div class="form-control error">
+            <input
+              class="form form--name-field"
+              type="text"
+              name="name"
+              placeholder="*Efternamn"
+              required
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+
+          <div class="form-control">
+            <input
+              class="form form--adress-field"
+              type="text"
+              name="adress"
+              placeholder="*Gatuadress och gatunummer"
+              required
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+
+          <div class="form-control">
+            <input
+              class="form form--number-field"
+              type="number"
+              name="adress"
+              placeholder="*Postnummer"
+              required
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+
+          <div class="form-control">
+            <input
+              class="form form--adress-field"
+              type="text"
+              name="adress"
+              placeholder="*Ort"
+              required
+            />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+
+          <div class="form-control">
+            <input
+              class="form form--email-field"
+              type="email"
+              name="email"
+              placeholder="*Epost"
+              required
+            />
+
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <input
+              class="form form--number-field"
+              type="number"
+              name="phone"
+              placeholder="Telefonnummer"
+            />
+          </div>
+
+          <div class="form-control">
+            <textarea
+              class="form form--comment-field"
+              name="comments"
+              cols="30"
+              rows="10"
+              placeholder="Övriga kommentarer"
+            ></textarea>
+          </div>
+
+          <p>*<em>Alla markerade fält måste vara ifyllda</em></p>
+          <button class="btn btn--submit" type="submit" id="order_submit">
+            Skicka beställning
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <h3>Footer</h3>
+      <a>(socialMedia-Symbol)</a>
+      <a>(socialMedia-Symbol)</a>
+      <a>(socialMedia-Symbol)</a>
+    </footer>
+    <script src="script.js"></script>
+    <script src="order.js"></script>
+  </body>
 </html>

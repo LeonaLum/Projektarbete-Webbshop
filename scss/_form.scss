@@ -1,13 +1,21 @@
-.form {
-  &--number-field::-webkit-outer-spin-button,
-  &--number-field::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-  &--number-field {
-    -moz-appearance: textfield;
-  }
-  &--comment-field {
-    resize: none;
+.form-container {
+  @include flexBox(row, center, center);
+  height: auto;
+  width: 100%;
+  .form {
+    height: auto;
+    width: 70%;
+
+    &--number-field::-webkit-outer-spin-button,
+    &--number-field::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    &--number-field {
+      -moz-appearance: textfield;
+    }
+    &--comment-field {
+      resize: none;
+    }
   }
 }

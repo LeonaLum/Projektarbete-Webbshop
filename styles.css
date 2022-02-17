@@ -285,16 +285,39 @@ main {
   cursor: pointer;
 }
 
-.form--number-field::-webkit-outer-spin-button, .form--number-field::-webkit-inner-spin-button {
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  width: 100%;
+}
+
+.form-container .form {
+  height: auto;
+  width: 70%;
+}
+
+.form-container .form--number-field::-webkit-outer-spin-button, .form-container .form--number-field::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-.form--number-field {
+.form-container .form--number-field {
   -moz-appearance: textfield;
 }
 
-.form--comment-field {
+.form-container .form--comment-field {
   resize: none;
 }
 

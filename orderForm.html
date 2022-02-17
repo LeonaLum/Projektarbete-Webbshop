@@ -29,14 +29,14 @@
         <div class="form-header">
           <h2>Beställningsformulär</h2>
         </div>
-        <form action="/" method="GET" id="form" class="form">
-          <div class="form-control success japp">
+        <form action="/" method="GET" id="order-form" class="form">
+          <div class="form-control success">
             <input
+              id="firstname"
               class="form form--name-field"
               type="text"
               name="name"
               placeholder="*Förnamn"
-              required
             />
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
@@ -45,11 +45,11 @@
 
           <div class="form-control error">
             <input
+              id="lastname"
               class="form form--name-field"
               type="text"
               name="name"
               placeholder="*Efternamn"
-              required
             />
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
@@ -58,6 +58,7 @@
 
           <div class="form-control">
             <input
+              id="adress"
               class="form form--adress-field"
               type="text"
               name="adress"
@@ -71,6 +72,7 @@
 
           <div class="form-control">
             <input
+              id="postalcode"
               class="form form--number-field"
               type="number"
               name="adress"
@@ -84,6 +86,7 @@
 
           <div class="form-control">
             <input
+              id="city"
               class="form form--adress-field"
               type="text"
               name="adress"
@@ -97,6 +100,7 @@
 
           <div class="form-control">
             <input
+              id="email"
               class="form form--email-field"
               type="email"
               name="email"

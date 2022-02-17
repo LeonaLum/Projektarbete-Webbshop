@@ -2,8 +2,10 @@
 
 //Nyaste scriptet
 
-let productsList = document.getElementById("productsList");
+
+let productsListMain = document.getElementById("productsListMain");
 let detailContainer = document.getElementById("detailContainer");
+let listTitle = document.getElementById("listTitle");
 
 let shoppingCart = [];
 
@@ -103,7 +105,26 @@ function createProductCard(arr){
     </a>
     <div class="priceContainer"><p>Pris: ${product.price}</p><div>`;
     productCard.classList.add("productCard");
-    productsList.appendChild(productCard);
+    productsListMain.appendChild(productCard);
+
+    switch(currentCategory){
+      case "all":
+        listTitle.innerText=`Alla produkter`;
+        break;
+
+      case "phones":
+        listTitle.innerText=`Telefoner`;
+        break;
+
+      case "computers":
+        listTitle.innerText=`Datorer`;
+        break;
+
+      case "consoles":
+        listTitle.innerText=`Konsoller`;
+        break;
+    }
+
  })
  
 }

@@ -1,6 +1,6 @@
 // För att nå produkterna så behöver du gå in på products i json objektet.
 
-
+//Nyaste scriptet
 
 let productsList = document.getElementById("productsList");
 let detailContainer = document.getElementById("detailContainer");

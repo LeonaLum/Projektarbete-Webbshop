@@ -25,9 +25,10 @@ let listTitle = document.getElementById("listTitle");
 let productNumber = localStorage.length;
 console.log(productNumber)
 
+let shoppingCartHead = document.getElementById("shoppingCartHead");
 let shoppingCartMain = document.getElementById("shoppingCartMain");
 
-
+let amountOfProducts = document.createElement("p");
 
 
 const params = new URLSearchParams(location.search);
@@ -198,6 +199,8 @@ function showCardDetails(arr){
 
  if(location.pathname == "/shoppingCart.html"){
    createShoppingCartList(shoppingCartArray);
+   amountOfProducts.innerText = `${localStorage.length} Produkter`;
+   shoppingCartHead.appendChild(amountOfProducts)
  }
 
  function createShoppingCartList(arr){
@@ -205,9 +208,9 @@ function showCardDetails(arr){
     let shoppingCartProductCard = document.createElement("div");
     shoppingCartProductCard.classList.add("product-Card-ShoppingCart");
     shoppingCartProductCard.innerHTML = `
-    <h2>${product.name}</h2>
+    <h3>${product.name}</h3>
     <div class="product-ShoppingCart-Picture"></div>
-    <div>${product.price}</div>
+    <div class="product-ShoppingCart-Price">${product.price}</div>
     <button class="plus-Minus-Buttons">+</button>
     <button class="plus-Minus-Buttons">-</button>`
     shoppingCartMain.appendChild(shoppingCartProductCard)

@@ -398,6 +398,8 @@ main {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-size: 30px;
   background-color: #c9c9c9;
   height: 150px;
@@ -423,7 +425,6 @@ main {
   width: 100%;
   padding: 20px;
   background-color: red;
-  height: 700px;
 }
 
 .product-Card-ShoppingCart {
@@ -437,17 +438,58 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: green;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 20px;
+  font-size: 12px;
+  background-color: white;
   width: 100%;
   height: 100px;
 }
 
-.product-Card-ShoppingCart .product-ShoppingCart-Picture {
-  background-color: grey;
+.product-Card-ShoppingCart h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
-  width: 50px;
+  width: 170px;
+  background-color: white;
+}
+
+.product-Card-ShoppingCart .product-ShoppingCart-Price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: yellow;
+  height: 100%;
+  width: 200px;
+}
+
+.product-Card-ShoppingCart .product-ShoppingCart-Picture {
+  background-color: green;
+  height: 100%;
+  width: 200px;
 }
 
 .product-Card-ShoppingCart .plus-Minus-Buttons {

@@ -4,6 +4,12 @@
   text-decoration: none;
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
 }
 
 main {
@@ -44,13 +50,34 @@ main {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  padding: 20px;
   background-color: white;
   border-radius: 10px;
   border: #969696 solid 2px;
   color: black;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
+}
+
+.productCard .clickableProductCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  background-color: green;
+  border-radius: 10px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
 }
 
 .productCard .priceContainer {
@@ -151,6 +178,79 @@ main {
 .form--comment-field {
   resize: none;
 }
+.detailContainer {
+  width: 100%;
+}
+
+.detailContainer .detail-Card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #d17b7b;
+  height: 100%;
+  width: 100%;
+}
+
+.detailContainer h2 {
+  font-size: 40px;
+  text-align: left;
+}
+
+.detailContainer .product-Detail-Desc {
+  height: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+}
+
+.detailContainer .price-Container-Detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 50px;
+  text-align: center;
+  font-size: 50px;
+  height: 100px;
+  width: 150px;
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.detailContainer .button-Purchase {
+  background-color: red;
+  font-size: 20px;
+  height: 100%;
+  width: 30%;
+  cursor: pointer;
+}
+
+.detailContainer .product-Detail-Picture {
+  background-color: green;
+  height: 100%;
+  width: 50%;
+}
+
 .reciept {
   display: -webkit-box;
   display: -ms-flexbox;

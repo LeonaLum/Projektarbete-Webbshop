@@ -33,7 +33,7 @@ main {
       flex-wrap: wrap;
   width: 100%;
   padding: 20px;
-  background-color: #ff3737;
+  background-color: #a7a7a7;
 }
 
 .productCard {
@@ -58,6 +58,13 @@ main {
   height: 500px;
 }
 
+.productCard h2 {
+  font-size: 30px;
+  text-align: center;
+  padding: 30px;
+  color: black;
+}
+
 .productCard .clickableProductCard {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,12 +79,11 @@ main {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-color: green;
+  background-color: orange;
   border-radius: 10px;
   display: block;
   height: 100%;
   width: 100%;
-  z-index: 1;
 }
 
 .productCard .priceContainer {
@@ -165,6 +171,11 @@ main {
   background-color: black;
 }
 
+.footer a {
+  display: block;
+  padding: 20px;
+}
+
 .detailContainer {
   width: 100%;
 }
@@ -184,8 +195,17 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #d17b7b;
-  height: 100%;
   width: 100%;
+  height: 500px;
+}
+
+.detailContainer .product-Detail-Picture {
+  background-color: orange;
+  padding: 20px;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .detailContainer h2 {
@@ -194,15 +214,6 @@ main {
 }
 
 .detailContainer .product-Detail-Desc {
-  height: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  background-color: white;
-  padding: 20px;
-}
-
-.detailContainer .price-Container-Detail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,6 +221,44 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: default;
+      -ms-flex-align: default;
+          align-items: default;
+  -webkit-box-pack: default;
+      -ms-flex-pack: default;
+          justify-content: default;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: silver;
+  padding: 20px;
+}
+
+.detailContainer .product-Detail-Desc-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  justify-self: flex-end;
+}
+
+.detailContainer .product-Detail-Desc-Bottom .price-Container-Detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -217,25 +266,23 @@ main {
       justify-content: space-around;
   padding: 50px;
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
   height: 100px;
-  width: 150px;
+  width: 300px;
   background-color: yellow;
   font-weight: bold;
 }
 
-.detailContainer .button-Purchase {
-  background-color: red;
-  font-size: 20px;
-  height: 100%;
-  width: 30%;
-  cursor: pointer;
+.detailContainer .product-Detail-Desc-Bottom .price-Container-Detail p {
+  display: block;
 }
 
-.detailContainer .product-Detail-Picture {
-  background-color: green;
-  height: 100%;
-  width: 50%;
+.detailContainer .product-Detail-Desc-Bottom .button-Purchase {
+  background-color: red;
+  font-size: 20px;
+  height: 100px;
+  width: 150px;
+  cursor: pointer;
 }
 
 .form--number-field::-webkit-outer-spin-button, .form--number-field::-webkit-inner-spin-button {

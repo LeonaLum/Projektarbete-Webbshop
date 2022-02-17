@@ -102,22 +102,29 @@ function showCardDetails(arr) {
       detailCard.innerHTML = `
    
      <article class="detail-Card">
-     <div class="product-Detail-Picture"></div>
+      <div 
+      id="product-Detail-Picture" 
+      class="product-Detail-Picture">
+      </div>
 
       <div class="product-Detail-Desc">
        <h2>${product.name}</h2> 
-       <p>Product description</p>
-       <p>Pris: </p>
-       <div class="price-Container-Detail">
-       <p>${product.price}</p>
-       </div>
-       <button id="buttonPurchase" class="button-Purchase">Köp</button>
-       </div>
+       <p>Product description
+      </p>
 
+       <div class="product-Detail-Desc-Bottom">
      
-   
-      
 
+       <div class="price-Container-Detail">
+       <p>Pris: ${product.price}</p>
+       </div>
+
+       <button id="buttonPurchase" class="button-Purchase">
+       Köp
+       </button>
+       </div>
+
+       </div>
      </article>
 
 

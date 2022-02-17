@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   width: 100%;
   padding:20px;
-  background-color: rgb(255, 55, 55);
+  background-color: rgb(167, 167, 167);
 }
 
 .productCard{
@@ -14,14 +14,19 @@
   color: rgb(0, 0, 0);
   width:500px;
   height: 500px;
+  h2{
+    font-size: 30px;
+    text-align: center;
+    padding:30px;
+    color: black;
+  }
   .clickableProductCard{
     @include flexBox(column, center, flex-end);
-    background-color: green;
+    background-color: orange;
     border-radius: 10px;
     display: block;
     height: 100%;
     width:100%;
-    z-index:1;
   }
   .priceContainer{
     border-radius: 10px;

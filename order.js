@@ -11,7 +11,6 @@ const email = document.getElementById('email');
 //Skapa funktion för submit av formulär
 orderForm.addEventListener('submit', (e) => {
   e.preventDefault();
-
   checkInputs();
 });
 

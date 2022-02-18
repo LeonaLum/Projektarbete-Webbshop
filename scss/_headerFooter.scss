@@ -1,33 +1,32 @@
-.logo{
+.logo {
   @include flexBox(row, center, space-around);
   height: 300px;
-  width:100%;
+  width: 100%;
   background-color: rgb(216, 216, 216);
   display: block;
-  a{
+  a {
     display: block;
     width: 100px;
     height: 100px;
   }
-  .content{
+  .content {
     background-color: red;
   }
-
 }
-.navMenu{
+.navMenu {
   @include flexBox(row, center, center);
   height: 100px;
   width: 100%;
   background-color: black;
-  a{
+  a {
     color: white;
     font-size: 20px;
-    padding:10px;
+    padding: 10px;
   }
 }
-.footer{
+.footer {
   @include flexBox(row, center, center);
-  color:white;
+  color: white;
   height: 100%;
   width: 100%;
   padding: 50px;
@@ -37,4 +36,3 @@
     padding:20px;
   }
 }
-

@@ -23,7 +23,7 @@ const productsListMain = document.getElementById("productsListMain");
 const detailContainer = document.getElementById("detailContainer");
 let listTitle = document.getElementById("listTitle");
 let productNumber = localStorage.length;
-console.log(productNumber)
+
 
 let shoppingCartHead = document.getElementById("shoppingCartHead");
 let shoppingCartMain = document.getElementById("shoppingCartMain");
@@ -117,12 +117,32 @@ async function getProductsConsoles() {
 function createProductCard(arr){
   arr.forEach((product) => {
     let productCard = document.createElement("div");
+
     productCard.innerHTML=`
-    <a id="${product.id}"class="clickableProductCard"
+    <a id="${product.id}"class="clickableProductCard" 
+    
     href="productDetail.html?id=${product.id}">
+
+    <div
+    class="clickable-Product-Card-Image">
+    <img src=${product.image}>
     <h2>${product.name}</h2>
+   
+
+    </div>
+
     </a>
-    <div class="priceContainer"><p>Pris: ${product.price}</p><div>`;
+    <div class="priceContainer"><p>Pris: ${product.price}</p><div>
+
+    </div>
+    `;
+  
+    
+   
+      //clickableImage.style.backgroundImage = `${product.image}`;
+      //clickableImage.style.backgroundSize = `100%`;
+     
+
     productCard.classList.add("productCard");
     productsListMain.appendChild(productCard);
 
@@ -145,7 +165,6 @@ function createProductCard(arr){
     }
 
  })
- 
 }
 
 

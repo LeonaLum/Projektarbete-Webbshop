@@ -5,21 +5,25 @@
     "name":"Macbook Pro",
     "type":"computer",
     "price":"20.000",
-    "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
+    "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem",
+    "image":"./img/Macbook_pro.png"
+    
   },
   {
     "id": "2",
     "name":"Macbook Air",
     "type":"computer",
     "price":"15.000",
-    "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
+    "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem",
+    "image":"./img/macbook_air.png"
   },
   {
     "id": "3",
     "name":"iMac",
     "type":"computer",
     "price":"40.000",
-    "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
+    "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem",
+    "image":"./img/imac.png"
   },
   {
     "id": "4",

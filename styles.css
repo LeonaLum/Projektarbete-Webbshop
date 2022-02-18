@@ -64,12 +64,13 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  padding: 20px;
+  padding: 40px;
 }
 
 .productCard {
@@ -86,9 +87,9 @@ main {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-bottom: 30px;
   background-color: white;
   border-radius: 10px;
-  border: #969696 solid 2px;
   color: black;
   width: 500px;
   height: 500px;
@@ -115,14 +116,31 @@ main {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-color: orange;
   border-radius: 10px;
   display: block;
   height: 100%;
   width: 100%;
 }
 
+.productCard .clickableProductCard a {
+  display: block;
+}
+
+.productCard .clickable-Product-Card-Image {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.productCard img {
+  position: absolute;
+  height: 500px;
+  width: 500px;
+}
+
 .productCard .priceContainer {
+  z-index: 1;
   border-radius: 10px;
   background-color: yellow;
   text-align: center;
@@ -209,7 +227,6 @@ main {
 
 .footer a {
   display: block;
-  padding: 20px;
 }
 
 .detailContainer {

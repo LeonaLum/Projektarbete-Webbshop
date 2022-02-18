@@ -30,7 +30,7 @@
           <h2>Beställningsformulär</h2>
         </div>
         <form action="/" method="GET" id="order-form" class="form">
-          <div class="form-control success">
+          <div class="form-control">
             <input
               id="firstname"
               class="form form--name-field"
@@ -43,7 +43,7 @@
             <small>Error message</small>
           </div>
 
-          <div class="form-control error">
+          <div class="form-control">
             <input
               id="lastname"
               class="form form--name-field"
@@ -63,7 +63,6 @@
               type="text"
               name="adress"
               placeholder="*Gatuadress och gatunummer"
-              required
             />
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
@@ -72,12 +71,11 @@
 
           <div class="form-control">
             <input
-              id="postalcode"
+              id="formPostalcode"
               class="form form--number-field"
               type="number"
               name="adress"
               placeholder="*Postnummer"
-              required
             />
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
@@ -91,7 +89,6 @@
               type="text"
               name="adress"
               placeholder="*Ort"
-              required
             />
             <i class="fas fa-check-circle"></i>
             <i class="fas fa-exclamation-circle"></i>
@@ -105,7 +102,6 @@
               type="email"
               name="email"
               placeholder="*Epost"
-              required
             />
 
             <i class="fas fa-check-circle"></i>
@@ -114,6 +110,7 @@
           </div>
           <div class="form-control">
             <input
+              id="formPhone-number"
               class="form form--number-field"
               type="number"
               name="phone"
@@ -123,6 +120,7 @@
 
           <div class="form-control">
             <textarea
+              id="text-area"
               class="form form--comment-field"
               name="comments"
               cols="30"

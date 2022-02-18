@@ -1,4 +1,9 @@
 'use strict';
+
+//Notes:
+//!number i textfält som ska ha bokstäver
+//Få bort ID i sass?????? hur??
+
 //Kalla på alla element
 const orderForm = document.getElementById('order-form');
 const firstName = document.getElementById('firstname');
@@ -11,7 +16,9 @@ const email = document.getElementById('email');
 //Skapa funktion för submit av formulär
 orderForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  checkInputs();
+  if (checkInputs()) {
+    moveToReciept();
+  }
 });
 
 //Skapa funktionen för att se värdet av inputs
@@ -86,4 +93,8 @@ function isEmailValid(email) {
   return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
     email
   );
+}
+
+function moveToReciept() {
+  window.location = '/reciept.html';
 }

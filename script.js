@@ -1,12 +1,29 @@
 // För att nå produkterna så behöver du gå in på products i json objektet.
 
 //Nyaste scriptet
+let shoppingCartArray = [];
 
-let productsListMain = document.getElementById('productsListMain');
-let detailContainer = document.getElementById('detailContainer');
+checkLocalStorageForProducts();
+function checkLocalStorageForProducts() {
+  if (localStorage.getItem('0') !== null) {
+    let savedProducts = Object.values(localStorage);
+    savedProducts.forEach((product) => {
+      shoppingCartArray.push(JSON.parse(product));
+      console.log(shoppingCartArray);
+    });
+  }
+}
+
+const productsListMain = document.getElementById('productsListMain');
+const detailContainer = document.getElementById('detailContainer');
 let listTitle = document.getElementById('listTitle');
+let productNumber = localStorage.length;
+console.log(productNumber);
 
-let shoppingCart = [];
+let shoppingCartHead = document.getElementById('shoppingCartHead');
+let shoppingCartMain = document.getElementById('shoppingCartMain');
+
+let amountOfProducts = document.createElement('p');
 
 const params = new URLSearchParams(location.search);
 let currentCategory = params.get('category');
@@ -147,20 +164,41 @@ function showCardDetails(arr) {
 
        </div>
      </article>
-
-
- 
-
- 
-
      `;
+
       detailContainer.appendChild(detailCard);
 
       const buttonPurchase = document.getElementById('buttonPurchase');
+
       buttonPurchase.addEventListener('click', () => {
-        shoppingCart.push(product);
-        console.log(shoppingCart);
+        localStorage.setItem(
+          JSON.stringify(productNumber),
+          JSON.stringify(product)
+        );
+        shoppingCartArray.push(product);
+        productNumber++;
+        console.log(shoppingCartArray);
       });
     }
+  });
+}
+
+if (location.pathname == '/shoppingCart.html') {
+  createShoppingCartList(shoppingCartArray);
+  amountOfProducts.innerText = `${localStorage.length} Produkter`;
+  shoppingCartHead.appendChild(amountOfProducts);
+}
+
+function createShoppingCartList(arr) {
+  arr.forEach((product) => {
+    let shoppingCartProductCard = document.createElement('div');
+    shoppingCartProductCard.classList.add('product-Card-ShoppingCart');
+    shoppingCartProductCard.innerHTML = `
+    <h3>${product.name}</h3>
+    <div class="product-ShoppingCart-Picture"></div>
+    <div class="product-ShoppingCart-Price">${product.price}</div>
+    <button class="plus-Minus-Buttons">+</button>
+    <button class="plus-Minus-Buttons">-</button>`;
+    shoppingCartMain.appendChild(shoppingCartProductCard);
   });
 }

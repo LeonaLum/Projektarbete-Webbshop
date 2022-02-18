@@ -338,6 +338,144 @@ main {
   cursor: pointer;
 }
 
+main.form-main {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: red;
+  min-height: 100vw;
+  width: 100vw;
+}
+
+main.form-main .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  background-color: yellow;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+main.form-main .form-container .form-header {
+  background-color: white;
+  border-bottom: 1px solid black;
+  padding: 20px 40px;
+}
+
+main.form-main .form-container form {
+  height: auto;
+  background-color: wheat;
+  padding: 20px 20px;
+}
+
+main.form-main .form-container form--number-field::-webkit-outer-spin-button, main.form-main .form-container form--number-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main.form-main .form-container form--number-field {
+  -moz-appearance: textfield;
+}
+
+main.form-main .form-container .form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+main.form-main .form-container .form-control input,
+main.form-main .form-container textarea {
+  border: 2px solid black;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+main.form-main .form-container .form-control i {
+  position: absolute;
+  right: 70px;
+  visibility: hidden;
+}
+
+main.form-main .form-container .form-control small {
+  position: absolute;
+  visibility: hidden;
+}
+
+main.form-main .form-container .form-control.success input {
+  border-color: green;
+}
+
+main.form-main .form-container .form-control.error input {
+  border-color: red;
+}
+
+main.form-main .form-container .form-control.success i.fa-check-circle {
+  visibility: visible;
+  color: green;
+}
+
+main.form-main .form-container .form-control.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: red;
+}
+
+main.form-main .form-container .form-control.error small {
+  visibility: visible;
+  color: red;
+}
+
+main.form-main .form-container button {
+  background-color: gray;
+  display: block;
+  border: 2px solid gray;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  -webkit-box-shadow: 0 3px gray;
+          box-shadow: 0 3px gray;
+}
+
+main.form-main .form-container button:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+main.form-main .form-container button:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+main.form-main .form-container #formText-area {
+  resize: none;
+}
+
+main.form-main .form-container #formPhone-number::-webkit-outer-spin-button,
+main.form-main .form-container #formPhone-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main.form-main .form-container #formPostalcode::-webkit-outer-spin-button,
+main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .reciept {
   display: -webkit-box;
   display: -ms-flexbox;

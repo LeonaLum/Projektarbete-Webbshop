@@ -18,17 +18,12 @@ const productsListMain = document.getElementById('productsListMain');
 const detailContainer = document.getElementById('detailContainer');
 let listTitle = document.getElementById('listTitle');
 let productNumber = localStorage.length;
-<<<<<<< HEAD
 
 
 let shoppingCartHead = document.getElementById("shoppingCartHead");
 let shoppingCartMain = document.getElementById("shoppingCartMain");
-=======
-console.log(productNumber);
->>>>>>> 8dbe6e120d54a5db44fbee066703097220916ada
 
-let shoppingCartHead = document.getElementById('shoppingCartHead');
-let shoppingCartMain = document.getElementById('shoppingCartMain');
+
 
 let amountOfProducts = document.createElement('p');
 
@@ -110,45 +105,34 @@ async function getProductsConsoles() {
 
 function createProductCard(arr) {
   arr.forEach((product) => {
-<<<<<<< HEAD
     let productCard = document.createElement("div");
+    productCard.innerHTML = `<h2>${product.name}</h2>`;
+    
+    let productFooter = document.createElement("div");
+    productFooter.classList.add("priceContainer");
+    productFooter.innerHTML = ` 
+    <div class="priceContainer">
+    <p>Pris: ${product.price}</p>
+    </div>`
 
-    productCard.innerHTML=`
+    let productImage = document.createElement("div");
+    productImage.classList.add("image");
+    productImage.innerHTML = `
+
     <a id="${product.id}"class="clickableProductCard" 
-    
-=======
-    let productCard = document.createElement('div');
-    productCard.innerHTML = `
-    <a id="${product.id}"class="clickableProductCard"
->>>>>>> 8dbe6e120d54a5db44fbee066703097220916ada
     href="productDetail.html?id=${product.id}">
-
-    <div
-    class="clickable-Product-Card-Image">
-    <img src=${product.image}>
-    <h2>${product.name}</h2>
-   
-
-    </div>
-
     </a>
-<<<<<<< HEAD
-    <div class="priceContainer"><p>Pris: ${product.price}</p><div>
-
-    </div>
     `;
-  
-    
-   
-      //clickableImage.style.backgroundImage = `${product.image}`;
-      //clickableImage.style.backgroundSize = `100%`;
+    productCard.appendChild(productImage);
+    productCard.appendChild(productFooter);
+
+      productImage.style.backgroundImage = `${product.image}`;
+      productImage.style.backgroundSize = "contain";
+      productImage.style.backgroundPosition = "center";
+      productImage.style.backgroundRepeat = "no-repeat";
      
 
     productCard.classList.add("productCard");
-=======
-    <div class="priceContainer"><p>Pris: ${product.price}</p><div>`;
-    productCard.classList.add('productCard');
->>>>>>> 8dbe6e120d54a5db44fbee066703097220916ada
     productsListMain.appendChild(productCard);
 
     switch (currentCategory) {
@@ -168,12 +152,8 @@ function createProductCard(arr) {
         listTitle.innerText = `Konsoller`;
         break;
     }
-<<<<<<< HEAD
 
  })
-=======
-  });
->>>>>>> 8dbe6e120d54a5db44fbee066703097220916ada
 }
 
 function showCardDetails(arr) {

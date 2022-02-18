@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
  "products": [
   {
     "id": "1",
@@ -7,7 +6,7 @@
     "type":"computer",
     "price":"20.000",
     "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem",
-    "image":"./img/Macbook_pro.png"
+    "image":"url(../img/Macbook_pro.png)"
     
   },
   {
@@ -16,7 +15,7 @@
     "type":"computer",
     "price":"15.000",
     "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem",
-    "image":"./img/macbook_air.png"
+    "image":"url(../img/macbook_air.png)"
   },
   {
     "id": "3",
@@ -24,7 +23,7 @@
     "type":"computer",
     "price":"40.000",
     "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem",
-    "image":"./img/imac.png"
+    "image":"url(../img/imac.png)"
   },
   {
     "id": "4",
@@ -70,71 +69,3 @@
   }
 ]
 }
-=======
-  "products": [
-    {
-      "id": "1",
-      "name": "Macbook Pro",
-      "type": "computer",
-      "price": "20.000",
-      "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
-    },
-    {
-      "id": "2",
-      "name": "Macbook Air",
-      "type": "computer",
-      "price": "15.000",
-      "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
-    },
-    {
-      "id": "3",
-      "name": "iMac",
-      "type": "computer",
-      "price": "40.000",
-      "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
-    },
-    {
-      "id": "4",
-      "name": "Huawei P40",
-      "type": "phone",
-      "price": "3.900",
-      "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
-    },
-    {
-      "id": "5",
-      "name": "Nokia 3310",
-      "type": "phone",
-      "price": "9001",
-      "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
-    },
-    {
-      "id": "6",
-      "name": "iPhone 13 PRO",
-      "type": "phone",
-      "price": "13.000",
-      "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
-    },
-    {
-      "id": "7",
-      "name": "Nintendo Switch",
-      "type": "console",
-      "price": "4000",
-      "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
-    },
-    {
-      "id": "8",
-      "name": "Playstation 5",
-      "type": "console",
-      "price": "6000",
-      "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
-    },
-    {
-      "id": "9",
-      "name": "Xbox series X",
-      "type": "console",
-      "price": "5000",
-      "description": "lorem borem koremlorem borem koremlorem borem koremlorem borem koremlorem borem"
-    }
-  ]
-}
->>>>>>> 8dbe6e120d54a5db44fbee066703097220916ada

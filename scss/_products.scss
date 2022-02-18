@@ -29,7 +29,7 @@
   h2{
     font-size: 30px;
     text-align: center;
-    padding:30px;
+    padding:10px;
     color: black;
   }
   .clickableProductCard{
@@ -43,26 +43,22 @@
       display: block;
     }
   }
-  .clickable-Product-Card-Image{
+  .image{
     border-radius: 10px;
     height: 100%;
     width: 100%;
   
-    position: relative;
+ 
   }
 
-img{
-  position: absolute;
-  height: 500px;
-  width: 500px;
-}
+
   
   .priceContainer{
     z-index: 1;
     border-radius: 10px;
     background-color: yellow;
     text-align: center;
-    padding: 30px;
+    padding: 10px;
     font-weight: bold;
     font-size: 30px;
     color: black;

@@ -109,7 +109,7 @@ function createProductCard(arr) {
     productCard.innerHTML = `<h2>${product.name}</h2>`;
     
     let productFooter = document.createElement("div");
-    productFooter.classList.add("priceContainer");
+    productFooter.classList.add("product-Footer");
     productFooter.innerHTML = ` 
     <div class="priceContainer">
     <p>Pris: ${product.price}</p>
@@ -160,22 +160,22 @@ function showCardDetails(arr) {
   arr.filter((product) => {
     if (product.id == currentId) {
       let detailCard = document.createElement('div');
+
+      let detailPicture = document.createElement("div");
+      detailPicture.classList.add("product-Detail-Picture");
+
       detailCard.innerHTML = `
    
      <article class="detail-Card">
-      <div 
-      id="product-Detail-Picture" 
-      class="product-Detail-Picture">
-      </div>
 
       <div class="product-Detail-Desc">
        <h2>${product.name}</h2> 
-       <p>Product description
-      </p>
+       <div class="description">
+       <p>Product description</p>
+       </div>
 
        <div class="product-Detail-Desc-Bottom">
      
-
        <div class="price-Container-Detail">
        <p>Pris: ${product.price}</p>
        </div>
@@ -184,12 +184,18 @@ function showCardDetails(arr) {
        Köp
        </button>
        </div>
-
        </div>
      </article>
      `;
-
+      
+     detailPicture.style.backgroundImage = `${product.image}`;
+     detailPicture.style.backgroundSize = "contain";
+     detailPicture.style.backgroundPosition = "center";
+     detailPicture.style.backgroundRepeat = "no-repeat";
+    
+      detailCard.firstElementChild.append(detailPicture);
       detailContainer.appendChild(detailCard);
+
 
       const buttonPurchase = document.getElementById('buttonPurchase');
 

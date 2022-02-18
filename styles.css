@@ -443,7 +443,7 @@ main.form-main .form-container button:active {
           transform: translateY(2px);
 }
 
-main.form-main .form-container #text-area {
+main.form-main .form-container #formText-area {
   resize: none;
 }
 

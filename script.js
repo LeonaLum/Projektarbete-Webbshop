@@ -46,6 +46,10 @@ switch (currentCategory) {
     break;
 }
 
+if (location.pathname == '/index.html'){
+  getAllProducts();
+}
+
 if (currentId) {
   getProductsForDetails();
 }
@@ -171,7 +175,7 @@ function showCardDetails(arr) {
       <div class="product-Detail-Desc">
        <h2>${product.name}</h2> 
        <div class="description">
-       <p>Product description</p>
+       <p>${product.description}</p>
        </div>
 
        <div class="product-Detail-Desc-Bottom">
@@ -217,6 +221,10 @@ if (location.pathname == '/shoppingCart.html') {
   amountOfProducts.innerText = `${localStorage.length} Produkter`;
   shoppingCartHead.appendChild(amountOfProducts);
 }
+
+
+
+
 
 function createShoppingCartList(arr) {
   arr.forEach((product) => {

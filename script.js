@@ -223,7 +223,6 @@ function showCardDetails(arr) {
 
 
 function createShoppingCartList(arr) {
-  calculateTotal(arr);
   arr.forEach((product) => {
     let shoppingCartProductCard = document.createElement('div');
   
@@ -246,21 +245,24 @@ function createShoppingCartList(arr) {
     shoppingCartProductCard.firstElementChild.append(shoppingCartProductImage);
     shoppingCartMain.appendChild(shoppingCartProductCard);
     
-
-    
+   
   });
+  if (localStorage.getItem('0') !== null){
   let shoppingCartFooterContent = document.createElement('div');
   shoppingCartFooterContent.classList.add("footer-Content");
   shoppingCartFooterContent.innerHTML = `
-  <div class="total-Container"><p>Totalt:</p></div>
+  <div class="total-Container">
+  <p>Totalsumma:</p>
+  <p class="total">${calculateTotal(arr)}:-</p>
+  </div>
   
+  <a class="order-Button" href="/orderForm.html">
   <button id="orderButton" class="order-Button">
-  <a href="orderForm.html">
-  <div class="order"></div>
-  </a>
-  </button>`;
+  Beställ
+  </button>
+  </a>`;
   shoppingCartFooter.appendChild(shoppingCartFooterContent);
-
+  }
 }
 
 function addImage (div, product){
@@ -280,11 +282,14 @@ function calculateTotal(array){
  })
  let intPrices = productPrices.map((price) => {
    if(price.includes(".")){
-     console.log("there is a dot")
-     price.replace("."," ");
-   
+    return parseInt(price.replace(".",''));
    }
-
+   else{
+     return parseInt(price);
+   }
  })
- console.log(productPrices)
+ let total  = intPrices.reduce((cur,next) => {
+   return cur + next;
+ })
+ return total
 }

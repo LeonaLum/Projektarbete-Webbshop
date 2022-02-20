@@ -7,10 +7,10 @@
     height: 500px;
   }
   .product-Detail-Picture{
-    background-color: orange;
     padding: 20px;
     height: 100%;
     flex: 1;
+    background-color: white;
   }
   h2{
     font-size: 40px;
@@ -20,8 +20,12 @@
       @include flexBox(column, default, default);
       height: 100%;
       flex:1;
-      background-color: rgb(192, 192, 192);
+      background-color: white;
       padding: 20px;
+      .description{
+        height: 100%;
+        padding:20px;
+      }
     }
   .product-Detail-Desc-Bottom{
     @include flexBox(row, center, space-around);

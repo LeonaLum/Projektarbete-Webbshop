@@ -28,7 +28,7 @@
       "id": "4",
       "name": "Huawei P40",
       "type": "phone",
-      "price": "3.900",
+      "price": "3900",
       "description": "Huawei P40 smartphone är utrustad med en vacker glaskonstruktion, en 6,1-tums ramlös OLED-pekskärm och är kompatibel med moderna 5G-nätverk. Tack vare IP53 skyddsgrad kommer den att överleva stänk eller en promenad i regnet.",
       "image": "url(../img/products/huawei_p40.png)"
     },
@@ -44,7 +44,7 @@
       "id": "6",
       "name": "iPhone 13 PRO",
       "type": "phone",
-      "price": "13.000",
+      "price": "13,000",
       "description": "IPhone 13 Pro smartphone har en fantastisk 6,1” OLED-pekskärm med 120 Hz uppdateringsfrekvens, en kraftfull A15 Bionic-processor med 5G-dataanslutning och branschledande IP68 vattentäthet.",
       "image": "url(../img/products/iphone13_pro.png)"
     },

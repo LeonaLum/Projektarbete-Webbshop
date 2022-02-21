@@ -2,11 +2,11 @@
 
 //Nyaste scriptet
 let shoppingCartArray = [];
+let savedProducts = Object.values(localStorage);
 
 checkLocalStorageForProducts();
 function checkLocalStorageForProducts() {
   if (localStorage.getItem('0') !== null) {
-    let savedProducts = Object.values(localStorage);
     savedProducts.forEach((product) => {
       shoppingCartArray.push(JSON.parse(product));
       console.log(shoppingCartArray);
@@ -23,6 +23,12 @@ let productNumber = localStorage.length;
 let shoppingCartHead = document.getElementById("shoppingCartHead");
 let shoppingCartMain = document.getElementById("shoppingCartMain");
 let shoppingCartFooter = document.getElementById("shoppingCartFooter");
+
+/////
+
+
+/////
+
 
 
 
@@ -200,7 +206,6 @@ function showCardDetails(arr) {
       detailCard.firstElementChild.append(detailPicture);
       detailContainer.appendChild(detailCard);
 
-
       const buttonPurchase = document.getElementById('buttonPurchase');
 
       buttonPurchase.addEventListener('click', () => {
@@ -217,50 +222,69 @@ function showCardDetails(arr) {
 }
 
 
-
-
-
-
-
 function createShoppingCartList(arr) {
-  calculateTotal(arr);
+ 
   arr.forEach((product) => {
+    let plusButton = document.createElement("div");
+    let minusButton = document.createElement("div");
+ 
     let shoppingCartProductCard = document.createElement('div');
   
     shoppingCartProductCard.classList.add('product-Card-ShoppingCart');
 
-
     let shoppingCartProductImage = document.createElement('div');
+
+
+    plusButton.classList.add("button-Div");
+    plusButton.innerHTML = `
+    <button class="plus-Minus-Buttons">
+    +
+    </button>
+    `;
+
+    minusButton.classList.add("button-Div");
+    minusButton.innerHTML = `
+    <button class="plus-Minus-Buttons">
+    -
+    </button>
+    `;
+   
 
     shoppingCartProductCard.innerHTML = `
     <div class="product-ShoppingCart-Image"></div>
     <h3>${product.name}</h3>
-
-    <div class="product-ShoppingCart-Price"><p>Pris:</p>${product.price}:-
+    <div class="product-ShoppingCart-Price">
+    <p>Pris:</p>${product.price}:-
     </div>
-    <button class="plus-Minus-Buttons">+</button>
-    <button class="plus-Minus-Buttons">-</button>`;
+    `;
+
+    ///////////////////////////////////////////////////////////////////////
+    plusButton.addEventListener("click", addProduct);
+    minusButton.addEventListener("click", removeProduct);
 
     addImage(shoppingCartProductImage,product);
 
     shoppingCartProductCard.firstElementChild.append(shoppingCartProductImage);
+    shoppingCartProductCard.appendChild(plusButton);
+    shoppingCartProductCard.appendChild(minusButton);
     shoppingCartMain.appendChild(shoppingCartProductCard);
     
-
-    
   });
+  if (localStorage.getItem('0') !== null){
   let shoppingCartFooterContent = document.createElement('div');
   shoppingCartFooterContent.classList.add("footer-Content");
   shoppingCartFooterContent.innerHTML = `
-  <div class="total-Container"><p>Totalt:</p></div>
-  
+  <div class="total-Container">
+  <p>Totalsumma:</p>
+  <p class="total">${calculateTotal(arr)}:-</p>
+  </div>
+  <a class="order-Button" href="/orderForm.html">
   <button id="orderButton" class="order-Button">
-  <a href="orderForm.html">
-  <div class="order"></div>
-  </a>
-  </button>`;
+  Beställ
+  </button>
+  </a>`;
   shoppingCartFooter.appendChild(shoppingCartFooterContent);
-
+  }
 }
 
 function addImage (div, product){
@@ -269,9 +293,6 @@ function addImage (div, product){
      div.style.backgroundPosition = "center";
      div.style.backgroundRepeat = "no-repeat";
 }
-
-
-
 //Hit skickas produkterna i shoppingcart
 function calculateTotal(array){
   let productPrices = [];
@@ -280,11 +301,59 @@ function calculateTotal(array){
  })
  let intPrices = productPrices.map((price) => {
    if(price.includes(".")){
-     console.log("there is a dot")
-     price.replace("."," ");
-   
+    return parseInt(price.replace(".",''));
    }
-
+   else{
+     return parseInt(price);
+   }
  })
- console.log(productPrices)
+ let total  = intPrices.reduce((cur,next) => {
+   return cur + next;
+ })
+ return total
+}
+
+
+
+
+
+
+function addProduct(button){
+  let parent = button.target.parentElement;
+  let productDiv = parent.parentElement;
+  let firstChild = productDiv.firstElementChild;
+  cardName = firstChild.nextSibling.nextSibling.innerText;
+  checkAllProducts()
+
+  async function checkAllProducts() {
+    const response = await fetch('./products.json');
+    const productData = await response.json();
+    const avaliableProducts = [...productData.products];
+    kolla(avaliableProducts);
+  }
+  function kolla(arr){
+    arr.forEach((product) => {
+      if(cardName == product.name){
+        console.log("dubblett")
+        localStorage.setItem(
+          JSON.stringify(productNumber),
+          JSON.stringify(product)
+        );
+        shoppingCartArray.push(product);
+        productNumber++;
+        console.log(shoppingCartArray);
+      }
+      else{
+        
+      }
+    })
+  }
+  
+  
+  
+ 
+
+}
+function removeProduct(){
+  console.log("ta bort produkt")
 }

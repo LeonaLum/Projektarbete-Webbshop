@@ -18,10 +18,13 @@ const productsListMain = document.getElementById('productsListMain');
 const detailContainer = document.getElementById('detailContainer');
 let listTitle = document.getElementById('listTitle');
 let productNumber = localStorage.length;
-console.log(productNumber);
 
-let shoppingCartHead = document.getElementById('shoppingCartHead');
-let shoppingCartMain = document.getElementById('shoppingCartMain');
+
+let shoppingCartHead = document.getElementById("shoppingCartHead");
+let shoppingCartMain = document.getElementById("shoppingCartMain");
+let shoppingCartFooter = document.getElementById("shoppingCartFooter");
+
+
 
 let amountOfProducts = document.createElement('p');
 
@@ -42,6 +45,15 @@ switch (currentCategory) {
   case 'all':
     getAllProducts();
     break;
+}
+
+if (location.pathname == '/index.html'){
+  getAllProducts();
+}
+if (location.pathname == '/shoppingCart.html') {
+  createShoppingCartList(shoppingCartArray);
+  amountOfProducts.innerText = `${localStorage.length} Produkter`;
+  shoppingCartHead.appendChild(amountOfProducts);
 }
 
 if (currentId) {
@@ -103,14 +115,31 @@ async function getProductsConsoles() {
 
 function createProductCard(arr) {
   arr.forEach((product) => {
-    let productCard = document.createElement('div');
-    productCard.innerHTML = `
-    <a id="${product.id}"class="clickableProductCard"
+    let productCard = document.createElement("div");
+    productCard.innerHTML = `<h2>${product.name}</h2>`;
+    
+    let productFooter = document.createElement("div");
+    productFooter.classList.add("product-Footer");
+    productFooter.innerHTML = ` 
+    <div class="priceContainer">
+    <p>Pris: ${product.price}</p>
+    </div>`
+
+    let productImage = document.createElement("div");
+    productImage.classList.add("image");
+    productImage.innerHTML = `
+
+    <a id="${product.id}"class="clickableProductCard" 
     href="productDetail.html?id=${product.id}">
-    <h2>${product.name}</h2>
     </a>
-    <div class="priceContainer"><p>Pris: ${product.price}</p><div>`;
-    productCard.classList.add('productCard');
+    `;
+    productCard.appendChild(productImage);
+    productCard.appendChild(productFooter);
+
+    addImage(productImage,product);
+     
+
+    productCard.classList.add("productCard");
     productsListMain.appendChild(productCard);
 
     switch (currentCategory) {
@@ -130,43 +159,47 @@ function createProductCard(arr) {
         listTitle.innerText = `Konsoller`;
         break;
     }
-  });
+
+ })
 }
 
 function showCardDetails(arr) {
   arr.filter((product) => {
     if (product.id == currentId) {
       let detailCard = document.createElement('div');
+
+      let detailPicture = document.createElement("div");
+      detailPicture.classList.add("product-Detail-Picture");
+
       detailCard.innerHTML = `
    
      <article class="detail-Card">
-      <div 
-      id="product-Detail-Picture" 
-      class="product-Detail-Picture">
-      </div>
 
       <div class="product-Detail-Desc">
        <h2>${product.name}</h2> 
-       <p>Product description
-      </p>
+       <div class="description">
+       <p>${product.description}</p>
+       </div>
 
        <div class="product-Detail-Desc-Bottom">
      
-
        <div class="price-Container-Detail">
        <p>Pris: ${product.price}</p>
        </div>
 
        <button id="buttonPurchase" class="button-Purchase">
-       Köp
+       <strong>Lägg till i kundvagnen</strong>
        </button>
        </div>
-
        </div>
      </article>
      `;
-
+      
+      addImage (detailPicture,product);
+    
+      detailCard.firstElementChild.append(detailPicture);
       detailContainer.appendChild(detailCard);
+
 
       const buttonPurchase = document.getElementById('buttonPurchase');
 
@@ -183,22 +216,75 @@ function showCardDetails(arr) {
   });
 }
 
-if (location.pathname == '/shoppingCart.html') {
-  createShoppingCartList(shoppingCartArray);
-  amountOfProducts.innerText = `${localStorage.length} Produkter`;
-  shoppingCartHead.appendChild(amountOfProducts);
-}
+
+
+
+
+
 
 function createShoppingCartList(arr) {
+  calculateTotal(arr);
   arr.forEach((product) => {
     let shoppingCartProductCard = document.createElement('div');
+  
     shoppingCartProductCard.classList.add('product-Card-ShoppingCart');
+
+
+    let shoppingCartProductImage = document.createElement('div');
+
     shoppingCartProductCard.innerHTML = `
+    <div class="product-ShoppingCart-Image"></div>
     <h3>${product.name}</h3>
-    <div class="product-ShoppingCart-Picture"></div>
-    <div class="product-ShoppingCart-Price">${product.price}</div>
+
+    <div class="product-ShoppingCart-Price"><p>Pris:</p>${product.price}:-
+    </div>
     <button class="plus-Minus-Buttons">+</button>
     <button class="plus-Minus-Buttons">-</button>`;
+
+    addImage(shoppingCartProductImage,product);
+
+    shoppingCartProductCard.firstElementChild.append(shoppingCartProductImage);
     shoppingCartMain.appendChild(shoppingCartProductCard);
+    
+
+    
   });
+  let shoppingCartFooterContent = document.createElement('div');
+  shoppingCartFooterContent.classList.add("footer-Content");
+  shoppingCartFooterContent.innerHTML = `
+  <div class="total-Container"><p>Totalt:</p></div>
+  
+  <button id="orderButton" class="order-Button">
+  <a href="orderForm.html">
+  <div class="order"></div>
+  </a>
+  </button>`;
+  shoppingCartFooter.appendChild(shoppingCartFooterContent);
+
+}
+
+function addImage (div, product){
+  div.style.backgroundImage = `${product.image}`;
+     div.style.backgroundSize = "contain";
+     div.style.backgroundPosition = "center";
+     div.style.backgroundRepeat = "no-repeat";
+}
+
+
+
+//Hit skickas produkterna i shoppingcart
+function calculateTotal(array){
+  let productPrices = [];
+ array.forEach((product,index,array) => {
+   productPrices.push(product.price);
+ })
+ let intPrices = productPrices.map((price) => {
+   if(price.includes(".")){
+     console.log("there is a dot")
+     price.replace("."," ");
+   
+   }
+
+ })
+ console.log(productPrices)
 }

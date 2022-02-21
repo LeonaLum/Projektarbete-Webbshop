@@ -12,39 +12,54 @@
   text-align: center;
 }
 .products-List-Main{
-  @include flexBox(row, center, space-around);
+  @include flexBox(row, center, space-evenly);
   flex-wrap: wrap;
   width: 100%;
-  padding:20px;
+  padding:40px;
 }
 
 .productCard{
   @include flexBox(column, center, flex-end);
+  margin-bottom: 30px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
-  border:rgb(150, 150, 150) solid 2px;
   color: rgb(0, 0, 0);
   width:500px;
   height: 500px;
   h2{
     font-size: 30px;
     text-align: center;
-    padding:30px;
+    padding:20px;
     color: black;
   }
   .clickableProductCard{
     @include flexBox(column, center, flex-end);
-    background-color: orange;
     border-radius: 10px;
     display: block;
     height: 100%;
     width:100%;
+  
+    a{
+      display: block;
+    }
   }
+  .image{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+  
+ 
+  }
+  .product-Footer{
+    padding: 20px;
+  }
+
+  
   .priceContainer{
     border-radius: 10px;
     background-color: yellow;
+    padding: 20px;
     text-align: center;
-    padding: 30px;
     font-weight: bold;
     font-size: 30px;
     color: black;

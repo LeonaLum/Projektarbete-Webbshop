@@ -64,12 +64,13 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  padding: 20px;
+  padding: 40px;
 }
 
 .productCard {
@@ -86,9 +87,9 @@ main {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-bottom: 30px;
   background-color: white;
   border-radius: 10px;
-  border: #969696 solid 2px;
   color: black;
   width: 500px;
   height: 500px;
@@ -97,7 +98,7 @@ main {
 .productCard h2 {
   font-size: 30px;
   text-align: center;
-  padding: 30px;
+  padding: 20px;
   color: black;
 }
 
@@ -115,18 +116,31 @@ main {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-color: orange;
   border-radius: 10px;
   display: block;
   height: 100%;
   width: 100%;
 }
 
+.productCard .clickableProductCard a {
+  display: block;
+}
+
+.productCard .image {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.productCard .product-Footer {
+  padding: 20px;
+}
+
 .productCard .priceContainer {
   border-radius: 10px;
   background-color: yellow;
+  padding: 20px;
   text-align: center;
-  padding: 30px;
   font-weight: bold;
   font-size: 30px;
   color: black;
@@ -209,7 +223,6 @@ main {
 
 .footer a {
   display: block;
-  padding: 20px;
 }
 
 .detailContainer {
@@ -236,12 +249,12 @@ main {
 }
 
 .detailContainer .product-Detail-Picture {
-  background-color: orange;
   padding: 20px;
   height: 100%;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  background-color: white;
 }
 
 .detailContainer h2 {
@@ -267,7 +280,12 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-color: silver;
+  background-color: white;
+  padding: 20px;
+}
+
+.detailContainer .product-Detail-Desc .description {
+  height: 100%;
   padding: 20px;
 }
 
@@ -565,6 +583,96 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   background-color: red;
 }
 
+.shopping-Cart-Footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 30px;
+  height: 150px;
+  width: 100%;
+  text-align: center;
+}
+
+.shopping-Cart-Footer .footer-Content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  background-color: #c343ff;
+}
+
+.shopping-Cart-Footer .total-Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  font-weight: bold;
+}
+
+.shopping-Cart-Footer .order-Button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: block;
+  background-color: purple;
+  height: 50%;
+  width: 200px;
+  font-size: 20px;
+}
+
+.shopping-Cart-Footer .order-Button a {
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-color: yellow;
+}
+
+.shopping-Cart-Footer .order-Button a .order {
+  background-color: red;
+  height: 20px;
+  width: 20px;
+}
+
 .product-Card-ShoppingCart {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -624,10 +732,10 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   width: 200px;
 }
 
-.product-Card-ShoppingCart .product-ShoppingCart-Picture {
+.product-Card-ShoppingCart .product-ShoppingCart-Image {
   background-color: green;
   height: 100%;
-  width: 200px;
+  width: 100px;
 }
 
 .product-Card-ShoppingCart .plus-Minus-Buttons {

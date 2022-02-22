@@ -1,3 +1,95 @@
+.hero-header {
+  
+  height: 500px;
+  width: 100%;
+  background-image: linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url("./img/header/heromario_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  .hero-textcontent {
+    @include flexBox(column, center, center);
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  h2 {
+    font-size: 3.50rem;
+  }
+  p {
+    font-size: 1.50rem;
+  }
+  .hero-button {
+
+    background-color: rgb(30, 255, 0);
+      padding: 2px;
+      border: none;
+      opacity: 0.6;
+      font-size:larger;
+      width: 120px ;
+      
+      
+    
+  }
+  
+  .hero-button:hover{
+    background-color: cyan;
+    opacity: 1;
+  }
+
+  }
+  a {
+    display: block;
+    width: 100px;
+    height: 100px;
+  }
+  .content {
+    background-color: red;
+  }
+}
+.navigation-wrapper{
+  display: block;
+  .navMenu {
+    @include flexBox(row, center, space-around);
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    .navigation-shoppingcart{
+      position: relative;
+      margin-left: 10%;
+    
+    }
+  .all-icons{
+    display: block;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+  }
+  .fa-braille{
+    font-size: 2.50rem;
+  }
+  .fa-mobile-screen-button{
+    font-size: 2.50rem;
+  
+  }
+  .fa-laptop{
+    font-size: 2.50rem;
+  }
+  .fa-gamepad{
+    font-size: 2.50rem;
+  }
+  .fa-cart-shopping{
+    font-size: 2.50rem;
+  }
+  .logo{
+    color: rgb(255, 255, 255);
+  }
+  a {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+  }
+}
 .productsList{
   @include flexBox(column, center, space-around);
   width: 100%;

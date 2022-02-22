@@ -6,7 +6,8 @@
       "type": "computer",
       "price": "22.999",
       "description": "Kompromisslös prestanda för de mest krävande användarna, det är MacBook Pro 14 M1 Pro 2021. Dess hållbara chassi tillverkad av aluminium omsluter ett fantastiskt Apple M1 Pro-chip för att leverera blixtrande snabb prestanda.",
-      "image": "url(../img/products/macbook_pro.png)"
+      "image": "url(../img/products/macbook_pro.png)",
+      "amount": "1"
     },
     {
       "id": "2",
@@ -14,7 +15,8 @@
       "type": "computer",
       "price": "14.999",
       "description": "MacBook Air 13 M1 2020 kombinerar minimalism och kraftfull prestanda, levererad av det åttakärniga Apple M1-chipet. Den har en skarp 13-tums Retina-skärm med True Tone-teknik. När du köper en MacBook får du Apple TV+ gratis i 3 månader.",
-      "image": "url(../img/products/macbookair.png)"
+      "image": "url(../img/products/macbookair.png)",
+      "amount": "1"
     },
     {
       "id": "3",
@@ -22,7 +24,8 @@
       "type": "computer",
       "price": "39.899",
       "description": "iMac 27 ”5K Retina MXWV2 har branschledande design och prestanda med sin fantastiska Retina 5K-skärm, kraftfulla 10:e generationens Intel Core i7-processor. När du köper en iMac får du Apple TV+ gratis i 3 månader",
-      "image": "url(../img/products/imac.png)"
+      "image": "url(../img/products/imac.png)",
+      "amount": "1"
     },
     {
       "id": "4",
@@ -30,7 +33,8 @@
       "type": "phone",
       "price": "3899",
       "description": "Huawei P40 smartphone är utrustad med en vacker glaskonstruktion, en 6,1-tums ramlös OLED-pekskärm och är kompatibel med moderna 5G-nätverk. Tack vare IP53 skyddsgrad kommer den att överleva stänk eller en promenad i regnet.",
-      "image": "url(../img/products/huawei_p40.png)"
+      "image": "url(../img/products/huawei_p40.png)",
+      "amount": "1"
     },
     {
       "id": "5",
@@ -38,7 +42,8 @@
       "type": "phone",
       "price": "9001",
       "description": "Nokia 3310 ÄR TILLBAKA, den efterlängtade och bortglömda pansar-tegelstenen har en vikt på 133 g. Nokia 3310 har en höjd på 22 mm. Nokia 3310 har en bredd på 113 mm. Nokia 3310 har ett djup på 48 mm.",
-      "image": "url(../img/products/nokia.png)"
+      "image": "url(../img/products/nokia.png)",
+      "amount": "1"
     },
     {
       "id": "6",
@@ -46,7 +51,8 @@
       "type": "phone",
       "price": "12.899",
       "description": "IPhone 13 Pro smartphone har en fantastisk 6,1” OLED-pekskärm med 120 Hz uppdateringsfrekvens, en kraftfull A15 Bionic-processor med 5G-dataanslutning och branschledande IP68 vattentäthet.",
-      "image": "url(../img/products/iphone13_pro.png)"
+      "image": "url(../img/products/iphone13_pro.png)",
+      "amount": "1"
     },
     {
       "id": "7",
@@ -54,7 +60,8 @@
       "type": "console",
       "price": "3899",
       "description": "Innovativa Nintendo Switch gamingkonsol kan spelas överallt och på en rad olika sätt. De två avtagbara Joy-Con-kontrollerna gör att Switch både kan användas som en handhållen enhet och som en handkontroll.",
-      "image": "url(../img/products/nintendo_switch_2.png)"
+      "image": "url(../img/products/nintendo_switch_2.png)",
+      "amount": "1"
     },
     {
       "id": "8",
@@ -62,7 +69,8 @@
       "type": "console",
       "price": "5999",
       "description": "PlayStation 5 (PS5) ger dig framtidens funktioner för en aldrig tidigare skådad spelupplevelse. Gör dig redo för supersmidig gameplay med upp till 120 fps i kompatibla spel, samt stöd för 120 Hz-utdata på 4K-skärmar. Känn varje explosion, varje skott och varje krasch tack vare den nydesignade DualSense trådlös handkontroll med haptiska återkopplingsvibrationer och adaptiva utlösare som tillsammans ger dig sensationell, realistisk feedback.",
-      "image": "url(../img/products/playstation_5.png)"
+      "image": "url(../img/products/playstation_5.png)",
+      "amount": "1"
     },
     {
       "id": "9",
@@ -70,7 +78,8 @@
       "type": "console",
       "price": "5499",
       "description": "Ta din gaming till nästa nivå med Xbox Series X spelkonsol - Xbox Velocity Architecture, 12 teraflops grafisk processorkraft och 16 GB grafiskt minne ger dig oöverträffad prestanda. Spela och streama i äkta 4K-upplösning.",
-      "image": "url(../img/products/xboxsx.png)"
+      "image": "url(../img/products/xboxsx.png)",
+      "amount": "1"
     }
   ]
 }

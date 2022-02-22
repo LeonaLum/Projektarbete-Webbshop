@@ -35,19 +35,23 @@
 
    .price-Container-Detail{
     @include flexBox(row, center, space-around);
-    padding:50px;
+    padding:40px;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     height: 100px;
-    width:300px;
-    background-color: yellow;
+    flex:1;
+    color: white;
+    background-color: rgb(42, 116, 255);
     font-weight: bold;
     p{
       display: block;
     }
    }
    .button-Purchase{
-    background-color: red;
+     flex:1;
+     color: white;
+    background-color: rgb(0, 58, 167);
+    padding:20px;
     font-size: 20px;
     height: 100px;
     width: 150px;

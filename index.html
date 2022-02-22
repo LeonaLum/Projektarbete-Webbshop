@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a href="index.html"><h1>Logo</h1></a>
+      </div>
 
-<header class="header">
-    <div class="logo">
-     <a href="index.html"><h1>Logo</h1></a>
-  </div>
+      <nav class="navMenu">
+        <a href="products.html?category=all">(Infinity-symbol)</a>
+        <a href="products.html?category=phones">(Telefon-symbol)</a>
+        <a href="products.html?category=computers">(computer-symbol)</a>
+        <a href="products.html?category=consoles">(console-symbol)</a>
+        <a href="shoppingCart.html">(SHOPPINGCART)</a>
+      </nav>
+    </header>
+    <main>
+      <div id="productsList" class="productsList">
+        <div id="productListHead" class="products-List-Head">
+          <h2 id="listTitle"></h2>
+        </div>
+        <div id="productsListMain" class="products-List-Main"></div>
+      </div>
+    </main>
 
-  <nav class="navMenu">
-    <a href="products.html?category=all">(Infinity-symbol)</a>
-    <a href="products.html?category=phones">(Telefon-symbol)</a>
-    <a href="products.html?category=computers">(computer-symbol)</a>
-    <a href="products.html?category=consoles">(console-symbol)</a>
-    <a href="shoppingCart.html">(SHOPPINGCART)</a>
-  </nav>
-</header>
-<main>
-  <div id="productsList" class="productsList">
-    <div id="productListHead" class="products-List-Head">
-      <h2 id="listTitle"></h2>
-    </div>
-    <div id="productsListMain" class="products-List-Main">  
-    </div>
-  </div>
-</main>
-
-<footer class="footer">
-  <h3>Footer</h3>
-  <a>(socialMedia-Symbol)</a>
-  <a>(socialMedia-Symbol)</a>
-  <a>(socialMedia-Symbol)</a>
-</footer>
-  <script src="script.js"></script>
-</body>
+    <footer class="footer">
+      <h3>Footer</h3>
+      <a>(socialMedia-Symbol)</a>
+      <a>(socialMedia-Symbol)</a>
+      <a>(socialMedia-Symbol)</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

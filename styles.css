@@ -20,6 +20,11 @@ main {
   width: 100%;
 }
 
+body,
+html {
+  height: 100%;
+}
+
 .productsList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,7 +155,75 @@ main {
   color: black;
 }
 
-.logo {
+.hero-header {
+  height: 500px;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 37, 37, 0.767)), to(rgba(255, 254, 254, 0))), url("./img/header/heromario_2.jpg");
+  background-image: linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url("./img/header/heromario_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-header .hero-textcontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-header .hero-textcontent h2 {
+  font-size: 3.50rem;
+}
+
+.hero-header .hero-textcontent p {
+  font-size: 1.50rem;
+}
+
+.hero-header .hero-textcontent .hero-button {
+  background-color: #1eff00;
+  padding: 2px;
+  border: none;
+  opacity: 0.6;
+  font-size: larger;
+  width: 120px;
+}
+
+.hero-header .hero-textcontent .hero-button:hover {
+  background-color: cyan;
+  opacity: 1;
+}
+
+.hero-header a {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.hero-header .content {
+  background-color: red;
+}
+
+.navigation-wrapper {
+  display: block;
+}
+
+.navigation-wrapper .navMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,42 +236,51 @@ main {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 300px;
-  width: 100%;
-  background-color: #d8d8d8;
-  display: block;
-}
-
-.logo a {
-  display: block;
-  width: 100px;
-  height: 100px;
-}
-
-.logo .content {
-  background-color: red;
-}
-
-.navMenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 100px;
   width: 100%;
-  background-color: black;
+  background-color: white;
 }
 
-.navMenu a {
+.navigation-wrapper .navMenu .navigation-shoppingcart {
+  position: relative;
+  margin-left: 10%;
+}
+
+.navigation-wrapper .navMenu .fa-braille {
+  font-size: 2.50rem;
+  color: #8b8a8a;
+}
+
+.navigation-wrapper .navMenu .fa-mobile-screen-button {
+  font-size: 2.50rem;
+  color: #bf01e6;
+}
+
+.navigation-wrapper .navMenu .fa-laptop {
+  font-size: 2.50rem;
+  color: #ff4800;
+}
+
+.navigation-wrapper .navMenu .fa-xbox {
+  font-size: 2.50rem;
+  color: cyan;
+}
+
+.navigation-wrapper .navMenu .fa-gamepad {
+  font-size: 2.50rem;
+  color: #1eff00;
+}
+
+.navigation-wrapper .navMenu .fa-cart-shopping {
+  font-size: 2.50rem;
+  color: #8b8a8a;
+}
+
+.navigation-wrapper .navMenu .logo {
+  color: white;
+}
+
+.navigation-wrapper .navMenu a {
   color: white;
   font-size: 20px;
   padding: 10px;
@@ -322,12 +404,15 @@ main {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 50px;
+  padding: 40px;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   height: 100px;
-  width: 300px;
-  background-color: yellow;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: white;
+  background-color: #2a74ff;
   font-weight: bold;
 }
 
@@ -336,7 +421,12 @@ main {
 }
 
 .detailContainer .product-Detail-Desc-Bottom .button-Purchase {
-  background-color: red;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: white;
+  background-color: #003aa7;
+  padding: 20px;
   font-size: 20px;
   height: 100px;
   width: 150px;
@@ -571,7 +661,8 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-size: 30px;
-  background-color: #c9c9c9;
+  background-color: #2a74ff;
+  color: white;
   height: 150px;
   width: 100%;
   text-align: center;
@@ -583,7 +674,7 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   width: 100%;
   padding: 20px;
   min-height: 500px;
-  background-color: red;
+  background-color: white;
 }
 
 .shopping-Cart-Footer {
@@ -622,7 +713,7 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
       justify-content: space-around;
   height: 100%;
   width: 100%;
-  background-color: #c343ff;
+  background-color: white;
 }
 
 .shopping-Cart-Footer .total-Container {
@@ -668,7 +759,8 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
       -ms-flex-pack: center;
           justify-content: center;
   display: block;
-  background-color: purple;
+  color: white;
+  background-color: #2a74ff;
   height: 100%;
   width: 100%;
   font-size: 20px;
@@ -695,10 +787,10 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   width: 100%;
   height: 100px;
   margin-bottom: 20px;
+  border-bottom: #d6d6d6 solid 2px;
 }
 
 .product-Card-ShoppingCart .product-ShoppingCart-Image {
-  background-color: green;
   height: 100%;
   width: 100px;
 }
@@ -736,9 +828,29 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: yellow;
+  background-color: #2a74ff;
+  color: white;
   height: 100%;
   width: 200px;
+}
+
+.product-Card-ShoppingCart .amount-Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 15px;
+  padding: 10px;
+  margin-left: 20px;
 }
 
 .product-Card-ShoppingCart .button-Div {
@@ -755,16 +867,19 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 50px;
-  background-color: red;
+  height: 40px;
+  background-color: #2a74ff;
   width: 50px;
   margin-left: 20px;
   border-radius: 10px;
 }
 
 .product-Card-ShoppingCart .button-Div .plus-Minus-Buttons {
+  color: white;
+  background-color: #2a74ff;
+  font-weight: bold;
   display: block;
-  font-size: 25px;
+  font-size: 20px;
   height: 100%;
   width: 100%;
   cursor: pointer;

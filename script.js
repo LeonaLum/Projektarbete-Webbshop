@@ -2,13 +2,13 @@
 
 //Nyaste scriptet
 let shoppingCartArray = [];
-let savedProducts = Object.values(localStorage);
+let savedProducts = JSON.parse(localStorage.getItem('cart'));
 
 checkLocalStorageForProducts();
 function checkLocalStorageForProducts() {
-  if (localStorage.getItem('0') !== null) {
+  if (localStorage.getItem('cart') !== null) {
     savedProducts.forEach((product) => {
-      shoppingCartArray.push(JSON.parse(product));
+      shoppingCartArray.push(product);
       console.log(shoppingCartArray);
     });
   }
@@ -17,7 +17,7 @@ function checkLocalStorageForProducts() {
 const productsListMain = document.getElementById('productsListMain');
 const detailContainer = document.getElementById('detailContainer');
 let listTitle = document.getElementById('listTitle');
-let productNumber = localStorage.length;
+//let productNumber = localStorage.length;
 
 
 let shoppingCartHead = document.getElementById("shoppingCartHead");
@@ -190,7 +190,7 @@ function showCardDetails(arr) {
        <div class="product-Detail-Desc-Bottom">
      
        <div class="price-Container-Detail">
-       <p>Pris: ${product.price}</p>
+       <p>Pris: ${product.price}:-</p>
        </div>
 
        <button id="buttonPurchase" class="button-Purchase">
@@ -208,14 +208,20 @@ function showCardDetails(arr) {
 
       const buttonPurchase = document.getElementById('buttonPurchase');
 
+      /***////////////////////////////KÖPKNAPPEN//////////////////////////***/
+
       buttonPurchase.addEventListener('click', () => {
-        localStorage.setItem(
-          JSON.stringify(productNumber),
-          JSON.stringify(product)
-        );
-        shoppingCartArray.push(product);
-        productNumber++;
-        console.log(shoppingCartArray);
+        const foundProduct = shoppingCartArray.find((cartItem) => {
+          return cartItem.id === product.id;
+        });
+
+        if (foundProduct) {
+          foundProduct.amount = parseInt(foundProduct.amount) + 1;
+        } else {
+          shoppingCartArray.push(product);
+        }
+        
+        localStorage.setItem('cart', JSON.stringify(shoppingCartArray));
       });
     }
   });
@@ -225,6 +231,7 @@ function showCardDetails(arr) {
 function createShoppingCartList(arr) {
  
   arr.forEach((product) => {
+   
     let plusButton = document.createElement("div");
     let minusButton = document.createElement("div");
  
@@ -233,6 +240,7 @@ function createShoppingCartList(arr) {
     shoppingCartProductCard.classList.add('product-Card-ShoppingCart');
 
     let shoppingCartProductImage = document.createElement('div');
+    shoppingCartProductImage.classList.add("product-ShoppingCart-Image")
 
 
     plusButton.classList.add("button-Div");
@@ -248,19 +256,23 @@ function createShoppingCartList(arr) {
     -
     </button>
     `;
-   
 
+    plusButton.addEventListener("click", addProduct);
+    minusButton.addEventListener("click", removeProduct);
+   
     shoppingCartProductCard.innerHTML = `
     <div class="product-ShoppingCart-Image"></div>
     <h3>${product.name}</h3>
     <div class="product-ShoppingCart-Price">
     <p>Pris:</p>${product.price}:-
     </div>
+    <div class="amount-Container">
+    <p>Antal:</p>${product.amount}
+    </div>
     `;
 
     ///////////////////////////////////////////////////////////////////////
-    plusButton.addEventListener("click", addProduct);
-    minusButton.addEventListener("click", removeProduct);
+   
 
     addImage(shoppingCartProductImage,product);
 
@@ -270,7 +282,7 @@ function createShoppingCartList(arr) {
     shoppingCartMain.appendChild(shoppingCartProductCard);
     
   });
-  if (localStorage.getItem('0') !== null){
+  if (localStorage.getItem('cart') !== null){
   let shoppingCartFooterContent = document.createElement('div');
   shoppingCartFooterContent.classList.add("footer-Content");
   shoppingCartFooterContent.innerHTML = `
@@ -315,45 +327,45 @@ function calculateTotal(array){
 
 
 
-
-
-
 function addProduct(button){
   let parent = button.target.parentElement;
   let productDiv = parent.parentElement;
   let firstChild = productDiv.firstElementChild;
   cardName = firstChild.nextSibling.nextSibling.innerText;
-  checkAllProducts()
 
-  async function checkAllProducts() {
-    const response = await fetch('./products.json');
-    const productData = await response.json();
-    const avaliableProducts = [...productData.products];
-    kolla(avaliableProducts);
-  }
-  function kolla(arr){
-    arr.forEach((product) => {
+    shoppingCartArray.forEach((product) => {
       if(cardName == product.name){
-        console.log("dubblett")
-        localStorage.setItem(
-          JSON.stringify(productNumber),
-          JSON.stringify(product)
-        );
-        shoppingCartArray.push(product);
-        productNumber++;
-        console.log(shoppingCartArray);
+        product.amount = product.amount + 1;
+        console.log(product.amount)
+        location.reload();
       }
       else{
-        
+        console.log("dem matchafr inte")
+        shoppingCartArray.push(product);
       }
+      localStorage.setItem('cart', JSON.stringify(shoppingCartArray))
     })
-  }
-  
-  
-  
- 
-
 }
+
+
 function removeProduct(){
   console.log("ta bort produkt")
-}
+  let parent = button.target.parentElement;
+  let productDiv = parent.parentElement;
+  let firstChild = productDiv.firstElementChild;
+  cardName = firstChild.nextSibling.nextSibling.innerText;
+
+    shoppingCartArray.forEach((product) => {
+      if(cardName == product.name){
+        product.amount = product.amount - 1;
+        console.log(product.amount)
+        location.reload();
+      }
+      else{
+        shoppingCartArray.push(product);
+
+      }
+      localStorage.setItem('cart', JSON.stringify(shoppingCartArray))
+    })
+  }
+

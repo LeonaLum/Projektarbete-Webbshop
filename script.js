@@ -225,6 +225,7 @@ function showCardDetails(arr) {
 function createShoppingCartList(arr) {
  
   arr.forEach((product) => {
+   
     let plusButton = document.createElement("div");
     let minusButton = document.createElement("div");
  
@@ -233,6 +234,7 @@ function createShoppingCartList(arr) {
     shoppingCartProductCard.classList.add('product-Card-ShoppingCart');
 
     let shoppingCartProductImage = document.createElement('div');
+    shoppingCartProductImage.classList.add("product-ShoppingCart-Image")
 
 
     plusButton.classList.add("button-Div");
@@ -248,19 +250,23 @@ function createShoppingCartList(arr) {
     -
     </button>
     `;
-   
 
+    plusButton.addEventListener("click", addProduct);
+    minusButton.addEventListener("click", removeProduct);
+   
     shoppingCartProductCard.innerHTML = `
     <div class="product-ShoppingCart-Image"></div>
     <h3>${product.name}</h3>
     <div class="product-ShoppingCart-Price">
     <p>Pris:</p>${product.price}:-
     </div>
+    <div class="amount-Container">
+    <p>Antal:</p>${product.amount}
+    </div>
     `;
 
     ///////////////////////////////////////////////////////////////////////
-    plusButton.addEventListener("click", addProduct);
-    minusButton.addEventListener("click", removeProduct);
+   
 
     addImage(shoppingCartProductImage,product);
 
@@ -315,45 +321,38 @@ function calculateTotal(array){
 
 
 
-
-
-
 function addProduct(button){
   let parent = button.target.parentElement;
   let productDiv = parent.parentElement;
   let firstChild = productDiv.firstElementChild;
   cardName = firstChild.nextSibling.nextSibling.innerText;
-  checkAllProducts()
+    kolla(shoppingCartArray);
+  }
 
-  async function checkAllProducts() {
-    const response = await fetch('./products.json');
-    const productData = await response.json();
-    const avaliableProducts = [...productData.products];
-    kolla(avaliableProducts);
-  }
   function kolla(arr){
+    // unpackedArr = JSON.parse(arr);
     arr.forEach((product) => {
-      if(cardName == product.name){
-        console.log("dubblett")
-        localStorage.setItem(
-          JSON.stringify(productNumber),
-          JSON.stringify(product)
-        );
-        shoppingCartArray.push(product);
-        productNumber++;
-        console.log(shoppingCartArray);
+      console.log(typeof product)
+      for(let value of product){
+        console.log(value)
       }
-      else{
-        
-      }
+      //   if(cardName == value){
+      //     console.log(value)  
+      // }
+      
+      // else{
+      //   console.log("what")
+      // }
+    
     })
-  }
+  // })
+}
   
   
   
  
 
-}
+
 function removeProduct(){
   console.log("ta bort produkt")
 }

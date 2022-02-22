@@ -6,7 +6,8 @@
       "type": "computer",
       "price": "20.000",
       "description": "Kompromisslös prestanda för de mest krävande användarna, det är MacBook Pro 14 M1 Pro 2021. Dess hållbara chassi tillverkad av aluminium omsluter ett fantastiskt Apple M1 Pro-chip för att leverera blixtrande snabb prestanda.",
-      "image": "url(../img/products/macbook_pro.png)"
+      "image": "url(../img/products/macbook_pro.png)",
+      "amount": "1"
     },
     {
       "id": "2",

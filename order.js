@@ -4,31 +4,28 @@
 //Få bort ID i sass?????? hur??
 
 //Kalla på alla element
-const orderForm = document.getElementById('order-form');
+const orderFormBtn = document.getElementById('order-form');
 const firstName = document.getElementById('firstname');
 const lastName = document.getElementById('lastname');
 const adress = document.getElementById('adress');
 const postalCode = document.getElementById('formPostalcode');
 const city = document.getElementById('city');
 const email = document.getElementById('email');
+const phoneNumber = document.getElementById('formPhone-number');
+const extraMessage = document.getElementById('formText-area');
 
 //Skapa funktion för submit av formulär
-orderForm.addEventListener('submit', (e) => {
+orderFormBtn.addEventListener('submit', (e) => {
   e.preventDefault();
-  if (checkInputs()) {
+  if (validateInputs() && saveUserData()) {
     moveToReciept();
   } else {
     return null;
   }
 });
 
-// orderForm.addEventListener('submit', (e) => {
-//   e.preventDefault();
-//   checkInputs();
-// });
-
 //Skapa funktionen för att se värdet av inputs
-function checkInputs() {
+function validateInputs() {
   let errors = 0;
   const firstNameValue = firstName.value.trim();
   const lastNameValue = lastName.value.trim();
@@ -36,7 +33,6 @@ function checkInputs() {
   const postalCodeValue = postalCode.value.trim();
   const cityValue = city.value.trim();
   const emailValue = email.value.trim();
-
   //Skapa felmeddelanden eller styling för input
 
   if (firstNameValue === '') {
@@ -83,6 +79,7 @@ function checkInputs() {
   } else {
     setSuccessFor(email);
   }
+  //Detta gör så att funktionen returnerar true!
   return errors === 0;
 }
 
@@ -110,8 +107,48 @@ function isEmailValid(email) {
   );
 }
 
+//Funktion för att gå till kvittosidan
+
 function moveToReciept() {
   window.location.pathname = '/reciept.html';
 }
 
-console.log(moveToReciept);
+//Funktion för att spara persondata i local storage
+
+function saveUserData() {
+  const firstNameValue = firstName.value.trim();
+  const lastNameValue = lastName.value.trim();
+  const adressValue = adress.value.trim();
+  const postalCodeValue = postalCode.value.trim();
+  const cityValue = city.value.trim();
+  const emailValue = email.value.trim();
+  const phoneValue = phoneNumber.value.trim();
+  const messageValue = extraMessage.value.trim();
+
+  if (
+    firstNameValue &&
+    lastNameValue &&
+    adressValue &&
+    postalCodeValue &&
+    cityValue &&
+    emailValue
+  ) {
+    localStorage.setItem(
+      'user',
+      JSON.stringify({
+        firstName: firstNameValue,
+        lastName: lastNameValue,
+        adress: adressValue,
+        postalCode: postalCodeValue,
+        city: cityValue,
+        email: emailValue,
+        phone: phoneValue,
+        message: messageValue,
+      })
+    );
+
+    return true;
+  } else {
+    return false;
+  }
+}

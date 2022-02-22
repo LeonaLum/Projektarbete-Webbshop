@@ -53,33 +53,36 @@
     @include flexBox(row, center, space-around);
     height: 100px;
     width: 100%;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     .navigation-shoppingcart{
       position: relative;
       margin-left: 10%;
     
     }
-  .all-icons{
-    display: block;
-    position: absolute;
-    height: 20px;
-    width: 20px;
-  }
   .fa-braille{
     font-size: 2.50rem;
+    color: rgb(139, 138, 138);
   }
   .fa-mobile-screen-button{
     font-size: 2.50rem;
+    color: rgb(191, 1, 230);
   
   }
   .fa-laptop{
     font-size: 2.50rem;
+    color: rgb(255, 72, 0);
+  }
+  .fa-xbox{
+    font-size: 2.50rem;
+    color: cyan;
   }
   .fa-gamepad{
     font-size: 2.50rem;
+    color:rgb(30, 255, 0)
   }
   .fa-cart-shopping{
     font-size: 2.50rem;
+    color:rgb(139, 138, 138);
   }
   .logo{
     color: rgb(255, 255, 255);

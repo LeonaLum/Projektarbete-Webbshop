@@ -2,13 +2,13 @@
 
 //Nyaste scriptet
 let shoppingCartArray = [];
-let savedProducts = Object.values(localStorage);
+let savedProducts = JSON.parse(localStorage.getItem('cart'));
 
 checkLocalStorageForProducts();
 function checkLocalStorageForProducts() {
-  if (localStorage.getItem('0') !== null) {
+  if (localStorage.getItem('cart') !== null) {
     savedProducts.forEach((product) => {
-      shoppingCartArray.push(JSON.parse(product));
+      shoppingCartArray.push(product);
       console.log(shoppingCartArray);
     });
   }
@@ -17,7 +17,7 @@ function checkLocalStorageForProducts() {
 const productsListMain = document.getElementById('productsListMain');
 const detailContainer = document.getElementById('detailContainer');
 let listTitle = document.getElementById('listTitle');
-let productNumber = localStorage.length;
+//let productNumber = localStorage.length;
 
 
 let shoppingCartHead = document.getElementById("shoppingCartHead");
@@ -190,7 +190,7 @@ function showCardDetails(arr) {
        <div class="product-Detail-Desc-Bottom">
      
        <div class="price-Container-Detail">
-       <p>Pris: ${product.price}</p>
+       <p>Pris: ${product.price}:-</p>
        </div>
 
        <button id="buttonPurchase" class="button-Purchase">
@@ -208,14 +208,20 @@ function showCardDetails(arr) {
 
       const buttonPurchase = document.getElementById('buttonPurchase');
 
+      /***////////////////////////////KÖPKNAPPEN//////////////////////////***/
+
       buttonPurchase.addEventListener('click', () => {
-        localStorage.setItem(
-          JSON.stringify(productNumber),
-          JSON.stringify(product)
-        );
-        shoppingCartArray.push(product);
-        productNumber++;
-        console.log(shoppingCartArray);
+        const foundProduct = shoppingCartArray.find((cartItem) => {
+          return cartItem.id === product.id;
+        });
+
+        if (foundProduct) {
+          foundProduct.amount = parseInt(foundProduct.amount) + 1;
+        } else {
+          shoppingCartArray.push(product);
+        }
+        
+        localStorage.setItem('cart', JSON.stringify(shoppingCartArray));
       });
     }
   });
@@ -326,33 +332,40 @@ function addProduct(button){
   let productDiv = parent.parentElement;
   let firstChild = productDiv.firstElementChild;
   cardName = firstChild.nextSibling.nextSibling.innerText;
-    kolla(shoppingCartArray);
-  }
 
-  function kolla(arr){
-    // unpackedArr = JSON.parse(arr);
-    arr.forEach((product) => {
-      console.log(typeof product)
-      for(let value of product){
-        console.log(value)
+    shoppingCartArray.forEach((product) => {
+      if(cardName == product.name){
+        product.amount = product.amount + 1;
+        console.log(product.amount)
+        location.reload();
       }
-      //   if(cardName == value){
-      //     console.log(value)  
-      // }
-      
-      // else{
-      //   console.log("what")
-      // }
-    
+      else{
+        console.log("dem matchafr inte")
+        shoppingCartArray.push(product);
+      }
+      localStorage.setItem('cart', JSON.stringify(shoppingCartArray))
     })
-  // })
 }
-  
-  
-  
- 
 
 
 function removeProduct(){
   console.log("ta bort produkt")
-}
+  let parent = button.target.parentElement;
+  let productDiv = parent.parentElement;
+  let firstChild = productDiv.firstElementChild;
+  cardName = firstChild.nextSibling.nextSibling.innerText;
+
+    shoppingCartArray.forEach((product) => {
+      if(cardName == product.name){
+        product.amount = product.amount - 1;
+        console.log(product.amount)
+        location.reload();
+      }
+      else{
+        shoppingCartArray.push(product);
+
+      }
+      localStorage.setItem('cart', JSON.stringify(shoppingCartArray))
+    })
+  }
+

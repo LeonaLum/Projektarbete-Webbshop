@@ -20,6 +20,10 @@ main {
   width: 100%;
 }
 
+body, html {
+  height: 100%;
+}
+
 .productsList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -150,32 +154,67 @@ main {
   color: black;
 }
 
-.logo {
+.hero-header {
+  height: 500px;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 37, 37, 0.767)), to(rgba(255, 254, 254, 0))), url("./img/header/heromario_2.jpg");
+  background-image: linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url("./img/header/heromario_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-header .hero-textcontent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 300px;
-  width: 100%;
-  background-color: #d8d8d8;
-  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
 }
 
-.logo a {
+.hero-header .hero-textcontent h2 {
+  font-size: 3.50rem;
+}
+
+.hero-header .hero-textcontent p {
+  font-size: 1.50rem;
+}
+
+.hero-header .hero-textcontent .hero-button {
+  background-color: #1eff00;
+  padding: 2px;
+  border: none;
+  opacity: 0.6;
+  font-size: larger;
+  width: 120px;
+}
+
+.hero-header .hero-textcontent .hero-button:hover {
+  background-color: cyan;
+  opacity: 1;
+}
+
+.hero-header a {
   display: block;
   width: 100px;
   height: 100px;
 }
 
-.logo .content {
+.hero-header .content {
   background-color: red;
 }
 
@@ -196,6 +235,10 @@ main {
   height: 100px;
   width: 100%;
   background-color: black;
+}
+
+.navMenu .logo {
+  color: white;
 }
 
 .navMenu a {

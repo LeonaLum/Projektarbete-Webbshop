@@ -113,5 +113,3 @@ function isEmailValid(email) {
 function moveToReciept() {
   window.location.pathname = '/reciept.html';
 }
-
-console.log(moveToReciept);

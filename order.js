@@ -15,7 +15,7 @@ const email = document.getElementById('email');
 //Skapa funktion för submit av formulär
 orderForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  if (checkInputs() === true) {
+  if (checkInputs()) {
     moveToReciept();
   } else {
     return null;
@@ -29,6 +29,7 @@ orderForm.addEventListener('submit', (e) => {
 
 //Skapa funktionen för att se värdet av inputs
 function checkInputs() {
+  let errors = 0;
   const firstNameValue = firstName.value.trim();
   const lastNameValue = lastName.value.trim();
   const adressValue = adress.value.trim();
@@ -40,41 +41,49 @@ function checkInputs() {
 
   if (firstNameValue === '') {
     setErrorFor(firstName, 'Du måste fylla i ditt förnamn');
+    errors++;
   } else {
     setSuccessFor(firstName);
   }
 
   if (lastNameValue === '') {
     setErrorFor(lastName, 'Du måste fylla i ditt efternamn');
+    errors++;
   } else {
     setSuccessFor(lastName);
   }
 
   if (adressValue === '') {
     setErrorFor(adress, 'Du måste fylla i din adress');
+    errors++;
   } else {
     setSuccessFor(adress);
   }
 
   if (postalCodeValue === '') {
     setErrorFor(postalCode, 'Du måste fylla i ditt postnummer');
+    errors++;
   } else {
     setSuccessFor(postalCode);
   }
 
   if (cityValue === '') {
     setErrorFor(city, 'Du måste fylla i din ort');
+    errors++;
   } else {
     setSuccessFor(city);
   }
 
   if (emailValue === '') {
     setErrorFor(email, 'Du måste fylla i din epost');
+    errors++;
   } else if (!isEmailValid(emailValue)) {
     setErrorFor(email, 'Du måste fylla i en giltig epost');
+    errors++;
   } else {
     setSuccessFor(email);
   }
+  return errors === 0;
 }
 
 //Funktion för styling error

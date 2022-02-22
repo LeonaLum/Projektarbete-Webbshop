@@ -1,0 +1,772 @@
+* {
+  font-family: 'Geogrotesque', Verdana, sans-serif, serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+main {
+  width: 100%;
+}
+
+.productsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  background-color: #a7a7a7;
+}
+
+.products-List-Head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 30px;
+  background-color: #c9c9c9;
+  height: 150px;
+  width: 100%;
+  text-align: center;
+}
+
+.products-List-Main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding: 40px;
+}
+
+.productCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 30px;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  width: 500px;
+  height: 500px;
+}
+
+.productCard h2 {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px;
+  color: black;
+}
+
+.productCard .clickableProductCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-radius: 10px;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.productCard .clickableProductCard a {
+  display: block;
+}
+
+.productCard .image {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.productCard .product-Footer {
+  padding: 20px;
+}
+
+.productCard .priceContainer {
+  border-radius: 10px;
+  background-color: yellow;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 300px;
+  width: 100%;
+  background-color: #d8d8d8;
+  display: block;
+}
+
+.logo a {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.logo .content {
+  background-color: red;
+}
+
+.navMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100px;
+  width: 100%;
+  background-color: black;
+}
+
+.navMenu a {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  height: 100%;
+  width: 100%;
+  padding: 50px;
+  background-color: black;
+}
+
+.footer a {
+  display: block;
+}
+
+.detailContainer {
+  width: 100%;
+}
+
+.detailContainer .detail-Card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #d17b7b;
+  width: 100%;
+  height: 500px;
+}
+
+.detailContainer .product-Detail-Picture {
+  padding: 20px;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: white;
+}
+
+.detailContainer h2 {
+  font-size: 40px;
+  text-align: left;
+}
+
+.detailContainer .product-Detail-Desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: default;
+      -ms-flex-align: default;
+          align-items: default;
+  -webkit-box-pack: default;
+      -ms-flex-pack: default;
+          justify-content: default;
+  height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: white;
+  padding: 20px;
+}
+
+.detailContainer .product-Detail-Desc .description {
+  height: 100%;
+  padding: 20px;
+}
+
+.detailContainer .product-Detail-Desc-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  justify-self: flex-end;
+}
+
+.detailContainer .product-Detail-Desc-Bottom .price-Container-Detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 50px;
+  text-align: center;
+  font-size: 30px;
+  height: 100px;
+  width: 300px;
+  background-color: yellow;
+  font-weight: bold;
+}
+
+.detailContainer .product-Detail-Desc-Bottom .price-Container-Detail p {
+  display: block;
+}
+
+.detailContainer .product-Detail-Desc-Bottom .button-Purchase {
+  background-color: red;
+  font-size: 20px;
+  height: 100px;
+  width: 150px;
+  cursor: pointer;
+}
+
+main.form-main {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: red;
+  min-height: 100vw;
+  width: 100vw;
+}
+
+main.form-main .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  background-color: lightcyan;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+main.form-main .form-container .form-header {
+  background-color: white;
+  border-bottom: 1px solid black;
+  padding: 20px 40px;
+}
+
+main.form-main .form-container form {
+  height: auto;
+  background-color: wheat;
+  padding: 20px 20px;
+}
+
+main.form-main .form-container form--number-field::-webkit-outer-spin-button, main.form-main .form-container form--number-field::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main.form-main .form-container form--number-field {
+  -moz-appearance: textfield;
+}
+
+main.form-main .form-container .form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+main.form-main .form-container .form-control input,
+main.form-main .form-container textarea {
+  border: 2px solid black;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+}
+
+main.form-main .form-container .form-control i {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  visibility: hidden;
+}
+
+main.form-main .form-container .form-control small {
+  position: absolute;
+  visibility: hidden;
+}
+
+main.form-main .form-container .form-control.success input {
+  border-color: green;
+}
+
+main.form-main .form-container .form-control.error input {
+  border-color: red;
+}
+
+main.form-main .form-container .form-control.success i.fa-check-circle {
+  visibility: visible;
+  color: green;
+}
+
+main.form-main .form-container .form-control.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: red;
+}
+
+main.form-main .form-container .form-control.error small {
+  visibility: visible;
+  color: red;
+}
+
+main.form-main .form-container button {
+  background-color: gray;
+  display: block;
+  border: 2px solid gray;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  -webkit-box-shadow: 0 3px gray;
+          box-shadow: 0 3px gray;
+}
+
+main.form-main .form-container button a {
+  z-index: 1;
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-color: lightblue;
+}
+
+main.form-main .form-container button:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+main.form-main .form-container button:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+main.form-main .form-container #formText-area {
+  resize: none;
+}
+
+main.form-main .form-container #formPhone-number::-webkit-outer-spin-button,
+main.form-main .form-container #formPhone-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+main.form-main .form-container #formPostalcode::-webkit-outer-spin-button,
+main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.reciept {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 400px;
+  width: 100%;
+  border: 4px solid #00e065;
+}
+
+.reciept .order-confirmation h2 {
+  color: #a02d96;
+  font-size: 2.50rem;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+
+.reciept .order-details h3 {
+  color: #ad7116;
+  font-size: 1.50rem;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+
+.reciept .billing-info h3 {
+  color: #165cad;
+  font-size: 1.50rem;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+
+.reciept .payment-method h3 {
+  color: #20201f;
+  font-size: 1.50rem;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+
+.shopping-Cart-List {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  background-color: #a7a7a7;
+}
+
+.shopping-Cart-Head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 30px;
+  background-color: #c9c9c9;
+  height: 150px;
+  width: 100%;
+  text-align: center;
+}
+
+.shopping-Cart-Main {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+  min-height: 500px;
+  background-color: red;
+}
+
+.shopping-Cart-Footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 30px;
+  height: 150px;
+  width: 100%;
+  text-align: center;
+}
+
+.shopping-Cart-Footer .footer-Content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  background-color: #c343ff;
+}
+
+.shopping-Cart-Footer .total-Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  font-weight: bold;
+}
+
+.shopping-Cart-Footer .total-Container .total {
+  margin-left: 20px;
+}
+
+.shopping-Cart-Footer a {
+  height: 100px;
+  width: 200px;
+  z-index: 1;
+  display: block;
+}
+
+.shopping-Cart-Footer a .order-Button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: block;
+  background-color: purple;
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.product-Card-ShoppingCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 20px;
+  font-size: 12px;
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.product-Card-ShoppingCart .product-ShoppingCart-Image {
+  background-color: green;
+  height: 100%;
+  width: 100px;
+}
+
+.product-Card-ShoppingCart h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 170px;
+  background-color: white;
+}
+
+.product-Card-ShoppingCart .product-ShoppingCart-Price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: yellow;
+  height: 100%;
+  width: 200px;
+}
+
+.product-Card-ShoppingCart .button-Div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  background-color: red;
+  width: 50px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+.product-Card-ShoppingCart .button-Div .plus-Minus-Buttons {
+  display: block;
+  font-size: 25px;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -645,6 +645,15 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   background-color: #a7a7a7;
 }
 
+.div-Empty-Cart {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
 .shopping-Cart-Head {
   display: -webkit-box;
   display: -ms-flexbox;

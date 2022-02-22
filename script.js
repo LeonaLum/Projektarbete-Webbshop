@@ -282,7 +282,7 @@ function createShoppingCartList(arr) {
     shoppingCartMain.appendChild(shoppingCartProductCard);
     
   });
-  if (localStorage.getItem('0') !== null){
+  if (localStorage.getItem('cart') !== null){
   let shoppingCartFooterContent = document.createElement('div');
   shoppingCartFooterContent.classList.add("footer-Content");
   shoppingCartFooterContent.innerHTML = `

@@ -218,7 +218,11 @@ body, html {
   background-color: red;
 }
 
-.navMenu {
+.navigation-wrapper {
+  display: block;
+}
+
+.navigation-wrapper .navMenu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,19 +233,50 @@ body, html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: 100px;
   width: 100%;
   background-color: black;
 }
 
-.navMenu .logo {
+.navigation-wrapper .navMenu .navigation-shoppingcart {
+  position: relative;
+  margin-left: 10%;
+}
+
+.navigation-wrapper .navMenu .all-icons {
+  display: block;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+}
+
+.navigation-wrapper .navMenu .fa-braille {
+  font-size: 2.50rem;
+}
+
+.navigation-wrapper .navMenu .fa-mobile-screen-button {
+  font-size: 2.50rem;
+}
+
+.navigation-wrapper .navMenu .fa-laptop {
+  font-size: 2.50rem;
+}
+
+.navigation-wrapper .navMenu .fa-gamepad {
+  font-size: 2.50rem;
+}
+
+.navigation-wrapper .navMenu .fa-cart-shopping {
+  font-size: 2.50rem;
+}
+
+.navigation-wrapper .navMenu .logo {
   color: white;
 }
 
-.navMenu a {
+.navigation-wrapper .navMenu a {
   color: white;
   font-size: 20px;
   padding: 10px;

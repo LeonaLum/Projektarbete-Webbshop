@@ -15,17 +15,17 @@
       href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Products</title>
   </head>
   <body>
     <header class="header">
-      <div class="hero-header">
+      <div class="hero-header" id="heroHeader">
         <a href="index.html" class="logo"><h1>Logo</h1></a>
         <div class="hero-textcontent">
-          <h2>Super Mario Party</h2>
-          <p>Häng med Mario och hans vänner i en helt ny värld av äventyr!</p>
-          <a href="products.html?category=consoles" class="hero-link">
-            <button class="hero-button">Till Äventyret</button>
+          <h2 id="heroTitle"></h2>
+          <p id="heroText"></p>
+          <a href="products.html?category=consoles" id="heroLink">
+            <button id="heroButton" class="hero-button"></button>
           </a>
         </div>
       </div>
@@ -63,11 +63,17 @@
     </main>
 
     <footer class="footer">
-      <h3>Footer</h3>
-      <a>(socialMedia-Symbol)</a>
-      <a>(socialMedia-Symbol)</a>
-      <a>(socialMedia-Symbol)</a>
+      <div class="facebook-icon">
+        <a><i class="fa-brands fa-facebook-f"></i></a>
+      </div>
+      <div class="twitter-icon">
+        <a><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <div class="instagram-icon">
+        <a><i class="fa-brands fa-instagram"></i></a>
+      </div>
     </footer>
     <script src="script.js"></script>
+    <script src="changeheader.js"></script>
   </body>
 </html>

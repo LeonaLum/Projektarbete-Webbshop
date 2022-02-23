@@ -1,10 +1,16 @@
-.hero-header {
+.hero-header  {
   
-  height: 500px;
+  height: 400px;
   width: 100%;
-  background-image: linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url("./img/header/heromario_2.jpg");
+  //background-image: linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url("./img/header/heromario_2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  //&:hover{
+    //background-image: linear-gradient(rgba(20, 20, 20, 0.767), rgba(56, 56, 56, 0.486)), url("./img/header/heromario_2.jpg");
+    //background-size: cover;
+    //background-repeat: no-repeat;
+  }
+  
   .hero-textcontent {
     @include flexBox(column, center, center);
     position: absolute;
@@ -18,6 +24,7 @@
   }
   p {
     font-size: 1.50rem;
+    font-weight: bold;
   }
   .hero-button {
 
@@ -46,12 +53,12 @@
   .content {
     background-color: red;
   }
-}
+
 .navigation-wrapper{
-  display: block;
+  display: flex;
   .navMenu {
     @include flexBox(row, center, space-around);
-    height: 100px;
+    
     width: 100%;
     background-color: rgb(255, 255, 255);
     .navigation-shoppingcart{
@@ -88,19 +95,48 @@
     color: rgb(255, 255, 255);
   }
   a {
+    @include flexBox(row, center, space-around);
     color: white;
     font-size: 20px;
-    padding: 10px;
+    
   }
 }
 }
 .footer {
-  @include flexBox(row, center, center);
-  color: white;
+  @include flexBox(row, center, space-evenly);
+  
   height: 100%;
   width: 100%;
-  padding: 50px;
+  
   background-color: black;
+  .facebook-icon {
+    @include flexBox(row, center, center);
+    background-color: rgb(97, 97, 97);
+    border-radius: 50%;
+    font-size: 2.50rem;
+    height: 4.50rem;
+    width: 4.50rem;
+    color: rgb(255, 255, 255);
+  }
+  .twitter-icon{
+    @include flexBox(row, center, center);
+    background-color: rgb(97, 97, 97);
+    border-radius: 50%;
+    font-size: 2.50rem;
+    height: 4.50rem;
+    width: 4.50rem;
+    color: rgb(255, 255, 255);
+    
+  }
+  .instagram-icon{
+    @include flexBox(row, center, center);
+    background-color: rgb(97, 97, 97);
+    border-radius: 50%;
+    font-size: 2.50rem;
+    height: 4.50rem;
+    width: 4.50rem;
+    color: rgb(255, 255, 255);
+  }
   a{
     display: block;
     

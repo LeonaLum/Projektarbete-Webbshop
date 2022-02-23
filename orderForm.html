@@ -58,14 +58,15 @@
       </section>
     </header>
     <main class="form-main">
-      <div class="recieptAmount" id="recieptAmount">
-        Här ska minikvitto stå!
-      </div>
       <div class="form-container" id="form-container">
-        <div class="form-header">
-          <h2>Beställningsformulär</h2>
-        </div>
+        <section class="detail-section">
+          <div class="reciept-amount" id="reciept-amount">
+            <h3 id="formTotalPrice"></h3>
+          </div>
+        </section>
+        <section class="form-section">
         <form action="/" method="GET" id="order-form" class="form">
+          <h2>Beställningsformulär</h2>
           <div class="form-control">
             <input
               id="firstname"
@@ -166,11 +167,10 @@
           </div>
 
           <p>*<em>Alla markerade fält måste vara ifyllda</em></p>
-          <a href="/reciept.html"
-            ><button class="btn btn--submit" type="submit" id="order_submit">
+            <button class="btn btn--submit" type="submit" id="order_submit">
               Skicka beställning
             </button>
-          </a>
+          </section>
         </form>
       </div>
     </main>

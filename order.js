@@ -154,3 +154,27 @@ function saveUserData() {
 }
 
 //För att se vilka produkter man har i varukorgen när man klickar på beställ
+
+const recieptAmount = document.getElementById('reciept-amount');
+const formTitle = document.getElementById('formTitle');
+const formAmount = document.getElementById('formAmount');
+const formPrice = document.getElementById('formPrice');
+const totalPrice = document.getElementById('formTotalPrice');
+
+function showProductsFromCart() {
+  shoppingCartArray.forEach((product) => {
+    recieptAmount.innerHTML = `<h2>${product.name}</h2>
+    <p>${product.amount}</p>
+    <p>${product.price}</p>`;
+  });
+}
+showProductsFromCart();
+
+// shoppingCartArray.forEach((item) => {
+//   formTitle.innerText = `${item.name}`;
+//   formAmount.innerText = `${item.amount}`;
+//   formPrice.innerText = `${item.price}`;
+// });
+
+let totalPriceOfProducts = calculateTotal(shoppingCartArray);
+totalPrice.innerText = `${totalPriceOfProducts}`;

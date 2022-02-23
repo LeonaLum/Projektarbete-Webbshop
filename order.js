@@ -152,3 +152,5 @@ function saveUserData() {
     return false;
   }
 }
+
+//För att se vilka produkter man har i varukorgen när man klickar på beställ

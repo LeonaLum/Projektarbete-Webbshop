@@ -159,7 +159,7 @@ const recieptAmount = document.getElementById('reciept-amount');
 const formTitle = document.getElementById('formTitle');
 const formAmount = document.getElementById('formAmount');
 const formPrice = document.getElementById('formPrice');
-const totalPrice = document.getElementById('formTotalPrice');
+const totalPrice = document.getElementById('form-TotalPrice');
 
 function showProductsFromCart() {
   shoppingCartArray.forEach((product) => {
@@ -177,6 +177,6 @@ showProductsFromCart();
 // });
 
 let totalPriceOfProducts = calculateTotal(shoppingCartArray);
-totalPrice.innerText = `${totalPriceOfProducts}`;
+totalPrice.innerHTML = `<h3>${totalPriceOfProducts}</h3>`;
 console.log(totalPrice);
 console.log(totalPriceOfProducts);

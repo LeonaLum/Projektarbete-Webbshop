@@ -178,3 +178,5 @@ showProductsFromCart();
 
 let totalPriceOfProducts = calculateTotal(shoppingCartArray);
 totalPrice.innerText = `${totalPriceOfProducts}`;
+console.log(totalPrice);
+console.log(totalPriceOfProducts);

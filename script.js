@@ -1,8 +1,8 @@
 // För att nå produkterna så behöver du gå in på products i json objektet.
 
 //Nyaste scriptet
-let shoppingCartArray = [];
 let productPrices = [];
+let shoppingCartArray = [];
 let savedProducts = JSON.parse(localStorage.getItem('cart'));
 
 checkLocalStorageForProducts();
@@ -15,9 +15,21 @@ function checkLocalStorageForProducts() {
   }
 }
 
+let productListHead = document.getElementById('productListHead');
 const productsListMain = document.getElementById('productsListMain');
 const detailContainer = document.getElementById('detailContainer');
 let listTitle = document.getElementById('listTitle');
+
+let searchDiv = document.createElement('div');
+searchDiv.classList.add('search-Div');
+
+let searchField = document.createElement('input');
+searchField.type = 'text';
+searchField.placeholder = 'sök';
+searchField.classList.add('search-field');
+
+let searchButton = document.createElement('button');
+searchButton.innerText = 'sök';
 
 let shoppingCartHead = document.getElementById('shoppingCartHead');
 let shoppingCartMain = document.getElementById('shoppingCartMain');
@@ -29,6 +41,8 @@ let amountOfProducts = document.createElement('p');
 const params = new URLSearchParams(location.search);
 let currentCategory = params.get('category');
 let currentId = params.get('id');
+
+let searchableArray = [];
 
 switch (currentCategory) {
   case 'phones':
@@ -57,6 +71,12 @@ if (location.pathname == '/shoppingCart.html') {
   shoppingCartHead.appendChild(amountOfProducts);
 }
 
+if (location.pathname == '/products.html') {
+  searchDiv.appendChild(searchField);
+  searchDiv.appendChild(searchButton);
+  productListHead.appendChild(searchDiv);
+}
+
 if (currentId) {
   getProductsForDetails();
 }
@@ -72,7 +92,9 @@ async function getAllProducts() {
   const response = await fetch('./products.json');
   const productData = await response.json();
   const productsArray = [...productData.products];
+
   createProductCard(productsArray);
+  searchableArray = productsArray;
 }
 
 async function getProductsPhones() {
@@ -86,6 +108,7 @@ async function getProductsPhones() {
     }
   });
   createProductCard(phoneProducts);
+  searchableArray = phoneProducts;
 }
 
 async function getProductsComputers() {
@@ -99,6 +122,7 @@ async function getProductsComputers() {
     }
   });
   createProductCard(computerProducts);
+  searchableArray = computerProducts;
 }
 
 async function getProductsConsoles() {
@@ -112,6 +136,7 @@ async function getProductsConsoles() {
     }
   });
   createProductCard(consoleProducts);
+  searchableArray = consoleProducts;
 }
 
 function createProductCard(arr) {
@@ -292,6 +317,34 @@ function addImage(div, product) {
   div.style.backgroundPosition = 'center';
   div.style.backgroundRepeat = 'no-repeat';
 }
+
+searchButton.addEventListener('click', search);
+
+function search() {
+  if (searchField.value != '') {
+    console.log('det är något i searchfield');
+    console.log(currentCategory);
+    searchableArray.find((product) => {
+      if (
+        product.name.toLowerCase().includes(searchField.value.toLowerCase())
+      ) {
+        let matchingProducts = [];
+        matchingProducts.push(product);
+        let cards = productsListMain.querySelectorAll('div');
+        cards.forEach((card) => {
+          card.remove();
+        });
+        console.log(matchingProducts);
+        createProductCard(matchingProducts);
+      } else {
+        console.log('no products matched');
+      }
+    });
+  } else {
+    console.log('det är INGET i searchfield');
+  }
+}
+
 //Hit skickas produkterna i shoppingcart
 function calculateTotal(array) {
   array.forEach((product) => {
@@ -348,7 +401,6 @@ function removeProduct(button) {
   });
   calcTotalAmountOfProducst();
 }
-
 function calcTotalAmountOfProducts() {
   let amounts = [];
   shoppingCartArray.forEach((product) => {

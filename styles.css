@@ -39,7 +39,7 @@ html {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
-  background-color: #a7a7a7;
+  background-color: white;
 }
 
 .products-List-Head {
@@ -55,11 +55,21 @@ html {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  color: white;
+  background-color: #2a74ff;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 30px;
   font-size: 30px;
-  background-color: #c9c9c9;
-  height: 150px;
   width: 100%;
   text-align: center;
+}
+
+.products-List-Head h2 {
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .products-List-Main {
@@ -97,6 +107,7 @@ html {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-bottom: 30px;
+  border: solid #d8d8d8 2px;
   background-color: white;
   border-radius: 10px;
   color: black;
@@ -147,31 +158,61 @@ html {
 
 .productCard .priceContainer {
   border-radius: 10px;
-  background-color: yellow;
-  padding: 20px;
+  color: white;
+  background-color: #2a74ff;
+  padding: 30px;
   text-align: center;
   font-weight: bold;
   font-size: 30px;
-  color: black;
+}
+
+.search-Div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 50px;
+  width: 400px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.search-Div .search-field {
+  font-size: 20px;
+  padding: 20px;
+  height: 90%;
+  width: 60%;
+  border-radius: 10px;
+  border: none;
+}
+
+.search-Div button {
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  height: 90%;
+  width: 100px;
+  background-color: #003aa7;
 }
 
 .hero-header {
-  height: 500px;
+  height: 400px;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(37, 37, 37, 0.767)), to(rgba(255, 254, 254, 0))), url("./img/header/heromario_2.jpg");
-  background-image: linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url("./img/header/heromario_2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.hero-header:hover {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, 0.767)), to(rgba(56, 56, 56, 0.486))), url("./img/header/heromario_2.jpg");
-  background-image: linear-gradient(rgba(20, 20, 20, 0.767), rgba(56, 56, 56, 0.486)), url("./img/header/heromario_2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.hero-header .hero-textcontent {
+.hero-textcontent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,16 +235,16 @@ html {
   color: white;
 }
 
-.hero-header .hero-textcontent h2 {
+.hero-textcontent h2 {
   font-size: 3.50rem;
 }
 
-.hero-header .hero-textcontent p {
+.hero-textcontent p {
   font-size: 1.50rem;
   font-weight: bold;
 }
 
-.hero-header .hero-textcontent .hero-button {
+.hero-textcontent .hero-button {
   background-color: #1eff00;
   padding: 2px;
   border: none;
@@ -212,23 +253,25 @@ html {
   width: 120px;
 }
 
-.hero-header .hero-textcontent .hero-button:hover {
+.hero-textcontent .hero-button:hover {
   background-color: cyan;
   opacity: 1;
 }
 
-.hero-header a {
+a {
   display: block;
   width: 100px;
   height: 100px;
 }
 
-.hero-header .content {
+.content {
   background-color: red;
 }
 
 .navigation-wrapper {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .navigation-wrapper .navMenu {
@@ -244,7 +287,6 @@ html {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 100px;
   width: 100%;
   background-color: white;
 }
@@ -289,9 +331,20 @@ html {
 }
 
 .navigation-wrapper .navMenu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   color: white;
   font-size: 20px;
-  padding: 10px;
 }
 
 .footer {
@@ -308,10 +361,8 @@ html {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  color: white;
   height: 100%;
   width: 100%;
-  padding: 50px;
   background-color: black;
 }
 
@@ -332,9 +383,8 @@ html {
   background-color: #616161;
   border-radius: 50%;
   font-size: 2.50rem;
-  height: 60px;
-  width: 60px;
-  padding-top: 6px;
+  height: 4.50rem;
+  width: 4.50rem;
   color: white;
 }
 
@@ -355,9 +405,8 @@ html {
   background-color: #616161;
   border-radius: 50%;
   font-size: 2.50rem;
-  height: 60px;
-  width: 60px;
-  padding-top: 6px;
+  height: 4.50rem;
+  width: 4.50rem;
   color: white;
 }
 
@@ -378,9 +427,8 @@ html {
   background-color: #616161;
   border-radius: 50%;
   font-size: 2.50rem;
-  height: 60px;
-  width: 60px;
-  padding-top: 6px;
+  height: 4.50rem;
+  width: 4.50rem;
   color: white;
 }
 

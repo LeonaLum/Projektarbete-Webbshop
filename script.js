@@ -17,19 +17,13 @@ function checkLocalStorageForProducts() {
 const productsListMain = document.getElementById('productsListMain');
 const detailContainer = document.getElementById('detailContainer');
 let listTitle = document.getElementById('listTitle');
-//let productNumber = localStorage.length;
+
 
 
 let shoppingCartHead = document.getElementById("shoppingCartHead");
 let shoppingCartMain = document.getElementById("shoppingCartMain");
 let shoppingCartFooter = document.getElementById("shoppingCartFooter");
-
-/////
-
-
-/////
-
-
+let divEmptyCart = document.getElementById("divEmptyCart");
 
 
 let amountOfProducts = document.createElement('p');
@@ -57,8 +51,12 @@ if (location.pathname == '/index.html'){
   getAllProducts();
 }
 if (location.pathname == '/shoppingCart.html') {
+  if(shoppingCartArray.length != 0){
+    divEmptyCart.classList.add("hide");
+    
+  }
   createShoppingCartList(shoppingCartArray);
-  amountOfProducts.innerText = `${localStorage.length} Produkter`;
+  amountOfProducts.innerText = `${calcTotalAmountOfProducts()} Produkter`;
   shoppingCartHead.appendChild(amountOfProducts);
 }
 
@@ -308,18 +306,16 @@ function addImage (div, product){
 //Hit skickas produkterna i shoppingcart
 function calculateTotal(array){
   let productPrices = [];
- array.forEach((product,index,array) => {
-   productPrices.push(product.price);
+ array.forEach((product) => {
+  priceOfProduct = parseInt(product.price);
+  amount = parseInt(product.amount);
+  totalOfProduct = priceOfProduct * amount;
+  productPrices.push(totalOfProduct)
+  console.log(productPrices)
+   
  })
- let intPrices = productPrices.map((price) => {
-   if(price.includes(".")){
-    return parseInt(price.replace(".",''));
-   }
-   else{
-     return parseInt(price);
-   }
- })
- let total  = intPrices.reduce((cur,next) => {
+
+ let total  = productPrices.reduce((cur,next) => {
    return cur + next;
  })
  return total
@@ -335,37 +331,51 @@ function addProduct(button){
 
     shoppingCartArray.forEach((product) => {
       if(cardName == product.name){
-        product.amount = product.amount + 1;
+        product.amount = parseInt(product.amount) + 1;
         console.log(product.amount)
         location.reload();
       }
       else{
-        console.log("dem matchafr inte")
-        shoppingCartArray.push(product);
       }
       localStorage.setItem('cart', JSON.stringify(shoppingCartArray))
     })
+    calcTotalAmountOfProducst()
 }
 
 
-function removeProduct(){
+function removeProduct(button){
   console.log("ta bort produkt")
   let parent = button.target.parentElement;
   let productDiv = parent.parentElement;
   let firstChild = productDiv.firstElementChild;
   cardName = firstChild.nextSibling.nextSibling.innerText;
 
-    shoppingCartArray.forEach((product) => {
+    shoppingCartArray.forEach((product,index,arr) => {
       if(cardName == product.name){
-        product.amount = product.amount - 1;
+        product.amount = product.amount -1;
         console.log(product.amount)
         location.reload();
+        if(product.amount == 0){
+          shoppingCartArray.splice(index,1)
+          productDiv.remove();
+        }
       }
       else{
-        shoppingCartArray.push(product);
-
       }
       localStorage.setItem('cart', JSON.stringify(shoppingCartArray))
     })
+    calcTotalAmountOfProducst()
+  }
+
+  function calcTotalAmountOfProducts(){
+    let amounts = [];
+   shoppingCartArray.forEach((product) => {
+     let prodAmount = parseInt(product.amount);
+     amounts.push(prodAmount);
+   })
+   let total = amounts.reduce((amount, next) => {
+     return amount + next;
+   })
+   return total
   }
 

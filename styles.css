@@ -164,6 +164,13 @@ html {
   background-repeat: no-repeat;
 }
 
+.hero-header:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, 0.767)), to(rgba(56, 56, 56, 0.486))), url("./img/header/heromario_2.jpg");
+  background-image: linear-gradient(rgba(20, 20, 20, 0.767), rgba(56, 56, 56, 0.486)), url("./img/header/heromario_2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .hero-header .hero-textcontent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,6 +200,7 @@ html {
 
 .hero-header .hero-textcontent p {
   font-size: 1.50rem;
+  font-weight: bold;
 }
 
 .hero-header .hero-textcontent .hero-button {
@@ -297,14 +305,83 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   color: white;
   height: 100%;
   width: 100%;
   padding: 50px;
   background-color: black;
+}
+
+.footer .facebook-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #616161;
+  border-radius: 50%;
+  font-size: 2.50rem;
+  height: 60px;
+  width: 60px;
+  padding-top: 6px;
+  color: white;
+}
+
+.footer .twitter-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #616161;
+  border-radius: 50%;
+  font-size: 2.50rem;
+  height: 60px;
+  width: 60px;
+  padding-top: 6px;
+  color: white;
+}
+
+.footer .instagram-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #616161;
+  border-radius: 50%;
+  font-size: 2.50rem;
+  height: 60px;
+  width: 60px;
+  padding-top: 6px;
+  color: white;
 }
 
 .footer a {
@@ -598,6 +675,7 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   height: 400px;
   width: 100%;
   border: 4px solid #00e065;
+  background-color: #ffe1f7;
 }
 
 .reciept .order-confirmation h2 {

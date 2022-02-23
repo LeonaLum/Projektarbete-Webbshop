@@ -5,6 +5,11 @@
   background-image: linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url("./img/header/heromario_2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  &:hover{
+    background-image: linear-gradient(rgba(20, 20, 20, 0.767), rgba(56, 56, 56, 0.486)), url("./img/header/heromario_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .hero-textcontent {
     @include flexBox(column, center, center);
     position: absolute;
@@ -18,6 +23,7 @@
   }
   p {
     font-size: 1.50rem;
+    font-weight: bold;
   }
   .hero-button {
 
@@ -95,12 +101,42 @@
 }
 }
 .footer {
-  @include flexBox(row, center, center);
+  @include flexBox(row, center, space-evenly);
   color: white;
   height: 100%;
   width: 100%;
   padding: 50px;
   background-color: black;
+  .facebook-icon {
+    @include flexBox(row, center, center);
+    background-color: rgb(97, 97, 97);
+    border-radius: 50%;
+    font-size: 2.50rem;
+    height: 60px;
+    width: 60px;
+    padding-top: 6px;
+    color: rgb(255, 255, 255);
+  }
+  .twitter-icon{
+    @include flexBox(row, center, center);
+    background-color: rgb(97, 97, 97);
+    border-radius: 50%;
+    font-size: 2.50rem;
+    height: 60px;
+    width: 60px;
+    padding-top: 6px;
+    color: rgb(255, 255, 255);
+  }
+  .instagram-icon{
+    @include flexBox(row, center, center);
+    background-color: rgb(97, 97, 97);
+    border-radius: 50%;
+    font-size: 2.50rem;
+    height: 60px;
+    width: 60px;
+    padding-top: 6px;
+    color: rgb(255, 255, 255);
+  }
   a{
     display: block;
     

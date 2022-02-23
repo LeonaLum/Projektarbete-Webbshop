@@ -39,7 +39,7 @@ html {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
-  background-color: #a7a7a7;
+  background-color: white;
 }
 
 .products-List-Head {
@@ -55,11 +55,21 @@ html {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  color: white;
+  background-color: #2a74ff;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 30px;
   font-size: 30px;
-  background-color: #c9c9c9;
-  height: 150px;
   width: 100%;
   text-align: center;
+}
+
+.products-List-Head h2 {
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .products-List-Main {
@@ -97,6 +107,7 @@ html {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-bottom: 30px;
+  border: solid #d8d8d8 2px;
   background-color: white;
   border-radius: 10px;
   color: black;
@@ -147,12 +158,51 @@ html {
 
 .productCard .priceContainer {
   border-radius: 10px;
-  background-color: yellow;
-  padding: 20px;
+  color: white;
+  background-color: #2a74ff;
+  padding: 30px;
   text-align: center;
   font-weight: bold;
   font-size: 30px;
-  color: black;
+}
+
+.search-Div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 50px;
+  width: 400px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.search-Div .search-field {
+  font-size: 20px;
+  padding: 20px;
+  height: 90%;
+  width: 60%;
+  border-radius: 10px;
+  border: none;
+}
+
+.search-Div button {
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  height: 90%;
+  width: 100px;
+  background-color: #003aa7;
 }
 
 .hero-header {

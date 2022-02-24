@@ -698,6 +698,7 @@ main.form-main .form-container .detail-section .order-item-form .mini-container 
   height: 100%;
   width: 200px;
   margin-left: 20px;
+  font-size: 18px;
 }
 
 main.form-main .form-container .detail-section .order-item-form .mini-container .mini--product-amount {

@@ -31,6 +31,17 @@ searchField.classList.add("search-field")
 let searchButton = document.createElement("button");
 searchButton.innerText = "sök";
 
+let trashCan = document.createElement("button");
+trashCan.innerHTML = `
+<p>Rensa Varukorgen </p><i class="fa-solid fa-trash-can"></i>
+`
+trashCan.classList.add("trash-Can");
+
+trashCan.addEventListener("click", () => {
+  localStorage.removeItem("cart");
+  location.reload();
+})
+
 
 
 let shoppingCartHead = document.getElementById("shoppingCartHead");
@@ -57,6 +68,9 @@ switch (currentCategory) {
   case 'consoles':
     getProductsConsoles();
     break;
+    case 'game':
+      getProductsGames();
+      break;
   case 'all':
     getAllProducts();
     break;
@@ -69,9 +83,12 @@ if (location.pathname == '/shoppingCart.html') {
   if(shoppingCartArray.length != 0){
     divEmptyCart.classList.add("hide");
   }
+  if(shoppingCartArray.length != 0){
   createShoppingCartList(shoppingCartArray);
   amountOfProducts.innerText = `${calcTotalAmountOfProducts()} Produkter`;
   shoppingCartHead.appendChild(amountOfProducts);
+  shoppingCartHead.appendChild(trashCan)
+  }
 }
 
 if (location.pathname == '/products.html'){
@@ -146,6 +163,24 @@ async function getProductsConsoles() {
   searchableArray = consoleProducts;
 }
 
+
+
+async function getProductsGames() {
+  const response = await fetch('./products.json');
+  const productData = await response.json();
+  const productsArray = [...productData.products];
+  const gameProducts = [];
+  productsArray.filter((product) => {
+    if (product.type == 'game') {
+      gameProducts.push(product);
+    }
+  });
+  createProductCard(gameProducts);
+  searchableArray = gameProducts;
+}
+
+
+
 function createProductCard(arr) {
   arr.forEach((product) => {
     let productCard = document.createElement("div");
@@ -191,6 +226,12 @@ function createProductCard(arr) {
       case 'consoles':
         listTitle.innerText = `Konsoller`;
         break;
+
+        case 'game':
+        listTitle.innerText = `Spel`;
+        break;
+
+
     }
 
  })

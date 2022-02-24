@@ -11,6 +11,9 @@ if (location.pathname == '/productDetail.html'){
 if (location.pathname == '/index.html'){
     heroHeader.style.backgroundImage = "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/heromario_2.jpg')";
 }
+if (location.pathname == '/orderForm.html'){
+    heroHeader.style.backgroundImage = "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/heromario_2.jpg')";
+}
 
 if (location.pathname == '/shoppingCart.html'){
     heroHeader.style.backgroundImage = "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/heromario_2.jpg')";

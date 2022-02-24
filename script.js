@@ -342,7 +342,7 @@ searchButton.addEventListener("click", search);
   if(searchField.value != ""){
     console.log("det är något i searchfield")
     console.log(currentCategory)
-    searchableArray.find((product) => {
+    searchableArray.forEach((product) => {
       if(product.name.toLowerCase().includes(searchField.value.toLowerCase())){
       let matchingProducts = [];
       matchingProducts.push(product)

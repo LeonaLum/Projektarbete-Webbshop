@@ -62,11 +62,14 @@ a {
       .items-in-shoppingcart {
         user-select: none;
         position: absolute;
-        right: 20px;
+        right: 5px;
         top: 16px;
         font-weight: bolder;
         font-size: 25px;
-        color: black;
+        color: rgb(255, 255, 255);
+        background-color: rgb(255, 93, 93);
+        border-radius: 100%;
+        padding:3px 12px 3px 12px;
         font-family: Arial, sans-serif;
       }
     }

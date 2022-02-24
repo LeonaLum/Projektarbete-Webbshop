@@ -290,6 +290,7 @@ function showCardDetails(arr) {
         }
         
         localStorage.setItem('cart', JSON.stringify(shoppingCartArray));
+        location.reload();
       });
     }
   });

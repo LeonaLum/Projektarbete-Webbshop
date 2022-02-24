@@ -66,6 +66,7 @@ const cartNumber = document.querySelector('#itemsInShoppingCart');
 if (shoppingCartArray.length == 0) {
   cartNumber.classList.add('hide');
 } else {
-  cartNumber.innerText = `${calcTotalAmountOfProducts()}`;
+  cartNumber.innerText = `${calcTotalAmountOfProducts()}`
+  ;
 }
 ////////////////////////////////////////////////////////////

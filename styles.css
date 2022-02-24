@@ -302,11 +302,14 @@ a {
       -ms-user-select: none;
           user-select: none;
   position: absolute;
-  right: 20px;
+  right: 5px;
   top: 16px;
   font-weight: bolder;
   font-size: 25px;
-  color: black;
+  color: white;
+  background-color: #ff5d5d;
+  border-radius: 100%;
+  padding: 3px 12px 3px 12px;
   font-family: Arial, sans-serif;
 }
 
@@ -1055,6 +1058,43 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   font-size: 20px;
   height: 100%;
   width: 100%;
+  cursor: pointer;
+}
+
+.trash-Can {
+  color: white;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #003aa7;
+}
+
+.trash-Can .fa-trash-can {
+  color: white;
+  display: block;
+  margin-left: 10px;
+}
+
+.trash-Can a {
+  height: 100%;
+  width: 100%;
+}
+
+.trash-Can:hover {
+  color: #2a74ff;
   cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */

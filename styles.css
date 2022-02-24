@@ -251,6 +251,7 @@ html {
   opacity: 0.6;
   font-size: larger;
   width: 120px;
+  cursor: pointer;
 }
 
 .hero-textcontent .hero-button:hover {
@@ -599,7 +600,7 @@ main.form-main .form-container {
           justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: lightcyan;
+  background-color: white;
   overflow: hidden;
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
@@ -612,51 +613,184 @@ main.form-main .form-container .detail-section {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-color: pink;
 }
 
-main.form-main .form-container .detail-section .reciept-amount {
-  display: block;
+main.form-main .form-container .detail-section h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+  font-size: 30px;
+}
+
+main.form-main .form-container .detail-section .order-item-form {
+  background-color: white;
+}
+
+main.form-main .form-container .detail-section .order-item-form .mini-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 20px;
+  font-size: 12px;
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+  border-bottom: #d6d6d6 solid 2px;
+}
+
+main.form-main .form-container .detail-section .order-item-form .mini-container .mini--product-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 170px;
+  background-color: white;
+}
+
+main.form-main .form-container .detail-section .order-item-form .mini-container .mini--product-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #2a74ff;
+  color: white;
+  height: 100%;
+  width: 200px;
+  margin-left: 20px;
+}
+
+main.form-main .form-container .detail-section .order-item-form .mini-container .mini--product-amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+main.form-main .form-container .detail-section .mini--full-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  font-weight: bold;
+}
+
+main.form-main .form-container .detail-section .mini--full-price p {
+  font-size: 20px;
+}
+
+main.form-main .form-container .detail-section .mini--full-price h3 {
+  font-size: 25px;
 }
 
 main.form-main .form-container .form-section {
-  background-color: green;
+  background-color: white;
   height: 100%;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
+main.form-main .form-container .form-section h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px;
+  font-size: 30px;
+}
+
 main.form-main .form-container .form-header {
   background-color: white;
-  border-bottom: 1px solid black;
+  border-bottom: px solid black;
   padding: 20px 40px;
 }
 
 main.form-main .form-container form {
   height: auto;
   width: 100%;
-  background-color: wheat;
+  background-color: white;
   padding: 20px 20px;
 }
 
-main.form-main .form-container form--number-field::-webkit-outer-spin-button, main.form-main .form-container form--number-field::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-main.form-main .form-container form--number-field {
-  -moz-appearance: textfield;
-}
-
-main.form-main .form-container .form-control {
+main.form-main .form-container form .form-control {
   margin-bottom: 10px;
   padding-bottom: 20px;
   position: relative;
 }
 
-main.form-main .form-container .form-control input,
-main.form-main .form-container textarea {
+main.form-main .form-container form .form-control input,
+main.form-main .form-container form textarea {
   border: 2px solid black;
   border-radius: 4px;
   display: block;
@@ -665,68 +799,56 @@ main.form-main .form-container textarea {
   font-size: 14px;
 }
 
-main.form-main .form-container .form-control i {
+main.form-main .form-container form .form-control i {
   position: absolute;
   right: 12px;
   top: 12px;
   visibility: hidden;
 }
 
-main.form-main .form-container .form-control small {
+main.form-main .form-container form .form-control small {
   position: absolute;
   visibility: hidden;
 }
 
-main.form-main .form-container .form-control.success input {
+main.form-main .form-container form .form-control.success input {
   border-color: green;
 }
 
-main.form-main .form-container .form-control.error input {
+main.form-main .form-container form .form-control.error input {
   border-color: red;
 }
 
-main.form-main .form-container .form-control.success i.fa-check-circle {
+main.form-main .form-container form .form-control.success i.fa-check-circle {
   visibility: visible;
   color: green;
 }
 
-main.form-main .form-container .form-control.error i.fa-exclamation-circle {
+main.form-main .form-container form .form-control.error i.fa-exclamation-circle {
   visibility: visible;
   color: red;
 }
 
-main.form-main .form-container .form-control.error small {
+main.form-main .form-container form .form-control.error small {
   visibility: visible;
   color: red;
 }
 
-main.form-main .form-container button {
-  background-color: gray;
+main.form-main .form-container form button {
+  background-color: #2a74ff;
   display: block;
-  border: 2px solid gray;
-  border-radius: 4px;
   width: 100%;
   padding: 10px;
   font-size: 16px;
   color: #fff;
-  -webkit-box-shadow: 0 3px gray;
-          box-shadow: 0 3px gray;
 }
 
-main.form-main .form-container button a {
-  z-index: 1;
-  display: block;
-  height: 20px;
-  width: 20px;
-  background-color: lightblue;
-}
-
-main.form-main .form-container button:hover {
+main.form-main .form-container form button:hover {
   cursor: pointer;
   background-color: black;
 }
 
-main.form-main .form-container button:active {
+main.form-main .form-container form button:active {
   -webkit-transform: translateY(2px);
           transform: translateY(2px);
 }

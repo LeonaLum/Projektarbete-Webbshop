@@ -173,9 +173,12 @@ const totalPrice = document.getElementById('form-TotalPrice');
 
 function showProductsFromCart() {
   shoppingCartArray.forEach((product) => {
-    recieptAmount.innerHTML += `<h2 class="mini--product-name">${product.name}</h2>
+    recieptAmount.innerHTML += `
+    <div class="mini-container">
+    <h2 class="mini--product-name">${product.name}</h2>
     <p class="mini--product-amount">x${product.amount}</p>
-    <p class="mini--product-name">${product.price} kr</p>`;
+    <p class="mini--product-price">${product.price} kr</p>
+    </div>`;
   });
 }
 
@@ -184,4 +187,8 @@ showProductsFromCart();
 //Funktion för att se totalsumma för alla varor
 
 let totalPriceOfProducts = calculateTotal(shoppingCartArray);
-totalPrice.innerHTML = `<h3 class="mini--all-prices">${totalPriceOfProducts} kr</h3>`;
+totalPrice.innerHTML = `
+<div class ="mini--full-price">
+<p>Totalsumma:</p>
+<h3>${totalPriceOfProducts} kr</h3>
+</div>`;

@@ -32,6 +32,7 @@
     opacity: 0.6;
     font-size: larger;
     width: 120px;
+    cursor: pointer;
   }
 
   .hero-button:hover {
@@ -69,7 +70,7 @@ a {
         color: rgb(255, 255, 255);
         background-color: rgb(255, 93, 93);
         border-radius: 100%;
-        padding:3px 12px 3px 12px;
+        padding: 3px 12px 3px 12px;
         font-family: Arial, sans-serif;
       }
     }

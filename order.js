@@ -171,7 +171,7 @@ const totalPrice = document.getElementById('form-TotalPrice');
 function showProductsFromCart() {
   shoppingCartArray.forEach((product) => {
     recieptAmount.innerHTML += `<h2 class="mini--product-name">${product.name}</h2>
-    <p class="mini--product-amount">${product.amount} st</p>
+    <p class="mini--product-amount">x${product.amount}</p>
     <p class="mini--product-name">${product.price} kr</p>`;
   });
 }

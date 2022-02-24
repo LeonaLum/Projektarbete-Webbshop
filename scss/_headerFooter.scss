@@ -1,144 +1,144 @@
-.hero-header  {
-  
+.hero-header {
   height: 400px;
   width: 100%;
   //background-image: linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url("./img/header/heromario_2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   //&:hover{
-    //background-image: linear-gradient(rgba(20, 20, 20, 0.767), rgba(56, 56, 56, 0.486)), url("./img/header/heromario_2.jpg");
-    //background-size: cover;
-    //background-repeat: no-repeat;
-  }
-  
-  .hero-textcontent {
-    @include flexBox(column, center, center);
-    position: absolute;
-    text-align: center;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+  //background-image: linear-gradient(rgba(20, 20, 20, 0.767), rgba(56, 56, 56, 0.486)), url("./img/header/heromario_2.jpg");
+  //background-size: cover;
+  //background-repeat: no-repeat;
+}
+
+.hero-textcontent {
+  @include flexBox(column, center, center);
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
   h2 {
-    font-size: 3.50rem;
+    font-size: 3.5rem;
   }
   p {
-    font-size: 1.50rem;
+    font-size: 1.5rem;
     font-weight: bold;
   }
   .hero-button {
-
     background-color: rgb(30, 255, 0);
-      padding: 2px;
-      border: none;
-      opacity: 0.6;
-      font-size:larger;
-      width: 120px ;
-      
-      
-    
+    padding: 2px;
+    border: none;
+    opacity: 0.6;
+    font-size: larger;
+    width: 120px;
   }
-  
-  .hero-button:hover{
+
+  .hero-button:hover {
     background-color: cyan;
     opacity: 1;
   }
+}
+a {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+.content {
+  background-color: red;
+}
 
-  }
-  a {
-    display: block;
-    width: 100px;
-    height: 100px;
-  }
-  .content {
-    background-color: red;
-  }
-
-.navigation-wrapper{
+.navigation-wrapper {
   display: flex;
   .navMenu {
     @include flexBox(row, center, space-around);
-    
+
     width: 100%;
     background-color: rgb(255, 255, 255);
-    .navigation-shoppingcart{
+    .navigation-shoppingcart {
       position: relative;
       margin-left: 10%;
-    
+
+      .items-in-shoppingcart {
+        user-select: none;
+        position: absolute;
+        right: 20px;
+        top: 16px;
+        font-weight: bolder;
+        font-size: 25px;
+        color: black;
+        font-family: Arial, sans-serif;
+      }
     }
-  .fa-braille{
-    font-size: 2.50rem;
-    color: rgb(139, 138, 138);
+    .fa-braille {
+      font-size: 2.5rem;
+      color: rgb(139, 138, 138);
+    }
+    .fa-mobile-screen-button {
+      font-size: 2.5rem;
+      color: rgb(191, 1, 230);
+    }
+    .fa-laptop {
+      font-size: 2.5rem;
+      color: rgb(255, 72, 0);
+    }
+    .fa-xbox {
+      font-size: 2.5rem;
+      color: cyan;
+    }
+    .fa-gamepad {
+      font-size: 2.5rem;
+      color: rgb(30, 255, 0);
+    }
+    .fa-cart-shopping {
+      font-size: 2.5rem;
+      color: rgb(139, 138, 138);
+    }
+    .logo {
+      color: rgb(255, 255, 255);
+    }
+    a {
+      @include flexBox(row, center, space-around);
+      color: white;
+      font-size: 20px;
+    }
   }
-  .fa-mobile-screen-button{
-    font-size: 2.50rem;
-    color: rgb(191, 1, 230);
-  
-  }
-  .fa-laptop{
-    font-size: 2.50rem;
-    color: rgb(255, 72, 0);
-  }
-  .fa-xbox{
-    font-size: 2.50rem;
-    color: cyan;
-  }
-  .fa-gamepad{
-    font-size: 2.50rem;
-    color:rgb(30, 255, 0)
-  }
-  .fa-cart-shopping{
-    font-size: 2.50rem;
-    color:rgb(139, 138, 138);
-  }
-  .logo{
-    color: rgb(255, 255, 255);
-  }
-  a {
-    @include flexBox(row, center, space-around);
-    color: white;
-    font-size: 20px;
-    
-  }
-}
 }
 .footer {
   @include flexBox(row, center, space-evenly);
-  
+
   height: 100%;
   width: 100%;
-  
+
   background-color: black;
   .facebook-icon {
     @include flexBox(row, center, center);
     background-color: rgb(97, 97, 97);
     border-radius: 50%;
-    font-size: 2.50rem;
-    height: 4.50rem;
-    width: 4.50rem;
+    font-size: 2.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
     color: rgb(255, 255, 255);
   }
-  .twitter-icon{
+  .twitter-icon {
     @include flexBox(row, center, center);
     background-color: rgb(97, 97, 97);
     border-radius: 50%;
-    font-size: 2.50rem;
-    height: 4.50rem;
-    width: 4.50rem;
+    font-size: 2.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
     color: rgb(255, 255, 255);
-    
   }
-  .instagram-icon{
+  .instagram-icon {
     @include flexBox(row, center, center);
     background-color: rgb(97, 97, 97);
     border-radius: 50%;
-    font-size: 2.50rem;
-    height: 4.50rem;
-    width: 4.50rem;
+    font-size: 2.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
     color: rgb(255, 255, 255);
   }
-  a{
+  a {
     display: block;
-    
   }
 }

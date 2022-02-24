@@ -236,11 +236,11 @@ html {
 }
 
 .hero-textcontent h2 {
-  font-size: 3.50rem;
+  font-size: 3.5rem;
 }
 
 .hero-textcontent p {
-  font-size: 1.50rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -296,33 +296,47 @@ a {
   margin-left: 10%;
 }
 
+.navigation-wrapper .navMenu .navigation-shoppingcart .items-in-shoppingcart {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: absolute;
+  right: 20px;
+  top: 16px;
+  font-weight: bolder;
+  font-size: 25px;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
 .navigation-wrapper .navMenu .fa-braille {
-  font-size: 2.50rem;
+  font-size: 2.5rem;
   color: #8b8a8a;
 }
 
 .navigation-wrapper .navMenu .fa-mobile-screen-button {
-  font-size: 2.50rem;
+  font-size: 2.5rem;
   color: #bf01e6;
 }
 
 .navigation-wrapper .navMenu .fa-laptop {
-  font-size: 2.50rem;
+  font-size: 2.5rem;
   color: #ff4800;
 }
 
 .navigation-wrapper .navMenu .fa-xbox {
-  font-size: 2.50rem;
+  font-size: 2.5rem;
   color: cyan;
 }
 
 .navigation-wrapper .navMenu .fa-gamepad {
-  font-size: 2.50rem;
+  font-size: 2.5rem;
   color: #1eff00;
 }
 
 .navigation-wrapper .navMenu .fa-cart-shopping {
-  font-size: 2.50rem;
+  font-size: 2.5rem;
   color: #8b8a8a;
 }
 
@@ -382,9 +396,9 @@ a {
           justify-content: center;
   background-color: #616161;
   border-radius: 50%;
-  font-size: 2.50rem;
-  height: 4.50rem;
-  width: 4.50rem;
+  font-size: 2.5rem;
+  height: 4.5rem;
+  width: 4.5rem;
   color: white;
 }
 
@@ -404,9 +418,9 @@ a {
           justify-content: center;
   background-color: #616161;
   border-radius: 50%;
-  font-size: 2.50rem;
-  height: 4.50rem;
-  width: 4.50rem;
+  font-size: 2.5rem;
+  height: 4.5rem;
+  width: 4.5rem;
   color: white;
 }
 
@@ -426,9 +440,9 @@ a {
           justify-content: center;
   background-color: #616161;
   border-radius: 50%;
-  font-size: 2.50rem;
-  height: 4.50rem;
-  width: 4.50rem;
+  font-size: 2.5rem;
+  height: 4.5rem;
+  width: 4.5rem;
   color: white;
 }
 

@@ -159,24 +159,29 @@ const recieptAmount = document.getElementById('reciept-amount');
 const formTitle = document.getElementById('formTitle');
 const formAmount = document.getElementById('formAmount');
 const formPrice = document.getElementById('formPrice');
-const totalPrice = document.getElementById('formTotalPrice');
+const totalPrice = document.getElementById('form-TotalPrice');
+
+//Samma funktion som nedan fast på ett annat sätt
+// let cartComponent = (product) => `
+// <h2>${product.name}</h2>
+//     <p>${product.amount}</p>
+//     <p>${product.price}</p>
+// `;
+
+// recieptAmount.innerHTML = shoppingCartArray.map(cartComponent).join('');
+//
 
 function showProductsFromCart() {
   shoppingCartArray.forEach((product) => {
-    recieptAmount.innerHTML = `<h2>${product.name}</h2>
-    <p>${product.amount}</p>
-    <p>${product.price}</p>`;
+    recieptAmount.innerHTML += `<h2 class="mini--product-name">${product.name}</h2>
+    <p class="mini--product-amount">x${product.amount}</p>
+    <p class="mini--product-name">${product.price} kr</p>`;
   });
 }
+
 showProductsFromCart();
 
-// shoppingCartArray.forEach((item) => {
-//   formTitle.innerText = `${item.name}`;
-//   formAmount.innerText = `${item.amount}`;
-//   formPrice.innerText = `${item.price}`;
-// });
+//Funktion för att se totalsumma för alla varor
 
 let totalPriceOfProducts = calculateTotal(shoppingCartArray);
-totalPrice.innerText = `${totalPriceOfProducts}`;
-console.log(totalPrice);
-console.log(totalPriceOfProducts);
+totalPrice.innerHTML = `<h3 class="mini--all-prices">${totalPriceOfProducts} kr</h3>`;

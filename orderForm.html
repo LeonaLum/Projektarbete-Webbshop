@@ -23,19 +23,19 @@
   </head>
   <body>
     <header class="header">
-      <div class="hero-header">
+      <div class="hero-header" id="heroHeader">
         <a href="index.html" class="logo"><h1>Logo</h1></a>
         <div class="hero-textcontent">
           <h2>Super Mario Party</h2>
           <p>Häng med Mario och hans vänner i en helt ny värld av äventyr!</p>
-          <a href="products.html?category=consoles" class="hero-link">
+          <a href="products.html?category=consoles" id="heroLink">
             <button class="hero-button">Till Äventyret</button>
           </a>
         </div>
       </div>
       <section class="navigation-wrapper">
         <nav class="navMenu">
-          <a href="products.html?category=all" class=""
+          <a href="products.html?category=all"
             ><i class="fa-solid fa-braille"></i
           ></a>
           <a href="products.html?category=phones"
@@ -51,6 +51,7 @@
           ><i class="fa-solid fa-gamepad"></i></a>
 
           <section class="navigation-shoppingcart">
+            <p id="itemsInShoppingCart" class="items-in-shoppingcart"></p>
             <a href="shoppingCart.html"
               ><i class="fa-solid fa-cart-shopping"></i
             ></a>
@@ -62,8 +63,8 @@
       <div class="form-container" id="form-container">
         <section class="detail-section">
           <div class="reciept-amount" id="reciept-amount">
-            <h3 id="formTotalPrice">Total</h3>
           </div>
+          <div id="form-TotalPrice"></div>
         </section>
         <section class="form-section">
         <form action="/" method="GET" id="order-form" class="form">
@@ -189,5 +190,6 @@
     </footer>
     <script src="script.js"></script>
     <script src="order.js"></script>
+    <script src="changeheader.js"></script>
   </body>
 </html>

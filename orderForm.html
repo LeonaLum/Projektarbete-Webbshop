@@ -19,7 +19,7 @@
       src="https://kit.fontawesome.com/be475255e6.js"
       crossorigin="anonymous"
     ></script>
-    <title>Beställningssida</title>
+    <title>Beställningsformulär</title>
   </head>
   <body>
     <header class="header">
@@ -60,15 +60,19 @@
       </section>
     </header>
     <main class="form-main">
+      <div  class="shopping-Cart-Head">
+        <h2>Kassa</h2>
+       </div>
       <div class="form-container" id="form-container">
         <section class="detail-section">
-          <div class="reciept-amount" id="reciept-amount">
+          <h3>Din varukorg</h3>
+          <div class="order-item-form" id="reciept-amount">
           </div>
           <div id="form-TotalPrice"></div>
         </section>
         <section class="form-section">
+          <h3>Dina uppgifter</h3>
         <form action="/" method="GET" id="order-form" class="form">
-          <h2>Beställningsformulär</h2>
           <div class="form-control">
             <input
               id="firstname"

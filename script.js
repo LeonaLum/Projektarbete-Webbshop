@@ -229,7 +229,6 @@ function createProductCard(arr) {
         productsArray.forEach((product) => {
         if(domProductName == product.name){
             shoppingCartArray.push(product);
-            product.amount++
             localStorage.setItem('cart', JSON.stringify(shoppingCartArray));
             location.reload();
             console.log(shoppingCartArray)

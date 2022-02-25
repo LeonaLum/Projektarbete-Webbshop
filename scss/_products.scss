@@ -60,18 +60,22 @@
  
   }
   .product-Footer{
+    @include flexBox(row, center, flex-start);
     padding: 20px;
+    width: 100%;
+    border-radius: 20px;
   }
 
   
   .priceContainer{
-    border-radius: 10px;
     color: white;
     background-color: rgb(42, 116, 255);
     padding: 30px;
     text-align: center;
     font-weight: bold;
     font-size: 30px;
+    height: 100%;
+    flex:1;
   }
 }
 
@@ -97,4 +101,62 @@
     width:100px;
     background-color: rgb(0, 58, 167);
   }
+}
+
+.category-Heading{
+  color:white;
+  font-size: 30px;
+  text-align: center;
+  background-color: rgb(42, 116, 255);
+  padding:30px;
+}
+.categories-Container{
+  @include flexBox(row, center, space-around);
+  flex-wrap: wrap;
+  width: 100%;
+  padding:20px;
+  .category-Description{
+    a{
+      height: 100%;
+      width: 100%;
+    }
+    @include flexBox(column, center, space-evenly);
+    display: block;
+    font-size: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 20px;
+    padding:20px;
+    &:hover{
+      background-color: rgb(233, 241, 255);
+    }
+ 
+   h3{
+     text-align: center;
+   }
+   .description-Content{
+    text-align: center;
+     padding:20px;
+     .fa-solid{
+      color: rgb(42, 116, 255);
+     }
+     .fa-brands{
+      color: rgb(42, 116, 255);
+     }
+   }
+  }
+}
+
+.buy-Now-Button{
+  cursor: pointer;
+  text-align: center;
+  height: 100%;
+  font-weight: bold;
+  font-size: 30px;
+  color:white;
+  display: block;
+  padding:20px;
+  background-color: rgb(0, 58, 167);
+  font-size: 20px;
+  flex:1;
 }

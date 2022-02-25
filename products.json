@@ -198,19 +198,6 @@
       "description": "Med Go Retro! portabla spelkonsol kommer retrospelen träffa dig som en bumerang, varsomhelst och närsomhelst. Denna lilla spelkonsol i fickformat är fullmatad med över 260 spel och har en batteritid på 10 timmar.",
       "image": "url(../img/products/go_retro.jpg)",
       "amount": "1"
-    },
-    {
-      "id": "reciept",
-      "thanks": "Tack för din order!",
-      "ordermessage": "Orderdetaljer:",
-      "orderdetails": "",
-      "deliverymessage": "Leveransuppgifter:",
-      "fullname": "",
-      "street": "",
-      "postalcode": "",
-      "state": "",
-      "email": "",
-      "phone": ""
     }
   ]
 }

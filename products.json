@@ -4,7 +4,7 @@
       "id": "1",
       "name": "Macbook Pro",
       "type": "computer",
-      "price": "22999",
+      "price": "22,999",
       "description": "Kompromisslös prestanda för de mest krävande användarna, det är MacBook Pro 14 M1 Pro 2021. Dess hållbara chassi tillverkad av aluminium omsluter ett fantastiskt Apple M1 Pro-chip för att leverera blixtrande snabb prestanda.",
       "image": "url(../img/products/macbook_pro.png)",
       "amount": "1"
@@ -13,7 +13,7 @@
       "id": "2",
       "name": "Macbook Air",
       "type": "computer",
-      "price": "14999",
+      "price": "14,999",
       "description": "MacBook Air 13 M1 2020 kombinerar minimalism och kraftfull prestanda, levererad av det åttakärniga Apple M1-chipet. Den har en skarp 13-tums Retina-skärm med True Tone-teknik. När du köper en MacBook får du Apple TV+ gratis i 3 månader.",
       "image": "url(../img/products/macbookair.png)",
       "amount": "1"
@@ -22,17 +22,17 @@
       "id": "2",
       "name": "Macbook Air",
       "type": "computer",
-      "price": "14999",
+      "price": "14,999",
       "description": "MacBook Air 13 M1 2020 kombinerar minimalism och kraftfull prestanda, levererad av det åttakärniga Apple M1-chipet. Den har en skarp 13-tums Retina-skärm med True Tone-teknik. När du köper en MacBook får du Apple TV+ gratis i 3 månader.",
       "image": "url(../img/products/macbookair.png)",
       "amount": "1"
     },
-    
+
     {
       "id": "3",
       "name": "iMac",
       "type": "computer",
-      "price": "39899",
+      "price": "39,899",
       "description": "iMac 27 ”5K Retina MXWV2 har branschledande design och prestanda med sin fantastiska Retina 5K-skärm, kraftfulla 10:e generationens Intel Core i7-processor. När du köper en iMac får du Apple TV+ gratis i 3 månader",
       "image": "url(../img/products/imac.png)",
       "amount": "1"
@@ -59,7 +59,7 @@
       "id": "6",
       "name": "iPhone 13 PRO",
       "type": "phone",
-      "price": "12899",
+      "price": "12,899",
       "description": "IPhone 13 Pro smartphone har en fantastisk 6,1” OLED-pekskärm med 120 Hz uppdateringsfrekvens, en kraftfull A15 Bionic-processor med 5G-dataanslutning och branschledande IP68 vattentäthet.",
       "image": "url(../img/products/iphone13_pro.png)",
       "amount": "1"
@@ -149,7 +149,7 @@
       "id": "16",
       "name": "Acer Nitro 5 AN515 ",
       "type": "computer",
-      "price": "10999",
+      "price": "10,999",
       "description": "ACER Nitro 5 (AN515-56-53X4) är en bärbar gamingdator med 15.6tum FHD IPS-skärm 144 Hz, Intel® Core™ i5-11300H-processor, 16 GB RAM, 512 GB SSD, NVIDIA GeForce RTX 3050-grafik och Windows 10. Med denna speldator kan du köra de senaste PC-spelen.",
       "image": "url(../img/products/macbookair.png)",
       "amount": "1"

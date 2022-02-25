@@ -177,7 +177,7 @@ function showProductsFromCart() {
     <div class="mini-container">
     <h2 class="mini--product-name">${product.name}</h2>
     <p class="mini--product-amount">x${product.amount}</p>
-    <p class="mini--product-price">${product.price} kr</p>
+    <p class="mini--product-price">${product.price}:-</p>
     </div>`;
   });
 }
@@ -190,5 +190,5 @@ let totalPriceOfProducts = calculateTotal(shoppingCartArray);
 totalPrice.innerHTML = `
 <div class ="mini--full-price">
 <p>Totalsumma:</p>
-<h3>${totalPriceOfProducts} kr</h3>
+<h3>${totalPriceOfProducts}:-</h3>
 </div>`;

@@ -4,9 +4,11 @@
 let productPrices = [];
 let shoppingCartArray = [];
 let savedProducts = JSON.parse(localStorage.getItem('cart'));
+let allProducts = [];
 
 checkLocalStorageForProducts();
 function checkLocalStorageForProducts() {
+
   if (localStorage.getItem('cart') !== null) {
     savedProducts.forEach((product) => {
       shoppingCartArray.push(product);
@@ -41,6 +43,7 @@ trashCan.addEventListener("click", () => {
   localStorage.removeItem("cart");
   location.reload();
 })
+
 
 
 
@@ -96,6 +99,11 @@ if (location.pathname == '/products.html'){
   searchDiv.appendChild(searchButton);
   productListHead.appendChild(searchDiv)
 }
+if (location.pathname == '/index.html'){
+  searchDiv.appendChild(searchField);
+  searchDiv.appendChild(searchButton);
+  productListHead.appendChild(searchDiv)
+}
 
 
 
@@ -119,6 +127,7 @@ async function getAllProducts() {
   
   createProductCard(productsArray);
   searchableArray = productsArray;
+  allProducts = productsArray;
 }
 
 async function getProductsPhones() {
@@ -185,13 +194,57 @@ function createProductCard(arr) {
   arr.forEach((product) => {
     let productCard = document.createElement("div");
     productCard.innerHTML = `<h2>${product.name}</h2>`;
+
+
     
     let productFooter = document.createElement("div");
     productFooter.classList.add("product-Footer");
+
     productFooter.innerHTML = ` 
     <div class="priceContainer">
-    <p>Pris: ${product.price}</p>
-    </div>`
+    <p>Pris: ${product.price}:-</p>
+    </div>
+    `;
+
+    let buyNowButton = document.createElement("button");
+    buyNowButton.classList.add("buy-Now-Button");
+    buyNowButton.innerHTML = `
+    Lägg i kundvagnen <i class="fa-solid fa-cart-shopping fa-1x">
+    </i>`;
+
+
+    ///////////////////////////////////////////////////////////////////////////7777
+    /////////////////////////////DIREKTKKÖP/////////////////////////77
+
+    buyNowButton.addEventListener("click", (e) => {
+      all();
+      async function all(){
+        const response = await fetch('./products.json');
+        const productData = await response.json();
+        const productsArray = [...productData.products];
+        let parent = e.target.parentElement.parentElement;
+        let domProductName = parent.firstChild.innerText
+
+  
+        productsArray.forEach((product) => {
+        if(domProductName == product.name){
+            shoppingCartArray.push(product);
+            product.amount++
+            localStorage.setItem('cart', JSON.stringify(shoppingCartArray));
+            location.reload();
+            console.log(shoppingCartArray)
+          }   
+   
+        }) 
+      }
+    })
+
+    ///////////////////////////////////////////////////////////////////////////////77
+    /////////////////////////////////////////////////////////////////////////////
+
+
+    productFooter.appendChild(buyNowButton);
+
 
     let productImage = document.createElement("div");
     productImage.classList.add("image");
@@ -201,8 +254,10 @@ function createProductCard(arr) {
     href="productDetail.html?id=${product.id}">
     </a>
     `;
+    
     productCard.appendChild(productImage);
     productCard.appendChild(productFooter);
+    
 
     addImage(productImage,product);
      
@@ -384,8 +439,6 @@ searchButton.addEventListener("click", search);
  function search(){
   let matchingProducts = [];
   if(searchField.value != ""){
-    console.log("det är något i searchfield")
-    console.log(currentCategory)
     searchableArray.map((product) => {
       if(product.name.toLowerCase().includes(searchField.value.toLowerCase())){
       matchingProducts.push(product)
@@ -393,18 +446,15 @@ searchButton.addEventListener("click", search);
       cards.forEach((card) => {
         card.remove();
       })
-      console.log(matchingProducts)
       createProductCard(matchingProducts);
       
       }
       else{
-        console.log("no products matched")
       }
     })
     
   }
   else{
-    console.log("det är INGET i searchfield")
   }
  
 
@@ -421,7 +471,7 @@ function calculateTotal(array){
   amount = parseInt(product.amount);
   totalOfProduct = priceOfProduct * amount;
   productPrices.push(totalOfProduct)
-  console.log(productPrices)
+ 
    
  })
 
@@ -442,7 +492,6 @@ function addProduct(button){
     shoppingCartArray.forEach((product) => {
       if(cardName == product.name){
         product.amount = parseInt(product.amount) + 1;
-        console.log(product.amount)
         location.reload();
       }
       else{
@@ -454,7 +503,6 @@ function addProduct(button){
 
 
 function removeProduct(button){
-  console.log("ta bort produkt")
   let parent = button.target.parentElement;
   let productDiv = parent.parentElement;
   let firstChild = productDiv.firstElementChild;
@@ -463,7 +511,6 @@ function removeProduct(button){
     shoppingCartArray.forEach((product,index,arr) => {
       if(cardName == product.name){
         product.amount = product.amount -1;
-        console.log(product.amount)
         location.reload();
         if(product.amount == 0){
           shoppingCartArray.splice(index,1)

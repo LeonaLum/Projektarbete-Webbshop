@@ -1123,6 +1123,7 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   height: 150px;
   width: 100%;
   text-align: center;
+  background-color: white;
 }
 
 .shopping-Cart-Footer .footer-Content {
@@ -1185,12 +1186,12 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 30px;
   display: block;
   color: white;
   background-color: #2a74ff;
   height: 100%;
   width: 100%;
-  font-size: 20px;
   cursor: pointer;
 }
 

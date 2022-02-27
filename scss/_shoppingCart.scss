@@ -34,6 +34,7 @@
   height: 150px;
   width: 100%;
   text-align: center;
+  background-color: white;
   .footer-Content{
     @include flexBox(row, center, space-around);
     height: 100%;
@@ -55,12 +56,12 @@
       display: block;
       .order-Button{
         @include flexBox(row, center, center);
+        font-size: 30px;
         display: block;
         color: white;
         background-color: rgb(42, 116, 255);
         height: 100%;
         width: 100%;
-        font-size: 20px;
         cursor: pointer;
     }
   }

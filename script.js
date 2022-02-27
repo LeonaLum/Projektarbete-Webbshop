@@ -226,15 +226,28 @@ function createProductCard(arr) {
         let domProductName = parent.firstChild.innerText
 
   
+        
         productsArray.forEach((product) => {
-        if(domProductName == product.name){
+         if(domProductName == product.name){
+          var currentProduct = product;
+
+          const foundProduct = shoppingCartArray.find((cartItem) => {
+            return cartItem.name === currentProduct.name;
+          });
+  
+          if (foundProduct) {
+            foundProduct.amount = parseInt(foundProduct.amount) + 1;
+          } else {
             shoppingCartArray.push(product);
-            localStorage.setItem('cart', JSON.stringify(shoppingCartArray));
-            location.reload();
-            console.log(shoppingCartArray)
-          }   
-   
-        }) 
+          }
+          
+          localStorage.setItem('cart', JSON.stringify(shoppingCartArray));
+          location.reload();
+
+        }
+         
+        })
+       
       }
     })
 
@@ -325,8 +338,9 @@ function showCardDetails(arr) {
       
       addImage (detailPicture,product);
     
-      detailCard.firstElementChild.append(detailPicture);
+     
       detailContainer.appendChild(detailCard);
+      detailContainer.appendChild(detailPicture);
 
       const buttonPurchase = document.getElementById('buttonPurchase');
 

@@ -23,7 +23,6 @@ orderFormBtn.addEventListener('submit', (e) => {
     return null;
   }
 });
-const baseURL = `${window.location.href}?path=reciept`;
 
 //Skapa funktionen för att se värdet av inputs
 function validateInputs() {

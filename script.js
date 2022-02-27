@@ -338,8 +338,9 @@ function showCardDetails(arr) {
       
       addImage (detailPicture,product);
     
-      detailCard.firstElementChild.append(detailPicture);
+     
       detailContainer.appendChild(detailCard);
+      detailContainer.appendChild(detailPicture);
 
       const buttonPurchase = document.getElementById('buttonPurchase');
 

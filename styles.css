@@ -659,7 +659,8 @@ html {
   position: absolute;
   left: 3px;
   bottom: 1px;
-  font-size: 20px;
+  font-size: 18px;
+  color: white;
 }
 
 .detailContainer {

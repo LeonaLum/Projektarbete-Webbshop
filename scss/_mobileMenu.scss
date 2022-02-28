@@ -1,0 +1,29 @@
+@media only screen and (max-width: 550px){
+  #navIconsContainer{
+    display: none;
+  }
+  #hamburger{
+    display: block;
+  }
+}
+
+.mobileNav{
+  @include flexBox(column, center, space-around);
+  z-index:1;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+
+.hamburger{
+  cursor: pointer;
+}
+
+.fa-bars{
+  color:rgb(104, 104, 104);
+}
+
+.hide{
+  display: none;
+}

@@ -1,3 +1,24 @@
+
+@media only screen and (max-width: 550px){
+  #shoppingCartHead{
+    flex-direction: column;
+  }
+  #productListHead{
+    flex-direction: column;
+  }
+  .search-Div{
+    margin-top: 9px;
+    flex-direction: column;
+    .search-field{
+      padding: 9px;
+    }
+    button{
+      margin-top: 9px;
+      padding: 9px;
+    }
+  }
+}
+
 .shopping-Cart-List{
   @include flexBox(column, center, space-around);
   width: 100%;
@@ -85,9 +106,16 @@
     @include flexBox(row, center, center);
     height: 100%;
     width: 170px;
+    font-size: 17px;
     background-color: white;
   }
   .product-ShoppingCart-Price{
+    p{
+      margin-right:5px;
+    }
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
     @include flexBox(row, center, center);
     background-color: rgb(42, 116, 255);
     color: white;
@@ -96,7 +124,7 @@
   }
   .amount-Container{
     @include flexBox(row, center, center);
-    font-size: 15px;
+    font-size: 17px;
     padding:10px;
     margin-left:20px;
   }
@@ -108,6 +136,7 @@
     margin-left:20px;
     border-radius: 10px;
     .plus-Minus-Buttons{
+      border-radius: 10px;
       color: white;
       background-color: rgb(42, 116, 255);
       font-weight: bold;
@@ -116,6 +145,10 @@
       height: 100%;
       width:100%;
       cursor: pointer;
+      &:hover{
+        background-color: white;
+        color: black;
+      }
     }
   }
   

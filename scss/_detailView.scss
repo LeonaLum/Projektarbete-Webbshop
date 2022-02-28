@@ -1,16 +1,20 @@
+
+
 .detailContainer{
+  @include flexBox(row, flex-start, flex-start);
+  flex-wrap: wrap-reverse;
   width: 100%;
   .detail-Card{
-    @include flexBox(row, center, center);
+    @include flexBox(row, flex-start, flex-start);
     background-color: rgb(209, 123, 123);
     width: 100%;
     height: 500px;
   }
   .product-Detail-Picture{
+    min-width: 100px;
     padding: 20px;
-    height: 100%;
-    flex: 1;
-    background-color: white;
+    height: 500px;
+    width: 100%;
   }
   h2{
     font-size: 40px;
@@ -38,7 +42,6 @@
     padding:40px;
     text-align: center;
     font-size: 20px;
-    height: 100px;
     flex:1;
     color: white;
     background-color: rgb(42, 116, 255);
@@ -53,9 +56,19 @@
     background-color: rgb(0, 58, 167);
     padding:20px;
     font-size: 20px;
-    height: 100px;
+    height:100%;
     width: 150px;
      cursor: pointer;
   }
  }
+}
+
+
+
+
+
+@media only screen and (min-width:992px){
+  .detailContainer{
+    flex-wrap: nowrap;
+  }
 }

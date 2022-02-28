@@ -29,28 +29,12 @@ if (location.search == '?category=phones') {
   heroHeader.style.backgroundImage = "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/iphone13pro.jpg')";
   heroTitle.innerText = 'Iphone 13 Pro Erbjudande!';
   heroText.innerText = 'Ny mobil? köp Iphone 13 Pro hos oss och få mobilabonnemang + spotify i ett år (värde 1999kr) på köpet!';
-<<<<<<< HEAD
-  heroButton.innerText = 'Till Erjudandet';
-
-  heroButton.addEventListener('click', () => {
-    location.href = '/productDetail.html?id=7';
-});
-=======
->>>>>>> 982d7b65fd9d88512117f35000aa69bb7c9c6d61
 }
 
 if (location.search == '?category=computers') {
   heroHeader.style.backgroundImage = "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/imac.jpg')";
   heroTitle.innerText = 'iMac';
   heroText.innerText = 'Har du etablerat dig ett hemmakontor? Uppgradera dig med en ny Imac och få ALDOBE i 6 månader på köpet';
-<<<<<<< HEAD
-  heroButton.innerText = 'Till Erjudandet';
-
-  heroButton.addEventListener('click', () => {
-    location.href = '/productDetail.html?id=4';
-});
-=======
->>>>>>> 982d7b65fd9d88512117f35000aa69bb7c9c6d61
 }
 
 if (location.search == '?category=consoles') {
@@ -64,12 +48,6 @@ if (location.search == '?category=game') {
   heroTitle.innerText = 'Playstation 5';
   heroText.innerText = 'Vi har Playstation 5 redo att skickas hem till dig!';
 
-<<<<<<< HEAD
-  heroButton.addEventListener('click', () => {
-    location.href = '/productDetail.html?id=9';
-});
-=======
->>>>>>> 982d7b65fd9d88512117f35000aa69bb7c9c6d61
 
 }
 

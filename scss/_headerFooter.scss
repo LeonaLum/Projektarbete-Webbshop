@@ -70,13 +70,7 @@
   .fa-brands{
     color: white;
   }
-
-  
 }
-
-
-
-
 
 .content {
   background-color: red;
@@ -92,7 +86,6 @@
     .navigation-shoppingcart {
       position: relative;
       margin-left: 10%;
-
       .items-in-shoppingcart {
         user-select: none;
         position: absolute;
@@ -111,33 +104,28 @@
     .fa-braille {
       font-size: 2.5rem;
       color: rgb(104, 104, 104);
-      border-bottom:solid rgb(190, 190, 190) 2px;
       padding: 20px;
     }
     .fa-mobile-screen-button {
       font-size: 2.5rem;
       color: rgb(0, 69, 173);
       padding: 20px;
-      border-bottom:solid rgb(190, 190, 190) 2px;
 
     }
     .fa-laptop {
       font-size: 2.5rem;
       color: rgb(11, 109, 255);
       padding: 20px;
-      border-bottom:solid rgb(190, 190, 190) 2px;
     }
     .fa-xbox {
       font-size: 2.5rem;
       color: rgb(1, 152, 212);
       padding: 20px;
-      border-bottom:solid rgb(190, 190, 190) 2px;
     }
     .fa-gamepad {
       font-size: 2.5rem;
       color: rgb(0, 167, 159);
       padding: 20px;
-      border-bottom:solid rgb(190, 190, 190) 2px;
     }
     .fa-cart-shopping {
       font-size: 2.5rem;
@@ -149,12 +137,12 @@
       !important;
       color: rgb(255, 255, 255);
     }
- 
     a {
-      
       @include flexBox(row, center, space-around);
       color: white;
-   
+    }
+    .selected{
+      border-bottom:solid rgb(190, 190, 190) 4px;
     }
   }
 }

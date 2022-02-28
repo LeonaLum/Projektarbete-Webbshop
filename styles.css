@@ -519,7 +519,7 @@ html {
 }
 
 .navigation-wrapper .navMenu .logo, .navigation-wrapper .navMenu #logoTextFont, .navigation-wrapper .navMenu a {
-  font-family: 'Nunito', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   color: white;
 }
 
@@ -1068,64 +1068,60 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
 }
 
 .reciept-wrapper {
-  width: 100%;
-  border: 4px solid #f700ad;
-  border-radius: 10px 10px 0px 0px;
-  background: #2980B9;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(#6DD5FA), to(#2980B9));
-  background: linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);
-  padding: 15px;
+  padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  border-top: 2px solid #1b63ff;
 }
 
 .reciept-wrapper .reciept-div {
-  display: block;
-  width: 40vw;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-right: 2px solid #c7c7c7;
+  padding: 30px;
+}
+
+.reciept-wrapper .reciept-div p {
+  font-size: 22px;
+  padding-top: 5px;
+}
+
+.reciept-wrapper .reciept-div .first-p {
+  padding-top: 10px;
+}
+
+.reciept-wrapper .reciept-div h3 {
+  text-align: left;
+  font-size: 30px;
+  padding-bottom: 10px;
 }
 
 .reciept-wrapper .reciept-second-div {
-  display: block;
-  width: 40vw;
-  border-left: dashed black 2px;
-  margin-left: 50px;
-  padding-left: 10vw;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 30px;
 }
 
-.reciept-wrapper h2 {
-  font-size: 2.00rem;
-  color: #f700ad;
+.reciept-wrapper .reciept-second-div h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
-.reciept-wrapper h3 {
-  font-size: x-large;
+.reciept-wrapper .reciept-second-div p {
+  font-size: 22px;
+  padding-top: 5px;
 }
 
-.reciept-wrapper p {
-  font-size: x-large;
-}
-
-.reciept-wrapper h4 {
-  font-size: 1.20rem;
-}
-
-.reciept-wrapper h5 {
-  font-size: 1.80rem;
-  color: #f700ad;
-  text-decoration: underline;
+.reciept-wrapper .reciept-second-div .recipe-bottom-product {
+  padding-bottom: 15px;
 }
 
 .shopping-Cart-List {

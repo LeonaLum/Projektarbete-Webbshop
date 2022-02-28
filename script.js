@@ -1,6 +1,6 @@
 // För att nå produkterna så behöver du gå in på products i json objektet.
 
-//lägger till kommentar
+//added icons
 
 let iconAll = document.getElementById("iconAll");
 let iconPhone = document.getElementById("iconPhone");

@@ -151,7 +151,7 @@
       "type": "computer",
       "price": "10999",
       "description": "ACER Nitro 5 (AN515-56-53X4) är en bärbar gamingdator med 15.6tum FHD IPS-skärm 144 Hz, Intel® Core™ i5-11300H-processor, 16 GB RAM, 512 GB SSD, NVIDIA GeForce RTX 3050-grafik och Windows 10. Med denna speldator kan du köra de senaste PC-spelen.",
-      "image": "url(../img/products/macbookair.png)",
+      "image": "url(../img/products/AcerNitro.jpg)",
       "amount": "1"
     },
     {
@@ -160,7 +160,7 @@
       "type": "computer",
       "price": "3990",
       "description": "Perfekt för arbete och spel på ett enda ställe. HP Chromebook levereras med en responsiv Intel®-processor, 14-tums bildskärm med extra skärmyta och lång batteritid, så att du enkelt kan klara av vilken uppgift som helst.",
-      "image": "url(../img/products/macbookair.png)",
+      "image": "url(../img/products/hpchromebook.jpg)",
       "amount": "1"
     },
     {
@@ -169,7 +169,7 @@
       "type": "phone",
       "price": "9689",
       "description": "OnePlus 9 Pro kombinerar en QHD 120Hz Amoled skärm på 6.7 tum med en snabb Snapdragon 888 CPU. Huvudkameran har en upplösning på 48 megapixar och batteriet med 4500 mAh ger kraft hela dagen.",
-      "image": "url(../img/products/huawei_p40.png)",
+      "image": "url(../img/products/oneplus9.png)",
       "amount": "1"
     },
     {
@@ -187,7 +187,7 @@
       "type": "console",
       "price": "1299",
       "description": "Välkommen tillbaka till 1980-talet och toppen av 16-bitars persondater. Amiga 500 släpptes 1987 och innehöll en 16/32-bitars CPU, 512 kb RAM och en rad anpassade chips för att producera ljud och video i sin klass.",
-      "image": "url(../img/products/nintendo_switch_2.png)",
+      "image": "url(../img/products/a500mini.jpg)",
       "amount": "1"
     },
     {

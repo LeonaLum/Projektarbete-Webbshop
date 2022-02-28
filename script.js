@@ -55,7 +55,7 @@ let divEmptyCart = document.getElementById("divEmptyCart");
 
 let amountOfProducts = document.createElement('p');
 
-const params = new URLSearchParams(location.search);
+let params = new URLSearchParams(location.search);
 let currentCategory = params.get('category');
 let currentId = params.get('id');
 

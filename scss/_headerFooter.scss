@@ -159,15 +159,25 @@
   }
 }
 .footer {
-  @include flexBox(row, center, space-evenly);
+  @include flexBox(column, center, space-evenly);
+  padding:100px;
+  background-color: $color-secondary;
 
-  height: 100%;
-  width: 100%;
 
-  background-color: black;
+  .footer-title{
+    color: white;
+    text-decoration: underline;
+    font-size: 40px;
+    margin-bottom:40px;
+  }
+  .social-Media-Icons{
+    @include flexBox(row, center, space-evenly);
+    width: 100%;
+  }
+
   .facebook-icon {
     @include flexBox(row, center, center);
-    background-color: rgb(97, 97, 97);
+    background-color: rgb(61, 106, 255);
     border-radius: 50%;
     font-size: 2.5rem;
     height: 4.5rem;
@@ -176,7 +186,7 @@
   }
   .twitter-icon {
     @include flexBox(row, center, center);
-    background-color: rgb(97, 97, 97);
+    background-color: rgb(62, 130, 185);
     border-radius: 50%;
     font-size: 2.5rem;
     height: 4.5rem;
@@ -185,7 +195,7 @@
   }
   .instagram-icon {
     @include flexBox(row, center, center);
-    background-color: rgb(97, 97, 97);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
     border-radius: 50%;
     font-size: 2.5rem;
     height: 4.5rem;

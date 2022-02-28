@@ -85,6 +85,12 @@
     width: 100%;
     padding: 40px;
     background-color: rgb(255, 255, 255);
+
+    .navIconsContainer{
+      @include flexBox(row, center, space-evenly);
+      flex:1;
+  
+    }
     .navigation-shoppingcart {
       position: relative;
       margin-left: 10%;
@@ -93,7 +99,6 @@
         position: absolute;
         right: -20px;
         top: -10px;
-
         font-weight: bolder;
         font-size: 25px;
         color: rgb(255, 255, 255);
@@ -103,6 +108,7 @@
         font-family: Arial, sans-serif;
       }
     }
+
     .fa-braille {
       font-size: 2.5rem;
       color: rgb(104, 104, 104);

@@ -25,6 +25,47 @@ html {
   height: 100%;
 }
 
+@media only screen and (max-width: 550px) {
+  #navIconsContainer {
+    display: none;
+  }
+  #hamburger {
+    display: block;
+  }
+}
+
+.mobileNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  z-index: 1;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.fa-bars {
+  color: #686868;
+}
+
+.hide {
+  display: none;
+}
+
 .productsList {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,6 +262,12 @@ html {
   height: 90%;
   width: 100px;
   background-color: #002c7e;
+}
+
+.search-Div button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
 }
 
 .category-Heading {
@@ -455,6 +502,25 @@ html {
   width: 100%;
   padding: 40px;
   background-color: white;
+}
+
+.navigation-wrapper .navMenu .navIconsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .navigation-wrapper .navMenu .navigation-shoppingcart {
@@ -1159,6 +1225,35 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   padding-bottom: 15px;
 }
 
+@media only screen and (max-width: 550px) {
+  #shoppingCartHead {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #productListHead {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .search-Div {
+    margin-top: 9px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .search-Div .search-field {
+    padding: 9px;
+  }
+  .search-Div button {
+    margin-top: 9px;
+    padding: 9px;
+  }
+}
+
 .shopping-Cart-List {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1352,10 +1447,14 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
           justify-content: center;
   height: 100%;
   width: 170px;
+  font-size: 17px;
   background-color: white;
 }
 
 .product-Card-ShoppingCart .product-ShoppingCart-Price {
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1375,6 +1474,10 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   width: 200px;
 }
 
+.product-Card-ShoppingCart .product-ShoppingCart-Price p {
+  margin-right: 5px;
+}
+
 .product-Card-ShoppingCart .amount-Container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1389,7 +1492,7 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 15px;
+  font-size: 17px;
   padding: 10px;
   margin-left: 20px;
 }
@@ -1416,6 +1519,7 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
 }
 
 .product-Card-ShoppingCart .button-Div .plus-Minus-Buttons {
+  border-radius: 10px;
   color: white;
   background-color: #2a74ff;
   font-weight: bold;
@@ -1424,6 +1528,11 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   height: 100%;
   width: 100%;
   cursor: pointer;
+}
+
+.product-Card-ShoppingCart .button-Div .plus-Minus-Buttons:hover {
+  background-color: white;
+  color: black;
 }
 
 .trash-Can {

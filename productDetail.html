@@ -20,6 +20,44 @@
   <body>
     <header class="header">
 
+      <div id="mobileNav" class="mobileNav hide">
+
+        <div id="phoneNavHamburger" class="hamburger">
+          <i class="fa-solid fa-bars fa-3x"></i>
+        </div>
+
+        <a href="products.html?category=all"
+        ><i id="iconAll"class="fa-solid fa-braille fa-3x"></i
+        >
+        <h2>Alla</h2>
+      </a>
+
+        <a href="products.html?category=phones"
+        ><i id="iconPhone"class="fa-solid fa-mobile-screen-button fa-3x"></i
+        >
+        <h2>Telefoner</h2>
+      </a>
+
+        <a href="products.html?category=computers"
+        ><i id="iconComputer"class="fa-solid fa-laptop fa-3x"></i
+        >
+        <h2>Datorer</h2>
+      </a>
+
+        <a href="products.html?category=consoles"
+        ><i id="iconConsole"class="fa-brands fa-xbox fa-3x"></i
+        >
+        <h2>Konsoller</h2>
+      </a>
+
+        <a href="products.html?category=game"
+        ><i id="iconGame"class="fa-solid fa-gamepad fa-3x"></i
+        >
+        <h2>Spel</h2>
+      </a>
+       
+      </div>
+
       <div class="logo-Div">
       <a href="index.html" class="logo">
         <h1 class="logo">
@@ -49,6 +87,13 @@
       </div>
       <section class="navigation-wrapper">
         <nav class="navMenu">
+          <div id="hamburger" class="hide hamburger">
+            <i class="fa-solid fa-bars fa-3x"></i>
+          </div>
+
+          
+
+          <div id="navIconsContainer" class="navIconsContainer">
           <a href="products.html?category=all"
             ><i id="iconAll"class="fa-solid fa-braille"></i
           ></a>
@@ -65,16 +110,17 @@
             ><i id="iconGame"class="fa-solid fa-gamepad"></i
           ></a>
 
-          <section class="navigation-shoppingcart">
-            <p id="itemsInShoppingCart" class="items-in-shoppingcart"></p>
-            <a href="shoppingCart.html"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
-          </section>
+         
+         </div>
+         <section class="navigation-shoppingcart">
+          <p id="itemsInShoppingCart" class="items-in-shoppingcart"></p>
+          <a href="shoppingCart.html"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+        </section>
         </nav>
       </section>
     </header>
-
 
     <main>
       <div id="detailContainer" class="detailContainer"></div>
@@ -99,6 +145,7 @@
     <p class="footer-copyright">&copy; 2022 - Fraps Webshop, All Rights Reserved</p>
     </footer>
     <script src="script.js"></script>
+    <script src="mobileMenu.js"></script>
     <script src="changeheader.js"></script>
   </body>
 </html>

@@ -1,9 +1,9 @@
 .hero-header {
   display: block;
   width: 100%;
-  background-size:auto;
+  background-size: auto;
   //background-image: linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url("./img/header/heromario_2.jpg");
-  background-position:left;
+  background-position: left;
   background-repeat: no-repeat;
   //&:hover{
   //background-image: linear-gradient(rgba(20, 20, 20, 0.767), rgba(56, 56, 56, 0.486)), url("./img/header/heromario_2.jpg");
@@ -15,14 +15,14 @@
   @include flexBox(column, center, space-around);
   text-align: center;
   color: white;
-  background-image:linear-gradient($color-secondary,rgba(0, 0, 0, 0));
+  background-image: linear-gradient($color-secondary, rgba(0, 0, 0, 0));
   background-size: 100%;
   height: 100%;
 
-  .hero-Text{
+  .hero-Text {
     width: 100%;
     height: 100%;
-    a{
+    a {
       color: white;
     }
     padding: 40px;
@@ -35,41 +35,41 @@
       font-size: 1.5rem;
       font-weight: bold;
     }
-    .header-link{
+    .header-link {
       background-color: purple;
       height: 100%;
       width: 100%;
-    
-      h1{
-      font-family: 'Nunito', sans-serif;
-      width: 100%;
-      display: block;
-      color: white;
-      font-weight:lighter;
-      letter-spacing: 5px;
-     }
+
+      h1 {
+        font-family: 'Nunito', sans-serif;
+        width: 100%;
+        display: block;
+        color: white;
+        font-weight: lighter;
+        letter-spacing: 5px;
+      }
     }
   }
-  .click-Here{
+  .click-Here {
     margin-top: 80px;
   }
 }
-.logo-Div{
-  a{
+.logo-Div {
+  a {
     color: white;
   }
 
   .logo {
     @include flexBox(row, center, space-around);
-    padding:20px;
+    padding: 20px;
     display: block;
     width: 100%;
     height: 100%;
   }
   @include flexBox(row, center, flex-start);
-  background-color:$color-secondary;
+  background-color: $color-secondary;
   width: 100%;
-  .fa-brands{
+  .fa-brands {
     color: white;
   }
 }
@@ -92,8 +92,8 @@
         user-select: none;
         position: absolute;
         right: -20px;
-        top:-10px;
-        
+        top: -10px;
+
         font-weight: bolder;
         font-size: 25px;
         color: rgb(255, 255, 255);
@@ -112,7 +112,6 @@
       font-size: 2.5rem;
       color: rgb(0, 69, 173);
       padding: 20px;
-
     }
     .fa-laptop {
       font-size: 2.5rem;
@@ -134,33 +133,33 @@
       color: rgb(104, 104, 104);
       padding: 20px;
     }
-    .logo, #logoTextFont, a{
-      font-family: 'Nunito', sans-serif
-      !important;
+    .logo,
+    #logoTextFont,
+    a {
+      font-family: 'Nunito', sans-serif !important;
       color: rgb(255, 255, 255);
     }
     a {
       @include flexBox(row, center, space-around);
       color: white;
     }
-    .selected{
-      border-bottom:solid rgb(190, 190, 190) 4px;
+    .selected {
+      border-bottom: solid rgb(190, 190, 190) 4px;
     }
   }
 }
 .footer {
   @include flexBox(column, center, space-evenly);
-  padding:100px;
+  padding: 100px;
   background-color: $color-secondary;
+  position: relative;
 
-
-  .footer-title{
+  .footer-title {
     color: white;
-    text-decoration: underline;
     font-size: 40px;
-    margin-bottom:40px;
+    margin-bottom: 40px;
   }
-  .social-Media-Icons{
+  .social-Media-Icons {
     @include flexBox(row, center, space-evenly);
     width: 100%;
   }
@@ -185,7 +184,14 @@
   }
   .instagram-icon {
     @include flexBox(row, center, center);
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    background: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
     border-radius: 50%;
     font-size: 2.5rem;
     height: 4.5rem;
@@ -194,5 +200,13 @@
   }
   a {
     display: block;
+  }
+  .footer-copyright {
+    font-style: italic;
+    position: absolute;
+    left: 3px;
+    bottom: 1px;
+    font-size: 18px;
+    color: white;
   }
 }

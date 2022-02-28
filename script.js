@@ -257,11 +257,8 @@ function createProductCard(arr) {
           
           localStorage.setItem('cart', JSON.stringify(shoppingCartArray));
           location.reload();
-
-        }
-         
-        })
-       
+        }     
+        })     
       }
     })
 
@@ -415,7 +412,7 @@ function createShoppingCartList(arr) {
     <div class="product-ShoppingCart-Image"></div>
     <h3>${product.name}</h3>
     <div class="product-ShoppingCart-Price">
-    <p>Pris:</p>${product.price}:-
+    <p>Pris: </p> ${product.price}:-
     </div>
     <div class="amount-Container">
     <p>Antal:</p>${product.amount}

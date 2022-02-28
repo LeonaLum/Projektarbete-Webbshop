@@ -88,7 +88,7 @@
 
     .navIconsContainer{
       @include flexBox(row, center, space-evenly);
-      background-color: red;
+      flex:1;
   
     }
     .navigation-shoppingcart {
@@ -99,7 +99,6 @@
         position: absolute;
         right: -20px;
         top: -10px;
-
         font-weight: bolder;
         font-size: 25px;
         color: rgb(255, 255, 255);

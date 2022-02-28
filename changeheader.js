@@ -26,7 +26,7 @@ if (location.search == '?category=all') {
 }
 
 if (location.search == '?category=phones') {
-  heroHeader.style.backgroundImage = "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/iphone13pro.jpg')";
+  heroHeader.style.backgroundImage = "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/phone-header.png')";
   heroTitle.innerText = 'Iphone 13 Pro Erbjudande!';
   heroText.innerText = 'Ny mobil? köp Iphone 13 Pro hos oss och få mobilabonnemang + spotify i ett år (värde 1999kr) på köpet!';
 }
@@ -44,7 +44,7 @@ if (location.search == '?category=consoles') {
   }
 
 if (location.search == '?category=game') {
-  heroHeader.style.backgroundImage = "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/spelheader.jpg')";
+  heroHeader.style.backgroundImage = "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/spelheader.png')";
   heroTitle.innerText = 'Playstation 5';
   heroText.innerText = 'Vi har Playstation 5 redo att skickas hem till dig!';
 

@@ -1,8 +1,9 @@
 .hero-header {
-  height: 400px;
+  display: block;
   width: 100%;
+  background-size:auto;
   //background-image: linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url("./img/header/heromario_2.jpg");
-  background-size: cover;
+  background-position:left;
   background-repeat: no-repeat;
   //&:hover{
   //background-image: linear-gradient(rgba(20, 20, 20, 0.767), rgba(56, 56, 56, 0.486)), url("./img/header/heromario_2.jpg");

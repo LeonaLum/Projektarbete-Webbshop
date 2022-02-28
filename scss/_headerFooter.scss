@@ -84,6 +84,11 @@
     width: 100%;
     padding: 40px;
     background-color: rgb(255, 255, 255);
+
+    .navIconsContainer{
+      @include flexBox(row, center, space-evenly);
+      background-color: red;
+    }
     .navigation-shoppingcart {
       position: relative;
       margin-left: 10%;

@@ -54,6 +54,35 @@
       </div>
       <section class="navigation-wrapper">
         <nav class="navMenu">
+          <div id="hamburger" class="hide hamburger">
+            <i class="fa-solid fa-bars fa-3x"></i>
+          </div>
+
+          <div id="mobileNav" class="mobileNav">
+
+            <a href="products.html?category=all"
+            ><i id="iconAll"class="fa-solid fa-braille"></i
+            ></a>
+
+            <a href="products.html?category=phones"
+            ><i id="iconPhone"class="fa-solid fa-mobile-screen-button"></i
+            ></a>
+
+            <a href="products.html?category=computers"
+            ><i id="iconComputer"class="fa-solid fa-laptop"></i
+            ></a>
+
+            <a href="products.html?category=consoles"
+            ><i id="iconConsole"class="fa-brands fa-xbox"></i
+            ></a>
+
+            <a href="products.html?category=game"
+            ><i id="iconGame"class="fa-solid fa-gamepad"></i
+            ></a>
+           
+          </div>
+
+          <div id="navIconsContainer" class="navIconsContainer">
           <a href="products.html?category=all"
             ><i id="iconAll"class="fa-solid fa-braille"></i
           ></a>
@@ -70,12 +99,14 @@
             ><i id="iconGame"class="fa-solid fa-gamepad"></i
           ></a>
 
-          <section class="navigation-shoppingcart">
-            <p id="itemsInShoppingCart" class="items-in-shoppingcart"></p>
-            <a href="shoppingCart.html"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
-          </section>
+         
+         </div>
+         <section class="navigation-shoppingcart">
+          <p id="itemsInShoppingCart" class="items-in-shoppingcart"></p>
+          <a href="shoppingCart.html"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+        </section>
         </nav>
       </section>
     </header>
@@ -172,6 +203,7 @@
 
     </footer>
     <script src="script.js"></script>
+    <script src="mobileMenu.js"></script>
     <script src="changeheader.js"></script>
   </body>
 </html>

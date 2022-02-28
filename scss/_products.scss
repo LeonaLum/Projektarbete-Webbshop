@@ -7,7 +7,7 @@
 .products-List-Head{
   @include flexBox(row, center, space-around);
   color: white;
-  background-color: rgb(42, 116, 255);
+  background-color: $color-primary;
   flex-wrap: wrap;
   padding:30px;
   font-size: 30px;
@@ -69,7 +69,7 @@
   
   .priceContainer{
     color: white;
-    background-color: rgb(42, 116, 255);
+    background-color:$color-primary;
     padding: 30px;
     text-align: center;
     font-weight: bold;
@@ -99,7 +99,7 @@
     color:white;
     height: 90%;
     width:100px;
-    background-color: rgb(0, 58, 167);
+    background-color: $color-secondary;
   }
 }
 
@@ -107,7 +107,7 @@
   color:white;
   font-size: 30px;
   text-align: center;
-  background-color: rgb(42, 116, 255);
+  background-color: $color-primary;
   padding:30px;
 }
 .categories-Container{
@@ -138,10 +138,10 @@
     text-align: center;
      padding:20px;
      .fa-solid{
-      color: rgb(42, 116, 255);
+      color: $color-primary;
      }
      .fa-brands{
-      color: rgb(42, 116, 255);
+      color: $color-primary;
      }
    }
   }
@@ -156,7 +156,7 @@
   color:white;
   display: block;
   padding:20px;
-  background-color: rgb(0, 58, 167);
+  background-color: $color-secondary;
   font-size: 20px;
   flex:1;
 }

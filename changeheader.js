@@ -31,21 +31,29 @@ if (location.search == '?category=all') {
 }
 
 if (location.search == '?category=phones') {
-  heroHeader.style.backgroundImage = "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/iphone-tonystark.jpg')";
+  heroHeader.style.backgroundImage = "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/iphone13pro.jpg')";
   heroTitle.innerText = 'Iphone 13 Pro Erbjudande!';
   heroText.innerText = 'Ny mobil? köp Iphone 13 Pro hos oss och få mobilabonnemang + spotify i ett år (värde 1999kr) på köpet!';
   heroButton.innerText = 'Till Erjudandet';
+
+  heroButton.addEventListener('click', () => {
+    location.href = '/productDetail.html?id=7';
+});
 }
 
 if (location.search == '?category=computers') {
-  heroHeader.style.backgroundImage = "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/iphone13pro.jpg')";
+  heroHeader.style.backgroundImage = "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/imac.jpg')";
   heroTitle.innerText = 'iMac';
   heroText.innerText = 'Har du etablerat dig ett hemmakontor? Uppgradera dig med en ny Imac och få ALDOBE i 6 månader på köpet';
   heroButton.innerText = 'Till Erjudandet';
+
+  heroButton.addEventListener('click', () => {
+    location.href = '/productDetail.html?id=4';
+});
 }
 
 if (location.search == '?category=consoles') {
-    heroHeader.style.backgroundImage = "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/spelheader.jpg')";
+    heroHeader.style.backgroundImage = "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/consoleheader_2.jpg')";
     heroTitle.innerText = 'Nytt hos oss: Elden Ring';
     heroText.innerText = 'Köp 2 spel och få in-game items';
     heroButton.innerText = 'Till Erjudandet';
@@ -62,7 +70,7 @@ if (location.search == '?category=game') {
   heroButton.innerText = 'Till Erjudandet';
 
   heroButton.addEventListener('click', () => {
-    window.location.search = '?category=consoles';
+    location.href = '/productDetail.html?id=9';
 });
 
 }

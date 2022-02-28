@@ -20,7 +20,7 @@ if (location.pathname == '/shoppingCart.html') {
 }
 
 if (location.search == '?category=all') {
-  heroHeader.style.backgroundImage = "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/valorant.png')";
+  heroHeader.style.backgroundImage = "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/valorant-header.jpg')";
   heroTitle.innerText = 'Valorant in-game Erbjudande';
   heroText.innerText = 'Köp 2 spel hos oss och få Valorant Battlepass + Skins på köpet!';
 }
@@ -38,7 +38,7 @@ if (location.search == '?category=computers') {
 }
 
 if (location.search == '?category=consoles') {
-    heroHeader.style.backgroundImage = "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/consoleheader_2.jpg')";
+    heroHeader.style.backgroundImage = "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/consoleheader.png')";
     heroTitle.innerText = 'Nytt hos oss: Elden Ring';
     heroText.innerText = 'Köp 2 spel och få in-game items';
   }

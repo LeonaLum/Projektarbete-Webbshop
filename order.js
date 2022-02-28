@@ -110,7 +110,7 @@ function isEmailValid(email) {
 //Funktion för att gå till kvittosidan
 
 function moveToReciept() {
-  window.location.pathname = '/reciept.html';
+  window.location.search = '?location=reciept';
 }
 
 //Funktion för att spara persondata i local storage

@@ -356,9 +356,10 @@ html {
 }
 
 .hero-header {
-  height: 400px;
+  display: block;
   width: 100%;
-  background-size: cover;
+  background-size: auto;
+  background-position: left;
   background-repeat: no-repeat;
 }
 
@@ -572,8 +573,10 @@ html {
   padding: 20px;
 }
 
-.navigation-wrapper .navMenu .logo, .navigation-wrapper .navMenu #logoTextFont, .navigation-wrapper .navMenu a {
-  font-family: 'Nunito', sans-serif !important;
+.navigation-wrapper .navMenu .logo,
+.navigation-wrapper .navMenu #logoTextFont,
+.navigation-wrapper .navMenu a {
+  font-family: 'Nunito', sans-serif !important;
   color: white;
 }
 
@@ -613,11 +616,11 @@ html {
           justify-content: space-evenly;
   padding: 100px;
   background-color: #002c7e;
+  position: relative;
 }
 
 .footer .footer-title {
   color: white;
-  text-decoration: underline;
   font-size: 40px;
   margin-bottom: 40px;
 }
@@ -697,7 +700,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
   border-radius: 50%;
   font-size: 2.5rem;
   height: 4.5rem;
@@ -707,6 +710,15 @@ html {
 
 .footer a {
   display: block;
+}
+
+.footer .footer-copyright {
+  font-style: italic;
+  position: absolute;
+  left: 3px;
+  bottom: 1px;
+  font-size: 18px;
+  color: white;
 }
 
 .detailContainer {

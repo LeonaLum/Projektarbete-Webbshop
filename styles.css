@@ -480,7 +480,6 @@ html {
 .navigation-wrapper .navMenu .fa-braille {
   font-size: 2.5rem;
   color: #686868;
-  border-bottom: solid #bebebe 2px;
   padding: 20px;
 }
 
@@ -488,28 +487,24 @@ html {
   font-size: 2.5rem;
   color: #0045ad;
   padding: 20px;
-  border-bottom: solid #bebebe 2px;
 }
 
 .navigation-wrapper .navMenu .fa-laptop {
   font-size: 2.5rem;
   color: #0b6dff;
   padding: 20px;
-  border-bottom: solid #bebebe 2px;
 }
 
 .navigation-wrapper .navMenu .fa-xbox {
   font-size: 2.5rem;
   color: #0198d4;
   padding: 20px;
-  border-bottom: solid #bebebe 2px;
 }
 
 .navigation-wrapper .navMenu .fa-gamepad {
   font-size: 2.5rem;
   color: #00a79f;
   padding: 20px;
-  border-bottom: solid #bebebe 2px;
 }
 
 .navigation-wrapper .navMenu .fa-cart-shopping {
@@ -519,7 +514,7 @@ html {
 }
 
 .navigation-wrapper .navMenu .logo, .navigation-wrapper .navMenu #logoTextFont, .navigation-wrapper .navMenu a {
-  font-family: 'Nunito', sans-serif !important;
+  font-family: 'Nunito', sans-serif !important;
   color: white;
 }
 
@@ -537,6 +532,10 @@ html {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   color: white;
+}
+
+.navigation-wrapper .navMenu .selected {
+  border-bottom: solid #bebebe 4px;
 }
 
 .footer {

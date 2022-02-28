@@ -2,6 +2,13 @@
 
 //lägger till kommentar
 
+let iconAll = document.getElementById("iconAll");
+let iconPhone = document.getElementById("iconPhone");
+let iconComputer = document.getElementById("iconComputer");
+let iconGame = document.getElementById("iconGame");
+let iconConsole = document.getElementById("iconConsole");
+
+
 //Nyaste scriptet
 let productPrices = [];
 let shoppingCartArray = [];
@@ -66,18 +73,23 @@ let searchableArray = [];
 switch (currentCategory) {
   case 'phones':
     getProductsPhones();
+    iconPhone.classList.add("selected");
     break;
   case 'computers':
     getProductsComputers();
+    iconComputer.classList.add("selected");
     break;
   case 'consoles':
     getProductsConsoles();
+    iconConsole.classList.add("selected");
     break;
     case 'game':
       getProductsGames();
+      iconGame.classList.add("selected");
       break;
   case 'all':
     getAllProducts();
+    iconAll.classList.add("selected");
     break;
 }
 

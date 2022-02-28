@@ -27,13 +27,13 @@
       "image": "url(../img/products/macbookair.png)",
       "amount": "1"
     },
-    
+
     {
       "id": "3",
       "name": "iMac",
       "type": "computer",
       "price": "39899",
-      "description": "iMac 27 ”5K Retina MXWV2 har branschledande design och prestanda med sin fantastiska Retina 5K-skärm, kraftfulla 10:e generationens Intel Core i7-processor. När du köper en iMac får du Apple TV+ gratis i 3 månader",
+      "description": "iMac 27 ”5K Retina MXWV2 har branschledande design och prestanda med sin fantastiska Retina 5K-skärm, kraftfulla 10:e generationens Intel Core i7-processor. När du köper en iMac får du Apple TV+ gratis i 3 månader.",
       "image": "url(../img/products/imac.png)",
       "amount": "1"
     },
@@ -50,8 +50,8 @@
       "id": "5",
       "name": "Nokia 3310",
       "type": "phone",
-      "price": "9001",
-      "description": "Nokia 3310 ÄR TILLBAKA, den efterlängtade och bortglömda pansar-tegelstenen har en vikt på 133 g. Nokia 3310 har en höjd på 22 mm. Nokia 3310 har en bredd på 113 mm. Nokia 3310 har ett djup på 48 mm.",
+      "price": "1337",
+      "description": "Nokia 3310 är tillbaka! Den efterlängtade och halvt bortglömda pansar-tegelstenen har en vikt på endast 133 g. Nokia 3310 kan användas för både samtal och SMS, men den kan även fungera som en ersättare till din borttappade hammare. Nokia 3310 är den enda telefonen som överlever ett kärnkraftskrig.",
       "image": "url(../img/products/nokia.png)",
       "amount": "1"
     },
@@ -192,10 +192,10 @@
     },
     {
       "id": "21",
-      "name": "Go Retro!",
+      "name": "Retro-Bit Go Retro Portable",
       "type": "console",
       "price": "459",
-      "description": "Med Go Retro! portabla spelkonsol kommer retrospelen träffa dig som en bumerang, varsomhelst och närsomhelst. Denna lilla spelkonsol i fickformat är fullmatad med över 260 spel och har en batteritid på 10 timmar.",
+      "description": "Med Go Retro! portabla spelkonsol kommer retrospelen träffa dig som en boomerang, varsomhelst och närsomhelst. Denna lilla spelkonsol i fickformat är fullmatad med över 260 spel och har en batteritid på 10 timmar.",
       "image": "url(../img/products/go_retro.jpg)",
       "amount": "1"
     }

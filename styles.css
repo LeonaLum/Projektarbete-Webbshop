@@ -543,6 +543,30 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 100px;
+  background-color: #002c7e;
+}
+
+.footer .footer-title {
+  color: white;
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+
+.footer .social-Media-Icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -553,9 +577,7 @@ html {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 100%;
   width: 100%;
-  background-color: black;
 }
 
 .footer .facebook-icon {
@@ -572,7 +594,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #616161;
+  background-color: #3d6aff;
   border-radius: 50%;
   font-size: 2.5rem;
   height: 4.5rem;
@@ -594,7 +616,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #616161;
+  background-color: #3e82b9;
   border-radius: 50%;
   font-size: 2.5rem;
   height: 4.5rem;
@@ -616,7 +638,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #616161;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   border-radius: 50%;
   font-size: 2.5rem;
   height: 4.5rem;

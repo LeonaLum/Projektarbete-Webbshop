@@ -61,6 +61,7 @@
 
   .logo {
     @include flexBox(row, center, space-around);
+    padding:20px;
     display: block;
     width: 100%;
     height: 100%;

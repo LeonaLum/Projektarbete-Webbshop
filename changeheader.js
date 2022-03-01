@@ -7,6 +7,8 @@ let headerLink = document.getElementById("headerLink");
 if (location.pathname == '/productDetail.html') {
   heroHeader.style.backgroundImage =
     "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/heromario_2.jpg')";
+    heroHeader.style.backgroundPosition = "center";
+    heroHeader.style.backgroundSize = "cover";
 }
 
 if (location.pathname == '/index.html') {

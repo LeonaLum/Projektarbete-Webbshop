@@ -1,81 +1,61 @@
-.hero-header {
-  display: block;
-  width: 100%;
-  background-size: auto;
-  //background-image: linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url("./img/header/heromario_2.jpg");
-  background-position: left;
-  background-repeat: no-repeat;
-  //&:hover{
-  //background-image: linear-gradient(rgba(20, 20, 20, 0.767), rgba(56, 56, 56, 0.486)), url("./img/header/heromario_2.jpg");
-  //background-size: cover;
-  //background-repeat: no-repeat;
+header {
+  .logo-Div {
+    a {
+      color: white;
+    }
+
+    .logo {
+      @include flexBox(row, center, space-around);
+      padding: 20px;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: $color-secondary;
+      width: 100%;
+      .fa-brands {
+        color: white;
+      }
+    }
+  }
 }
 
 .hero-picture {
   @include flexBox(column, center, space-around);
   text-align: center;
   color: white;
+
   background-image: linear-gradient($color-secondary, rgba(0, 0, 0, 0));
   background-size: 100%;
   height: 100%;
 
-  .hero-Text {
-    width: 100%;
-    height: 100%;
-    a {
-      color: white;
-    }
-    padding: 40px;
-    border-radius: 20px;
-    h2 {
-      margin-top: 20px;
-      font-size: 3.5rem;
-    }
-    p {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
-    .header-link {
-      background-color: purple;
-      height: 100%;
-      width: 100%;
-
-      h1 {
-        font-family: 'Nunito', sans-serif;
-        width: 100%;
-        display: block;
-        color: white;
-        font-weight: lighter;
-        letter-spacing: 5px;
-      }
-    }
-  }
-  .click-Here {
-    margin-top: 80px;
-  }
-}
-.logo-Div {
-  a {
-    color: white;
-  }
-
-  .logo {
-    @include flexBox(row, center, space-around);
-    padding: 20px;
+  .hero-header {
     display: block;
-    width: 100%;
     height: 100%;
-  }
-  @include flexBox(row, center, flex-start);
-  background-color: $color-secondary;
-  width: 100%;
-  .fa-brands {
-    color: white;
+    width: 100%;
+    background-size: auto;
+    background-position: left;
+    background-repeat: no-repeat;
   }
 }
 
-.content {
-  background-color: red;
+.hero-Text {
+  width: 100%;
+  padding: 40px;
+  h2 {
+    font-size: 35px;
+  }
+  p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .header-link {
+    color: white;
+    height: 100%;
+    width: 100%;
+    .click-Here {
+      margin-top: 20px;
+    }
+  }
 }
 
 .navigation-wrapper {
@@ -90,14 +70,15 @@
       @include flexBox(row, center, space-evenly);
       flex: 1;
     }
+
     .navigation-shoppingcart {
       position: relative;
       margin-left: 10%;
       .items-in-shoppingcart {
         user-select: none;
         position: absolute;
-        right: -20px;
-        top: -10px;
+        right: 10px;
+        top: 0px;
         font-weight: bolder;
         font-size: 25px;
         color: rgb(255, 255, 255);
@@ -153,6 +134,7 @@
     }
   }
 }
+
 .footer {
   @include flexBox(column, center, space-around);
   padding: 100px;

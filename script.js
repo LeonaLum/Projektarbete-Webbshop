@@ -8,7 +8,7 @@ let iconComputer = document.getElementById("iconComputer");
 let iconGame = document.getElementById("iconGame");
 let iconConsole = document.getElementById("iconConsole");
 
-console.log(iconAll)
+
 
 
 //Nyaste scriptet
@@ -92,7 +92,6 @@ switch (currentCategory) {
       break;
   case 'all':
     getAllProducts();
-    iconAll.classList.add("selected");
     break;
 }
 
@@ -141,7 +140,6 @@ async function getAllProducts() {
   const response = await fetch('./products.json');
   const productData = await response.json();
   const productsArray = [...productData.products];
-  
   createProductCard(productsArray);
   searchableArray = productsArray;
   allProducts = productsArray;

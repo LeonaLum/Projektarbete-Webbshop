@@ -161,6 +161,7 @@ main.form-main {
 
         &:hover {
           cursor: pointer;
+          background-color: $color-grey;
         }
         &:active {
           transform: translateY(2px);

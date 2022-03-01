@@ -275,6 +275,15 @@ html {
   font-size: 20px;
 }
 
+.productCard .product-Footer .buy-Now-Button:hover {
+  background-color: #7a7a7a;
+}
+
+.productCard .product-Footer .buy-Now-Button:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
 .search-Div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1272,6 +1281,7 @@ main.form-main .form-container form button {
 
 main.form-main .form-container form button:hover {
   cursor: pointer;
+  background-color: #7a7a7a;
 }
 
 main.form-main .form-container form button:active {
@@ -1612,6 +1622,11 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   font-weight: bolder;
 }
 
+.product-Card-ShoppingCart .button-Div .plus-Minus-Buttons:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
 .trash-Can {
   color: white;
   font-size: 20px;
@@ -1747,6 +1762,11 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   background-color: #7a7a7a;
   color: white;
   font-weight: bolder;
+}
+
+.shopping-Cart-Footer a .order-Button:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
 }
 
 @media only screen and (max-width: 650px) {

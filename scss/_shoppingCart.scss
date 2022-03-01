@@ -36,7 +36,7 @@
   @include flexBox(row, center, space-around);
   flex-wrap: wrap;
   font-size: 30px;
-  background-color: rgb(42, 116, 255);
+  background-color: $color-primary;
   color:white;
   height: 150px;
   width: 100%;
@@ -49,45 +49,7 @@
   min-height: 500px;
   background-color: white;
 }
-.shopping-Cart-Footer{
-  @include flexBox(row, center, space-around);
-  flex-wrap: wrap;
-  font-size: 30px;
-  height: 150px;
-  width: 100%;
-  text-align: center;
-  background-color: white;
-  .footer-Content{
-    @include flexBox(row, center, space-around);
-    height: 100%;
-    width: 100%;
-    background-color: white;
-  }
-  .total-Container{
-    @include flexBox(row, center, space-around);
-    height: 100%;
-    font-weight: bold;
-    .total{
-      margin-left:20px;
-    }
-  }
-    a{
-      height: 100px;
-      width:200px;
-      z-index: 1;
-      display: block;
-      .order-Button{
-        @include flexBox(row, center, center);
-        font-size: 30px;
-        display: block;
-        color: white;
-        background-color: rgb(42, 116, 255);
-        height: 100%;
-        width: 100%;
-        cursor: pointer;
-    }
-  }
-}
+
 
 .product-Card-ShoppingCart{
   @include flexBox(row, center, flex-start);
@@ -147,8 +109,9 @@
       width:100%;
       cursor: pointer;
       &:hover{
-        background-color: white;
-        color: black;
+        background-color: rgb(122, 122, 122);
+        color: white;
+        font-weight: bolder;
       }
     }
   }
@@ -161,7 +124,7 @@
   @include flexBox(row, center, center);
   border-radius: 10px;
   padding:10px;
-  background-color: rgb(0, 58, 167);
+  background-color: $color-primary;
   .fa-trash-can{
     color:white;
     display: block;
@@ -172,14 +135,62 @@
     width: 100%;
   }
   &:hover{
-    color: rgb(42, 116, 255);
+    text-decoration: underline;
+    font-weight: bolder;
+    color: white;
     cursor: pointer;
   }
  
  
 }
 
-@media only screen and (max-width: 500px){
+.shopping-Cart-Footer{
+  @include flexBox(row, center, space-around);
+  flex-wrap: wrap;
+  font-size: 30px;
+  height: 150px;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  .footer-Content{
+    @include flexBox(row, center, space-around);
+    height: 100%;
+    width: 100%;
+    background-color: white;
+  }
+  .total-Container{
+    @include flexBox(row, center, space-around);
+    height: 100%;
+    font-weight: bold;
+    .total{
+      margin-left:20px;
+    }
+  }
+    a{
+      height: 100px;
+      width:200px;
+      z-index: 1;
+      display: block;
+      .order-Button{
+        @include flexBox(row, center, center);
+        border-radius: 10px;
+        font-size: 30px;
+        display: block;
+        color: white;
+        background-color: rgb(42, 116, 255);
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+        &:hover{
+          background-color: rgb(122, 122, 122);
+          color: white;
+          font-weight: bolder;
+        }
+    }
+  }
+}
+
+@media only screen and (max-width: 650px){
 
   .shopping-Cart-Footer{
     .footer-Content{
@@ -187,8 +198,9 @@
       padding-bottom: 10px;
     }
     .order-Button {
-      height: 50%;
+      padding:20px;
       width: 50%;
+      height: 100%;
     }
   }
   .shopping-Cart-Main{
@@ -215,9 +227,19 @@
     .amount-Container{
       margin-left: 0px;
     }
+    .product-ShoppingCart-Price{
+      margin-top: 20px;
+      padding:20px;
+      width: 50%;
+    }
     .button-Div{
       margin-top: 5px;
       margin-left: 0px;
+      width: 50%;
+      .plus-Minus-Buttons{
+        height: 40px;
+        font-size: 30px;
+      }
     }
   }
 }

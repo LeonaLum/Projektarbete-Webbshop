@@ -7,6 +7,8 @@ let headerLink = document.getElementById("headerLink");
 if (location.pathname == '/productDetail.html') {
   heroHeader.style.backgroundImage =
     "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/heromario_2.jpg')";
+    heroHeader.style.backgroundPosition = "center";
+    heroHeader.style.backgroundSize = "cover";
 }
 
 if (location.pathname == '/index.html') {
@@ -19,11 +21,15 @@ if (location.pathname == '/index.html') {
 if (location.pathname == '/orderForm.html') {
   heroHeader.style.backgroundImage =
     "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/heromario_2.jpg')";
+    heroHeader.style.backgroundPosition = "center";
+    heroHeader.style.backgroundSize = "cover"; 
 }
 
 if (location.pathname == '/shoppingCart.html') {
   heroHeader.style.backgroundImage =
     "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/heromario_2.jpg')";
+    heroHeader.style.backgroundPosition = "center";
+    heroHeader.style.backgroundSize = "cover";
 }
 
 if (location.search == '?category=all') {
@@ -50,7 +56,7 @@ if (location.search == '?category=phones') {
 
 if (location.search == '?category=computers') {
   heroHeader.style.backgroundImage =
-    "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/imac.jpg')";
+    "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/imacheader.jpg')";
     heroHeader.style.backgroundPosition = "center";
     heroHeader.style.backgroundSize = "cover";
 
@@ -61,7 +67,7 @@ if (location.search == '?category=computers') {
 
 if (location.search == '?category=consoles') {
   heroHeader.style.backgroundImage =
-    "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/consoleheader.png')";
+    "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/playstat.jpg')";
     heroHeader.style.backgroundPosition = "center";
     heroHeader.style.backgroundSize = "cover";
   heroTitle.innerText = 'Har din partner lämnat dig?';

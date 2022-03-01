@@ -32,7 +32,7 @@ if (location.search == '?category=all') {
 
 if (location.search == '?category=phones') {
   heroHeader.style.backgroundImage =
-    "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/phone-header.jpg')";
+    "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/phone-ultra-header.png')";
   heroTitle.innerText = 'Marknadens främsta mobiltelefon';
   heroText.innerText = 'Köp iPhone 13 Pro hos oss och få AirPods Pro på köpet';
 }

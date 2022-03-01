@@ -457,7 +457,6 @@ header .logo-Div .logo {
   width: 100%;
   height: 100%;
   background-color: #002c7e;
-  width: 100%;
 }
 
 header .logo-Div .logo .fa-brands {
@@ -489,8 +488,8 @@ header .logo-Div .logo .fa-brands {
   display: block;
   height: 100%;
   width: 100%;
-  background-size: auto;
-  background-position: left;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 

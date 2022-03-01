@@ -11,7 +11,7 @@ header {
       width: 100%;
       height: 100%;
       background-color: $color-secondary;
-      width: 100%;
+      
       .fa-brands {
         color: white;
       }
@@ -32,8 +32,8 @@ header {
     display: block;
     height: 100%;
     width: 100%;
-    background-size: auto;
-    background-position: left;
+    background-size:cover;
+    background-position: center;
     background-repeat: no-repeat;
   }
 }

@@ -1,80 +1,78 @@
-
-@media only screen and (max-width: 550px){
-  #shoppingCartHead{
+@media only screen and (max-width: 550px) {
+  #shoppingCartHead {
     flex-direction: column;
     padding-bottom: 7px;
   }
-  #productListHead{
+  #productListHead {
     flex-direction: column;
   }
-  .search-Div{
+  .search-Div {
     margin-top: 9px;
     flex-direction: column;
-    .search-field{
+    .search-field {
       padding: 9px;
     }
-    button{
+    button {
       margin-top: 9px;
       padding: 9px;
     }
   }
 }
 
-.shopping-Cart-List{
+.shopping-Cart-List {
   @include flexBox(column, center, space-around);
   width: 100%;
   background-color: rgb(167, 167, 167);
 }
-.div-Empty-Cart{
+.div-Empty-Cart {
   margin-top: 50px;
   text-align: center;
 }
-.hide{
-  display:none;
+.hide {
+  display: none;
 }
-.shopping-Cart-Head{
+.shopping-Cart-Head {
   @include flexBox(row, center, space-around);
   flex-wrap: wrap;
   font-size: 30px;
   background-color: $color-primary;
-  color:white;
+  color: white;
   height: 150px;
   width: 100%;
   text-align: center;
 }
-.shopping-Cart-Main{
+.shopping-Cart-Main {
   flex-wrap: wrap;
   width: 100%;
-  padding:20px;
+  padding: 20px;
   min-height: 500px;
   background-color: white;
 }
 
-
-.product-Card-ShoppingCart{
+.product-Card-ShoppingCart {
   @include flexBox(row, center, flex-start);
   padding: 20px;
   font-size: 12px;
   background-color: white;
-  width:100%;
+  width: 100%;
   height: 100px;
-  margin-bottom:20px;
+  margin-bottom: 20px;
   border-bottom: rgb(214, 214, 214) solid 2px;
 
-  .product-ShoppingCart-Image{
+  .product-ShoppingCart-Image {
     height: 100%;
-    width:100px;
+    width: 100px;
   }
-  h3{
+  h3 {
     @include flexBox(row, center, center);
     height: 100%;
     width: 170px;
     font-size: 17px;
     background-color: white;
   }
-  .product-ShoppingCart-Price{
-    p{
-      margin-right:5px;
+  .product-ShoppingCart-Price {
+    p {
+      margin-right: 5px;
     }
     font-size: 20px;
     font-weight: bold;
@@ -85,20 +83,20 @@
     height: 100%;
     width: 200px;
   }
-  .amount-Container{
+  .amount-Container {
     @include flexBox(row, center, center);
     font-size: 17px;
-    padding:10px;
-    margin-left:20px;
+    padding: 10px;
+    margin-left: 20px;
   }
-  .button-Div{
+  .button-Div {
     @include flexBox(row, center, center);
     height: 40px;
     background-color: rgb(42, 116, 255);
     width: 50px;
-    margin-left:20px;
+    margin-left: 20px;
     border-radius: 10px;
-    .plus-Minus-Buttons{
+    .plus-Minus-Buttons {
       border-radius: 10px;
       color: white;
       background-color: rgb(42, 116, 255);
@@ -106,45 +104,45 @@
       display: block;
       font-size: 20px;
       height: 100%;
-      width:100%;
+      width: 100%;
       cursor: pointer;
-      &:hover{
-        background-color: rgb(122, 122, 122);
+      &:hover {
+        background-color: $color-grey;
         color: white;
         font-weight: bolder;
       }
+      &:active {
+        transform: translateY(2px);
+      }
     }
   }
-  
 }
 
-.trash-Can{
-  color:white;
+.trash-Can {
+  color: white;
   font-size: 20px;
   @include flexBox(row, center, center);
   border-radius: 10px;
-  padding:10px;
+  padding: 10px;
   background-color: $color-primary;
-  .fa-trash-can{
-    color:white;
+  .fa-trash-can {
+    color: white;
     display: block;
-    margin-left:10px;
+    margin-left: 10px;
   }
-   a{
+  a {
     height: 100%;
     width: 100%;
   }
-  &:hover{
+  &:hover {
     text-decoration: underline;
     font-weight: bolder;
     color: white;
     cursor: pointer;
   }
- 
- 
 }
 
-.shopping-Cart-Footer{
+.shopping-Cart-Footer {
   @include flexBox(row, center, space-around);
   flex-wrap: wrap;
   font-size: 30px;
@@ -152,43 +150,47 @@
   width: 100%;
   text-align: center;
   background-color: white;
-  .footer-Content{
+  .footer-Content {
     @include flexBox(row, center, space-around);
     height: 100%;
     width: 100%;
     background-color: white;
   }
-  .total-Container{
+  .total-Container {
     @include flexBox(row, center, space-around);
     height: 100%;
     font-weight: bold;
-    .total{
-      margin-left:20px;
+    .total {
+      margin-left: 20px;
     }
   }
-    a{
-      height: 100px;
-      width:200px;
-      z-index: 1;
+  a {
+    height: 100px;
+    width: 200px;
+    z-index: 1;
+    display: block;
+    .order-Button {
+      @include flexBox(row, center, center);
+      border-radius: 10px;
+      font-size: 30px;
       display: block;
-      .order-Button{
-        @include flexBox(row, center, center);
-        border-radius: 10px;
-        font-size: 30px;
-        display: block;
+      color: white;
+      background-color: rgb(42, 116, 255);
+      height: 100%;
+      width: 100%;
+      cursor: pointer;
+      &:hover {
+        background-color: $color-grey;
         color: white;
-        background-color: rgb(42, 116, 255);
-        height: 100%;
-        width: 100%;
-        cursor: pointer;
-        &:hover{
-          background-color: rgb(122, 122, 122);
-          color: white;
-          font-weight: bolder;
-        }
+        font-weight: bolder;
+      }
+      &:active {
+        transform: translateY(2px);
+      }
     }
   }
 }
+
 
 @media only screen and (max-width: 650px){
 
@@ -196,49 +198,48 @@
 
   
     .footer-Content{
+
       @include flexBox(column, center, space-around);
       padding-bottom: 10px;
     }
     .order-Button {
-      padding:20px;
+      padding: 20px;
       width: 50%;
       height: 100%;
     }
   }
-  .shopping-Cart-Main{
+  .shopping-Cart-Main {
     flex-wrap: nowrap;
-    
   }
-  .product-Card-ShoppingCart{
+  .product-Card-ShoppingCart {
     @include flexBox(column, center, space-around);
     height: 400px;
-    .product-ShoppingCart-Price{
+    .product-ShoppingCart-Price {
       height: 120px;
       width: 100px;
     }
-    .product-ShoppingCart-Image{
+    .product-ShoppingCart-Image {
       height: 100%;
       width: 200px;
     }
-    h3{
-      
+    h3 {
       height: 30%;
       width: 150px;
       font-size: 20px;
     }
-    .amount-Container{
+    .amount-Container {
       margin-left: 0px;
     }
-    .product-ShoppingCart-Price{
+    .product-ShoppingCart-Price {
       margin-top: 20px;
-      padding:20px;
+      padding: 20px;
       width: 50%;
     }
-    .button-Div{
+    .button-Div {
       margin-top: 5px;
       margin-left: 0px;
       width: 50%;
-      .plus-Minus-Buttons{
+      .plus-Minus-Buttons {
         height: 40px;
         font-size: 30px;
       }

@@ -477,6 +477,13 @@ header .logo-Div .logo .fa-brands {
   color: white;
 }
 
+#heroHeader {
+  height: 400px;
+  background-size: auto;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
 .hero-picture {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -496,15 +503,6 @@ header .logo-Div .logo .fa-brands {
   background-image: linear-gradient(#002c7e, rgba(0, 0, 0, 0));
   background-size: 100%;
   height: 100%;
-}
-
-.hero-picture .hero-header {
-  display: block;
-  height: 100%;
-  width: 100%;
-  background-size: auto;
-  background-position: left;
-  background-repeat: no-repeat;
 }
 
 .hero-Text {
@@ -573,8 +571,7 @@ header .logo-Div .logo .fa-brands {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 10px;
-  background-color: red;
+  height: 50px;
 }
 
 .navigation-wrapper .navMenu .navigation-shoppingcart {
@@ -658,11 +655,10 @@ header .logo-Div .logo .fa-brands {
   font-size: 2.5rem;
   color: #686868;
   padding: 20px;
-  padding-bottom: 10px;
 }
 
 .navigation-wrapper .navMenu .fa-cart-shopping:hover {
-  border-bottom: grey solid 3px;
+  color: #4b4b4b;
 }
 
 .navigation-wrapper .navMenu .logo,

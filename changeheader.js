@@ -2,6 +2,8 @@ const heroHeader = document.getElementById('heroHeader');
 const heroTitle = document.getElementById('heroTitle');
 const heroText = document.getElementById('heroText');
 
+let headerLink = document.getElementById("headerLink");
+
 if (location.pathname == '/productDetail.html') {
   heroHeader.style.backgroundImage =
     "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/heromario_2.jpg')";
@@ -25,9 +27,14 @@ if (location.pathname == '/shoppingCart.html') {
 if (location.search == '?category=all') {
   heroHeader.style.backgroundImage =
     "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/valorant-header.jpg')";
+    heroHeader.style.backgroundPosition = "top";
+
   heroTitle.innerText = 'Valorant: In-game erbjudande';
   heroText.innerText =
     'Köp 2 spel hos oss och få 3 månaders battlepass på köpet';
+    console.log(headerLink)
+  headerLink.href = "/products.html?category=game";
+
 }
 
 if (location.search == '?category=phones') {
@@ -40,6 +47,8 @@ if (location.search == '?category=phones') {
 if (location.search == '?category=computers') {
   heroHeader.style.backgroundImage =
     "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/imac.jpg')";
+    heroHeader.style.backgroundPosition = "bottom";
+
   heroTitle.innerText = 'Framtiden är här';
   heroText.innerText =
     'Uppgradera till Apples senaste iMac och få Adobepaketet gratis i 6 månader';

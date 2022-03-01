@@ -35,6 +35,10 @@ main.form-main {
           margin-bottom: 20px;
           border-bottom: rgb(214, 214, 214) solid 2px;
 
+          @media only screen and (max-width: 800px) {
+            @include flexBox(row, center, space-around);
+          }
+
           .mini--product-name {
             @include flexBox(row, center, center);
             height: 100%;
@@ -89,7 +93,6 @@ main.form-main {
 
     .form-header {
       background-color: white;
-      border-bottom: px solid black;
       padding: 20px 40px;
     }
     form {
@@ -158,7 +161,6 @@ main.form-main {
 
         &:hover {
           cursor: pointer;
-          background-color: black;
         }
         &:active {
           transform: translateY(2px);
@@ -178,6 +180,12 @@ main.form-main {
     #formPostalcode::-webkit-inner-spin-button {
       -webkit-appearance: none;
       margin: 0;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .form-container {
+      @include flexBox(column, center, space-around);
+      align-items: stretch;
     }
   }
 }

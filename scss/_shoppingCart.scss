@@ -191,9 +191,14 @@
   }
 }
 
-@media only screen and (max-width: 650px) {
-  .shopping-Cart-Footer {
-    .footer-Content {
+
+@media only screen and (max-width: 650px){
+
+  .shopping-Cart-Footer{
+
+  
+    .footer-Content{
+
       @include flexBox(column, center, space-around);
       padding-bottom: 10px;
     }

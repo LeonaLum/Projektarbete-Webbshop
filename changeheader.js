@@ -32,7 +32,7 @@ if (location.search == '?category=all') {
 
 if (location.search == '?category=phones') {
   heroHeader.style.backgroundImage =
-    "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/iphone13pro.jpg')";
+    "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/phone-header.jpg')";
   heroTitle.innerText = 'Marknadens främsta mobiltelefon';
   heroText.innerText = 'Köp iPhone 13 Pro hos oss och få AirPods Pro på köpet';
 }
@@ -55,7 +55,7 @@ if (location.search == '?category=consoles') {
 
 if (location.search == '?category=game') {
   heroHeader.style.backgroundImage =
-    "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/spelheader.jpg')";
+    "linear-gradient(rgba(37, 37, 37, 0.767), rgba(255, 254, 254, 0)), url('./img/header/spelheader.png')";
   heroTitle.innerText = 'Halo Infinite: Ett rent mästerverk';
   heroText.innerText =
     '20 år efter att Master Chief såg dagsljus, så är det dags för en ny legendarisk campaign';

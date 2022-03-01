@@ -17,27 +17,28 @@
 
   a{
     @include flexBox(column, center, space-around);
-    background-color: red;
     display: block;
     height: 100px;
     width: 100px;
     text-align: center;
     .fa-braille{
-      color:white;
+      margin-top:25px;
+      color: rgb(104, 104, 104);
       display: block;
     }
     .fa-mobile-screen-button{
-      color: green;
+      color: rgb(0, 69, 173);
     }
     .fa-laptop{
       color:white;
       display: block;
+      color: rgb(11, 109, 255);
     }
     .fa-xbox{
-      color: purple;
+      color: rgb(1, 152, 212);
     }
     .fa-gamepad{
-      color:yellow;
+      color: rgb(0, 167, 159);
     }
   }
 }

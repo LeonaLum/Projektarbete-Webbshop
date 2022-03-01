@@ -67,7 +67,6 @@ html {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: red;
   display: block;
   height: 100px;
   width: 100px;
@@ -75,25 +74,27 @@ html {
 }
 
 .mobileNav a .fa-braille {
-  color: white;
+  margin-top: 25px;
+  color: #686868;
   display: block;
 }
 
 .mobileNav a .fa-mobile-screen-button {
-  color: green;
+  color: #0045ad;
 }
 
 .mobileNav a .fa-laptop {
   color: white;
   display: block;
+  color: #0b6dff;
 }
 
 .mobileNav a .fa-xbox {
-  color: purple;
+  color: #0198d4;
 }
 
 .mobileNav a .fa-gamepad {
-  color: yellow;
+  color: #00a79f;
 }
 
 .hamburger {
@@ -193,9 +194,9 @@ html {
   border: solid #d8d8d8 2px;
   background-color: white;
   border-radius: 10px;
+  height: 600px;
   color: black;
   width: 500px;
-  height: 500px;
 }
 
 .productCard h2 {
@@ -246,25 +247,34 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 20px;
   width: 100%;
+  height: 300px;
   border-radius: 20px;
 }
 
-.productCard .priceContainer {
+.productCard .product-Footer .priceContainer {
   color: white;
   background-color: #1b63ff;
   padding: 30px;
   text-align: center;
   font-weight: bold;
   font-size: 30px;
-  height: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+}
+
+.productCard .product-Footer .buy-Now-Button {
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  display: block;
+  padding: 20px;
+  background-color: #002c7e;
+  font-size: 20px;
 }
 
 .search-Div {
@@ -288,6 +298,7 @@ html {
 }
 
 .search-Div .search-field {
+  display: block;
   font-size: 20px;
   padding: 20px;
   height: 90%;
@@ -387,28 +398,84 @@ html {
   color: #1b63ff;
 }
 
-.buy-Now-Button {
-  cursor: pointer;
-  text-align: center;
-  height: 100%;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-  display: block;
-  padding: 20px;
-  background-color: #002c7e;
-  font-size: 20px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+@media only screen and (max-width: 460px) {
+  .products-List-Head {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .product-Footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .product-Footer .buy-Now-Button {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .product-Footer .priceContainer {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .image {
+    height: 200px;
+    width: 200px;
+  }
 }
 
-.hero-header {
+header .logo-Div a {
+  color: white;
+}
+
+header .logo-Div .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
   display: block;
   width: 100%;
-  background-size: auto;
-  background-position: left;
-  background-repeat: no-repeat;
+  height: 100%;
+  background-color: #002c7e;
+  width: 100%;
+}
+
+header .logo-Div .logo .fa-brands {
+  color: white;
 }
 
 .hero-picture {
@@ -432,93 +499,37 @@ html {
   height: 100%;
 }
 
-.hero-picture .hero-Text {
-  width: 100%;
+.hero-picture .hero-header {
+  display: block;
   height: 100%;
+  width: 100%;
+  background-size: auto;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.hero-Text {
+  width: 100%;
   padding: 40px;
-  border-radius: 20px;
 }
 
-.hero-picture .hero-Text a {
-  color: white;
+.hero-Text h2 {
+  font-size: 35px;
 }
 
-.hero-picture .hero-Text h2 {
-  margin-top: 20px;
-  font-size: 3.5rem;
-}
-
-.hero-picture .hero-Text p {
+.hero-Text p {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.hero-picture .hero-Text .header-link {
-  background-color: purple;
+.hero-Text .header-link {
+  color: white;
   height: 100%;
   width: 100%;
 }
 
-.hero-picture .hero-Text .header-link h1 {
-  font-family: 'Nunito', sans-serif;
-  width: 100%;
-  display: block;
-  color: white;
-  font-weight: lighter;
-  letter-spacing: 5px;
-}
-
-.hero-picture .click-Here {
-  margin-top: 80px;
-}
-
-.logo-Div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  background-color: #002c7e;
-  width: 100%;
-}
-
-.logo-Div a {
-  color: white;
-}
-
-.logo-Div .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 20px;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.logo-Div .fa-brands {
-  color: white;
-}
-
-.content {
-  background-color: red;
+.hero-Text .header-link .click-Here {
+  margin-top: 20px;
 }
 
 .navigation-wrapper {

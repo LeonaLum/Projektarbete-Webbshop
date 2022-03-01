@@ -74,6 +74,7 @@ switch (currentCategory) {
   case 'phones':
     getProductsPhones();
     iconPhone.classList.add("selected");
+    console.log(iconPhone)
     break;
   case 'computers':
     getProductsComputers();

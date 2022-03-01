@@ -435,6 +435,10 @@ html {
   }
 }
 
+.selected {
+  border-bottom: grey solid 5px;
+}
+
 header .logo-Div a {
   color: white;
 }
@@ -560,6 +564,8 @@ header .logo-Div .logo .fa-brands {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  padding: 10px;
+  background-color: red;
 }
 
 .navigation-wrapper .navMenu .navigation-shoppingcart {
@@ -588,36 +594,66 @@ header .logo-Div .logo .fa-brands {
   font-size: 2.5rem;
   color: #686868;
   padding: 20px;
+  padding-bottom: 10px;
+}
+
+.navigation-wrapper .navMenu .fa-braille:hover {
+  border-bottom: grey solid 3px;
 }
 
 .navigation-wrapper .navMenu .fa-mobile-screen-button {
   font-size: 2.5rem;
   color: #0045ad;
   padding: 20px;
+  padding-bottom: 10px;
+}
+
+.navigation-wrapper .navMenu .fa-mobile-screen-button:hover {
+  border-bottom: grey solid 3px;
 }
 
 .navigation-wrapper .navMenu .fa-laptop {
   font-size: 2.5rem;
   color: #0b6dff;
   padding: 20px;
+  padding-bottom: 10px;
+}
+
+.navigation-wrapper .navMenu .fa-laptop:hover {
+  border-bottom: grey solid 3px;
 }
 
 .navigation-wrapper .navMenu .fa-xbox {
   font-size: 2.5rem;
   color: #0198d4;
   padding: 20px;
+  padding-bottom: 10px;
+}
+
+.navigation-wrapper .navMenu .fa-xbox:hover {
+  border-bottom: grey solid 3px;
 }
 
 .navigation-wrapper .navMenu .fa-gamepad {
   font-size: 2.5rem;
   color: #00a79f;
   padding: 20px;
+  padding-bottom: 10px;
+}
+
+.navigation-wrapper .navMenu .fa-gamepad:hover {
+  border-bottom: grey solid 3px;
 }
 
 .navigation-wrapper .navMenu .fa-cart-shopping {
   font-size: 2.5rem;
   color: #686868;
   padding: 20px;
+  padding-bottom: 10px;
+}
+
+.navigation-wrapper .navMenu .fa-cart-shopping:hover {
+  border-bottom: grey solid 3px;
 }
 
 .navigation-wrapper .navMenu .logo,
@@ -1427,7 +1463,7 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-size: 30px;
-  background-color: #2a74ff;
+  background-color: #1b63ff;
   color: white;
   height: 150px;
   width: 100%;
@@ -1441,97 +1477,6 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   padding: 20px;
   min-height: 500px;
   background-color: white;
-}
-
-.shopping-Cart-Footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  font-size: 30px;
-  height: 150px;
-  width: 100%;
-  text-align: center;
-  background-color: white;
-}
-
-.shopping-Cart-Footer .footer-Content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 100%;
-  width: 100%;
-  background-color: white;
-}
-
-.shopping-Cart-Footer .total-Container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 100%;
-  font-weight: bold;
-}
-
-.shopping-Cart-Footer .total-Container .total {
-  margin-left: 20px;
-}
-
-.shopping-Cart-Footer a {
-  height: 100px;
-  width: 200px;
-  z-index: 1;
-  display: block;
-}
-
-.shopping-Cart-Footer a .order-Button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 30px;
-  display: block;
-  color: white;
-  background-color: #2a74ff;
-  height: 100%;
-  width: 100%;
-  cursor: pointer;
 }
 
 .product-Card-ShoppingCart {
@@ -1662,8 +1607,9 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
 }
 
 .product-Card-ShoppingCart .button-Div .plus-Minus-Buttons:hover {
-  background-color: white;
-  color: black;
+  background-color: #7a7a7a;
+  color: white;
+  font-weight: bolder;
 }
 
 .trash-Can {
@@ -1684,7 +1630,7 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
           justify-content: center;
   border-radius: 10px;
   padding: 10px;
-  background-color: #003aa7;
+  background-color: #1b63ff;
 }
 
 .trash-Can .fa-trash-can {
@@ -1699,11 +1645,111 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
 }
 
 .trash-Can:hover {
-  color: #2a74ff;
+  text-decoration: underline;
+  font-weight: bolder;
+  color: white;
   cursor: pointer;
 }
 
-@media only screen and (max-width: 500px) {
+.shopping-Cart-Footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 30px;
+  height: 150px;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+}
+
+.shopping-Cart-Footer .footer-Content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+.shopping-Cart-Footer .total-Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  font-weight: bold;
+}
+
+.shopping-Cart-Footer .total-Container .total {
+  margin-left: 20px;
+}
+
+.shopping-Cart-Footer a {
+  height: 100px;
+  width: 200px;
+  z-index: 1;
+  display: block;
+}
+
+.shopping-Cart-Footer a .order-Button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  font-size: 30px;
+  display: block;
+  color: white;
+  background-color: #2a74ff;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.shopping-Cart-Footer a .order-Button:hover {
+  background-color: #7a7a7a;
+  color: white;
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 650px) {
   .shopping-Cart-Footer .footer-Content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1720,8 +1766,9 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
     padding-bottom: 10px;
   }
   .shopping-Cart-Footer .order-Button {
-    height: 50%;
+    padding: 20px;
     width: 50%;
+    height: 100%;
   }
   .shopping-Cart-Main {
     -ms-flex-wrap: nowrap;
@@ -1758,9 +1805,19 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   .product-Card-ShoppingCart .amount-Container {
     margin-left: 0px;
   }
+  .product-Card-ShoppingCart .product-ShoppingCart-Price {
+    margin-top: 20px;
+    padding: 20px;
+    width: 50%;
+  }
   .product-Card-ShoppingCart .button-Div {
     margin-top: 5px;
     margin-left: 0px;
+    width: 50%;
+  }
+  .product-Card-ShoppingCart .button-Div .plus-Minus-Buttons {
+    height: 40px;
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

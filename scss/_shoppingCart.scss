@@ -2,6 +2,7 @@
 @media only screen and (max-width: 550px){
   #shoppingCartHead{
     flex-direction: column;
+    padding-bottom: 7px;
   }
   #productListHead{
     flex-direction: column;
@@ -176,4 +177,47 @@
   }
  
  
+}
+
+@media only screen and (max-width: 500px){
+
+  .shopping-Cart-Footer{
+    .footer-Content{
+      @include flexBox(column, center, space-around);
+      padding-bottom: 10px;
+    }
+    .order-Button {
+      height: 50%;
+      width: 50%;
+    }
+  }
+  .shopping-Cart-Main{
+    flex-wrap: nowrap;
+    
+  }
+  .product-Card-ShoppingCart{
+    @include flexBox(column, center, space-around);
+    height: 400px;
+    .product-ShoppingCart-Price{
+      height: 120px;
+      width: 100px;
+    }
+    .product-ShoppingCart-Image{
+      height: 100%;
+      width: 200px;
+    }
+    h3{
+      
+      height: 30%;
+      width: 150px;
+      font-size: 20px;
+    }
+    .amount-Container{
+      margin-left: 0px;
+    }
+    .button-Div{
+      margin-top: 5px;
+      margin-left: 0px;
+    }
+  }
 }

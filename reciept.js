@@ -15,7 +15,7 @@ if (location.search == '?location=reciept') {
   recieptWrapper.classList.add('reciept-wrapper');
   recieptDiv.classList.add('reciept-div');
   recieptSecondDiv.classList.add('reciept-second-div');
-  recieptMainHeader.classList.add('shopping-Cart-Head');
+  recieptMainHeader.style.fontSize = '25px';
   recieptMainHeader.style.backgroundColor = 'white';
   recieptMainHeader.style.color = 'rgb(27, 99, 255)';
   recieptMainHeader.style.display = 'flex';

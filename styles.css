@@ -1264,12 +1264,28 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   padding-bottom: 15px;
 }
 
+@media only screen and (max-width: 500px) {
+  .reciept-wrapper .reciept-div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    border-top: 2px solid #c7c7c7;
+    border-right: hidden;
+    padding: 30px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  /*Big smartphones [426px -> 600px]*/
+}
+
 @media only screen and (max-width: 550px) {
   #shoppingCartHead {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-bottom: 7px;
   }
   #productListHead {
     -webkit-box-orient: vertical;
@@ -1609,5 +1625,66 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
 .trash-Can:hover {
   color: #2a74ff;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+  .shopping-Cart-Footer .footer-Content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-bottom: 10px;
+  }
+  .shopping-Cart-Footer .order-Button {
+    height: 50%;
+    width: 50%;
+  }
+  .shopping-Cart-Main {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .product-Card-ShoppingCart {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 400px;
+  }
+  .product-Card-ShoppingCart .product-ShoppingCart-Price {
+    height: 120px;
+    width: 100px;
+  }
+  .product-Card-ShoppingCart .product-ShoppingCart-Image {
+    height: 100%;
+    width: 200px;
+  }
+  .product-Card-ShoppingCart h3 {
+    height: 30%;
+    width: 150px;
+    font-size: 20px;
+  }
+  .product-Card-ShoppingCart .amount-Container {
+    margin-left: 0px;
+  }
+  .product-Card-ShoppingCart .button-Div {
+    margin-top: 5px;
+    margin-left: 0px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

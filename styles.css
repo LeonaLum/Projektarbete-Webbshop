@@ -619,18 +619,30 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 100px;
   background-color: #002c7e;
   position: relative;
+}
+
+@media only screen and (max-width: 520px) {
+  .footer {
+    padding: 70px 0px;
+  }
 }
 
 .footer .footer-title {
   color: white;
   font-size: 40px;
   margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 520px) {
+  .footer .footer-title {
+    text-align: center;
+    width: 100%;
+  }
 }
 
 .footer .social-Media-Icons {
@@ -727,6 +739,35 @@ html {
   bottom: 1px;
   font-size: 18px;
   color: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .footer .footer-title {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  .footer .footer-copyright {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer .footer-title {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+  .footer .facebook-icon,
+  .footer .twitter-icon,
+  .footer .instagram-icon {
+    font-size: 2rem;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  .footer .footer-copyright {
+    font-size: 14px;
+  }
 }
 
 .detailContainer {
@@ -954,6 +995,23 @@ main.form-main .form-container .detail-section .order-item-form .mini-container 
   border-bottom: #d6d6d6 solid 2px;
 }
 
+@media only screen and (max-width: 800px) {
+  main.form-main .form-container .detail-section .order-item-form .mini-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 main.form-main .form-container .detail-section .order-item-form .mini-container .mini--product-name {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1067,7 +1125,6 @@ main.form-main .form-container .form-section h3 {
 
 main.form-main .form-container .form-header {
   background-color: white;
-  border-bottom: px solid black;
   padding: 20px 40px;
 }
 
@@ -1140,7 +1197,6 @@ main.form-main .form-container form button {
 
 main.form-main .form-container form button:hover {
   cursor: pointer;
-  background-color: black;
 }
 
 main.form-main .form-container form button:active {
@@ -1162,6 +1218,26 @@ main.form-main .form-container #formPostalcode::-webkit-outer-spin-button,
 main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  main.form-main .form-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
 }
 
 .hide {

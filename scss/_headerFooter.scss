@@ -86,10 +86,9 @@
     padding: 40px;
     background-color: rgb(255, 255, 255);
 
-    .navIconsContainer{
+    .navIconsContainer {
       @include flexBox(row, center, space-evenly);
-      flex:1;
-  
+      flex: 1;
     }
     .navigation-shoppingcart {
       position: relative;
@@ -155,15 +154,21 @@
   }
 }
 .footer {
-  @include flexBox(column, center, space-evenly);
+  @include flexBox(column, center, space-around);
   padding: 100px;
   background-color: $color-secondary;
   position: relative;
-
+  @media only screen and (max-width: 520px) {
+    padding: 70px 0px;
+  }
   .footer-title {
     color: white;
     font-size: 40px;
     margin-bottom: 40px;
+    @media only screen and (max-width: 520px) {
+      text-align: center;
+      width: 100%;
+    }
   }
   .social-Media-Icons {
     @include flexBox(row, center, space-evenly);
@@ -214,5 +219,36 @@
     bottom: 1px;
     font-size: 18px;
     color: white;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .footer-title {
+      color: white;
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+    .footer-copyright {
+      font-size: 14px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .footer-title {
+      color: white;
+      font-size: 25px;
+      margin-bottom: 40px;
+    }
+
+    .facebook-icon,
+    .twitter-icon,
+    .instagram-icon {
+      font-size: 2rem;
+      height: 3.5rem;
+      width: 3.5rem;
+    }
+
+    .footer-copyright {
+      font-size: 14px;
+    }
   }
 }

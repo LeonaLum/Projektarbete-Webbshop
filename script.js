@@ -8,6 +8,8 @@ let iconComputer = document.getElementById("iconComputer");
 let iconGame = document.getElementById("iconGame");
 let iconConsole = document.getElementById("iconConsole");
 
+console.log(iconAll)
+
 
 //Nyaste scriptet
 let productPrices = [];
@@ -74,6 +76,7 @@ switch (currentCategory) {
   case 'phones':
     getProductsPhones();
     iconPhone.classList.add("selected");
+    console.log(iconPhone)
     break;
   case 'computers':
     getProductsComputers();

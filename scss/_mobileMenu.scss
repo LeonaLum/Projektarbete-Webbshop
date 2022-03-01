@@ -14,6 +14,33 @@
   height: 100vh;
   width: 100vw;
   background-color: white;
+
+  a{
+    @include flexBox(column, center, space-around);
+    display: block;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    .fa-braille{
+      margin-top:25px;
+      color: rgb(104, 104, 104);
+      display: block;
+    }
+    .fa-mobile-screen-button{
+      color: rgb(0, 69, 173);
+    }
+    .fa-laptop{
+      color:white;
+      display: block;
+      color: rgb(11, 109, 255);
+    }
+    .fa-xbox{
+      color: rgb(1, 152, 212);
+    }
+    .fa-gamepad{
+      color: rgb(0, 167, 159);
+    }
+  }
 }
 
 .hamburger{

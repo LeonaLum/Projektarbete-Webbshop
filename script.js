@@ -340,7 +340,7 @@ function showCardDetails(arr) {
        </div>
 
        <button id="buttonPurchase" class="button-Purchase">
-       <strong>Lägg till i kundvagnen</strong>
+       <strong><p>Lägg till i kundvagnen</p></strong>
        </button>
        </div>
        </div>

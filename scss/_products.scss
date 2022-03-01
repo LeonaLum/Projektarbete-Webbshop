@@ -1,4 +1,7 @@
 
+
+
+
 .productsList{
   @include flexBox(column, center, space-around);
   width: 100%;
@@ -31,15 +34,16 @@
   border: solid rgb(216, 216, 216) 2px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
-
+  height: 600px;
   color: rgb(0, 0, 0);
   width:500px;
-  height: 500px;
   h2{
     font-size: 30px;
     text-align: center;
     padding:20px;
     color: black;
+
+
   }
   .clickableProductCard{
     @include flexBox(column, center, flex-end);
@@ -60,23 +64,30 @@
  
   }
   .product-Footer{
-    @include flexBox(row, center, flex-start);
+    @include flexBox(row, center, center);
     padding: 20px;
     width: 100%;
-    border-radius: 20px;
-  }
-
-  
+ 
   .priceContainer{
     color: white;
     background-color:$color-primary;
     padding: 30px;
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
-    height: 100%;
-    flex:1;
+    font-size: 20px;
   }
+  .buy-Now-Button{
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color:white;
+    display: block;
+    padding:30px;
+    background-color: $color-secondary;
+    font-size: 20px;
+  }
+ }
 }
 
 .search-Div{
@@ -85,6 +96,7 @@
   width: 400px;
   flex:1;
   .search-field{
+    display: block;
     font-size: 20px;
     padding:20px;
     height: 90%;
@@ -152,16 +164,39 @@
   }
 }
 
-.buy-Now-Button{
-  cursor: pointer;
-  text-align: center;
-  height: 100%;
-  font-weight: bold;
-  font-size: 30px;
-  color:white;
-  display: block;
-  padding:20px;
-  background-color: $color-secondary;
-  font-size: 20px;
-  flex:1;
+
+
+
+@media only screen and (max-width: 460px){
+  .products-List-Head{
+    @include flexBox(row, center, center);
+    padding: 10px;
+    font-size: 20px;
+}
+
+.productCard{
+  h2{
+    font-size: 20px;
+  }
+}
+
+.product-Footer{
+  flex-wrap: wrap;
+
+  .priceContainer{
+    flex:1;
+  }
+  .buy-Now-Button{
+    width: 100%;
+  }
+  
+}
+
+
+.image{
+  height: 200px;
+  width: 200px;
+}
+
+
 }

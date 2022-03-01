@@ -54,6 +54,48 @@ html {
   background-color: white;
 }
 
+.mobileNav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: red;
+  display: block;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+.mobileNav a .fa-braille {
+  color: white;
+  display: block;
+}
+
+.mobileNav a .fa-mobile-screen-button {
+  color: green;
+}
+
+.mobileNav a .fa-laptop {
+  color: white;
+  display: block;
+}
+
+.mobileNav a .fa-xbox {
+  color: purple;
+}
+
+.mobileNav a .fa-gamepad {
+  color: yellow;
+}
+
 .hamburger {
   cursor: pointer;
 }

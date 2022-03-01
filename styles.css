@@ -252,8 +252,6 @@ html {
           justify-content: center;
   padding: 20px;
   width: 100%;
-  height: 300px;
-  border-radius: 20px;
 }
 
 .productCard .product-Footer .priceContainer {
@@ -262,7 +260,7 @@ html {
   padding: 30px;
   text-align: center;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .productCard .product-Footer .buy-Now-Button {
@@ -272,7 +270,7 @@ html {
   font-size: 30px;
   color: white;
   display: block;
-  padding: 20px;
+  padding: 30px;
   background-color: #002c7e;
   font-size: 20px;
 }
@@ -416,32 +414,20 @@ html {
     padding: 10px;
     font-size: 20px;
   }
+  .productCard h2 {
+    font-size: 20px;
+  }
   .product-Footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-  .product-Footer .buy-Now-Button {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
   }
   .product-Footer .priceContainer {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+  }
+  .product-Footer .buy-Now-Button {
+    width: 100%;
   }
   .image {
     height: 200px;
@@ -587,8 +573,8 @@ header .logo-Div .logo .fa-brands {
       -ms-user-select: none;
           user-select: none;
   position: absolute;
-  right: -20px;
-  top: -10px;
+  right: 10px;
+  top: 0px;
   font-weight: bolder;
   font-size: 25px;
   color: white;

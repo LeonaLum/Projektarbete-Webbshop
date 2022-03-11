@@ -46,6 +46,7 @@
     color: white;
     background-color: rgb(42, 116, 255);
     font-weight: bold;
+    border-radius: 10px 0px 0px 10px;
     p{
       display: block;
     }
@@ -58,7 +59,11 @@
     font-size: 20px;
     height:100%;
     width: 150px;
+    border-radius: 0px 10px 10px 0px;
      cursor: pointer;
+     &:hover {
+      background-color: $color-grey;
+    }
   }
  }
 }

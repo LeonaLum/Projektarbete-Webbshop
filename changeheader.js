@@ -41,7 +41,7 @@ if (location.search == '?category=all') {
   heroText.innerText =
     'Köp 2 spel hos oss och få 3 månaders battlepass på köpet';
     console.log(headerLink)
-  headerLink.href = "/products.html?category=game";
+  headerLink.setAttribute("href", "/products.html?category=game");
 
 }
 

@@ -1,6 +1,6 @@
 
    .selected{
-    border-bottom: grey solid 5px;
+    border-bottom: rgba(128, 128, 128, 0) solid 5px;
   }
 
 header {
@@ -82,6 +82,7 @@ header {
     .navigation-shoppingcart {
       position: relative;
       margin-left: 10%;
+    
       .items-in-shoppingcart {
         user-select: none;
         position: absolute;
@@ -94,7 +95,12 @@ header {
         border-radius: 100%;
         padding: 3px 12px 3px 12px;
         font-family: Arial, sans-serif;
+        @media only screen and (max-width: 260px) {
+          font-size: 15px;
+          padding:5px 10px 5px 10px;
+        }
       }
+      
     }
 
 
@@ -104,7 +110,7 @@ header {
       padding: 20px;
       padding-bottom: 10px;
       &:hover{
-        border-bottom: grey solid 3px;
+        border-bottom: rgba(128, 128, 128, 0) solid 3px;
       }
     }
     .fa-mobile-screen-button {
@@ -113,7 +119,7 @@ header {
       padding: 20px;
       padding-bottom: 10px;
       &:hover{
-        border-bottom: grey solid 3px;
+        border-bottom: rgba(128, 128, 128, 0) solid 3px;
       }
     }
     .fa-laptop {
@@ -122,7 +128,7 @@ header {
       padding: 20px;
       padding-bottom: 10px;
       &:hover{
-        border-bottom: grey solid 3px;
+        border-bottom: rgba(128, 128, 128, 0) solid 3px;
       }
     }
     .fa-xbox {
@@ -131,7 +137,7 @@ header {
       padding: 20px;
       padding-bottom: 10px;
       &:hover{
-        border-bottom: grey solid 3px;
+        border-bottom: rgba(128, 128, 128, 0) solid 3px;
       }
     }
     .fa-gamepad {
@@ -140,13 +146,16 @@ header {
       padding: 20px;
       padding-bottom: 10px;
       &:hover{
-        border-bottom: grey solid 3px;
+        border-bottom: rgba(128, 128, 128, 0) solid 3px;
       }
     }
     .fa-cart-shopping {
       font-size: 2.5rem;
       color: rgb(104, 104, 104);
       padding: 20px;
+      @media only screen and (max-width: 260px) {
+        font-size: 30px;
+      }
       &:hover{
         color:rgb(75, 75, 75);
       }
@@ -187,30 +196,57 @@ header {
   }
   .social-Media-Icons {
     @include flexBox(row, center, space-evenly);
+    border-top: $color-primary solid 2px;
+    border-bottom: $color-primary solid 2px;
+    padding:20px 0px 20px 0px;
     width: 100%;
+    
   }
 
   .facebook-icon {
     @include flexBox(row, center, center);
-    background-color: rgb(61, 106, 255);
+    /*background-color: rgb(61, 106, 255);*/
+    background-color: $color-primary;
     border-radius: 50%;
     font-size: 2.5rem;
     height: 4.5rem;
     width: 4.5rem;
     color: rgb(255, 255, 255);
+    @media only screen and (max-width: 520px) {
+      height: 60px;
+      width: 60px;
+      font-size: 25px;
+    }
+    @media only screen and (max-width: 260px) {
+      height: 35px;
+      width: 35px;
+      font-size: 20px;
+    }
+  
   }
   .twitter-icon {
     @include flexBox(row, center, center);
-    background-color: rgb(62, 130, 185);
+    /*background-color: rgb(62, 130, 185);*/
+    background-color: $color-primary;
     border-radius: 50%;
     font-size: 2.5rem;
     height: 4.5rem;
     width: 4.5rem;
     color: rgb(255, 255, 255);
+    @media only screen and (max-width: 520px) {
+      height: 60px;
+      width: 60px;
+      font-size: 25px;
+    }
+    @media only screen and (max-width: 260px) {
+      height: 35px;
+      width: 35px;
+      font-size: 20px;
+    }
   }
   .instagram-icon {
-    @include flexBox(row, center, center);
-    background: radial-gradient(
+    @include flexBox(row, center, space-around);
+    /*background: radial-gradient(
       circle at 30% 107%,
       #fdf497 0%,
       #fdf497 5%,
@@ -218,15 +254,25 @@ header {
       #d6249f 60%,
       #285aeb 90%
     );
-    border-radius: 50%;
+    */
+    background-color: $color-primary;
+    border-radius: 100%;
     font-size: 2.5rem;
     height: 4.5rem;
     width: 4.5rem;
     color: rgb(255, 255, 255);
+    @media only screen and (max-width: 520px) {
+      height: 60px;
+      width: 60px;
+      font-size: 25px;
+    }
+    @media only screen and (max-width: 260px) {
+      height: 35px;
+      width: 35px;
+      font-size: 20px;
+    }
   }
-  a {
-    display: block;
-  }
+  
   .footer-copyright {
     font-style: italic;
     position: absolute;
@@ -254,13 +300,7 @@ header {
       margin-bottom: 40px;
     }
 
-    .facebook-icon,
-    .twitter-icon,
-    .instagram-icon {
-      font-size: 2rem;
-      height: 3.5rem;
-      width: 3.5rem;
-    }
+ 
 
     .footer-copyright {
       font-size: 14px;

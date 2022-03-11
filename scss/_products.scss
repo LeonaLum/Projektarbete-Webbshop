@@ -12,9 +12,61 @@
   font-size: 30px;
   width: 100%;
   text-align: center;
+  @media only screen and (max-width: 460px) {
+    padding: 0px;
+  }
   h2 {
     display: block;
     flex: 1;
+  }
+  .search-Div {
+    @include flexBox(row, center, space-around);
+    height: 50px;
+    width: 400px;
+    flex: 1;
+    @media only screen and (max-width: 550px) {
+      flex-direction: column;
+      width: 100%;
+    }
+    .search-field {
+      display: block;
+      font-size: 20px;
+      padding: 20px;
+      height: 90%;
+      width: 60%;
+      border-radius: 10px;
+      border: none;
+      @media only screen and (max-width: 550px) {
+        height: 40px;
+      }
+      @media only screen and (max-width: 460px) {
+        height: 30px;
+        font-size: 15px;
+      }
+      @media only screen and (max-width: 260px) {
+        padding: 5px;
+        font-size: 10px;
+      }
+    }
+    button {
+      @include flexBox(row, center, space-around);
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 20px;
+      color: white;
+      height: 90%;
+      width: 100px;
+      background-color: $color-secondary;
+      @media only screen and (max-width: 460px) {
+        height: 30px;
+        font-size: 15px;
+      }
+      &:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+      }
+    }
   }
 }
 .products-List-Main {
@@ -22,17 +74,30 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 40px;
+  @media only screen and (max-width: 550px) {
+    padding: 0px;
+  }
 }
 
 .productCard {
   @include flexBox(column, center, flex-end);
   margin-bottom: 30px;
-  border: solid rgb(216, 216, 216) 2px;
+  border: solid rgb(206, 206, 206) 1px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   height: 600px;
   color: rgb(0, 0, 0);
   width: 500px;
+  @media only screen and (max-width: 260px) {
+    height: 400px;
+  }
+  @media only screen and (max-width: 550px) {
+    width: 100%;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-radius: 0px;
+  }
   h2 {
     font-size: 30px;
     text-align: center;
@@ -59,6 +124,11 @@
     @include flexBox(row, center, center);
     padding: 20px;
     width: 100%;
+    @media only screen and (max-width: 550px) {
+      padding: 0px;
+      flex-direction: column;
+     
+    }
 
     .priceContainer {
       color: white;
@@ -67,6 +137,14 @@
       text-align: center;
       font-weight: bold;
       font-size: 20px;
+      border-radius: 10px 0px 0px 10px;
+      @media only screen and (max-width: 550px) {
+        border-radius:0px 0px 0px 0px;
+        width: 100%;
+      }
+      @media only screen and (max-width: 260px) {
+        font-size: 15px;
+      }
     }
     .buy-Now-Button {
       cursor: pointer;
@@ -78,6 +156,14 @@
       padding: 30px;
       background-color: $color-secondary;
       font-size: 20px;
+      border-radius: 0px 10px 10px 0px;
+      @media only screen and (max-width: 260px) {
+        font-size: 15px;
+      }
+      @media only screen and (max-width: 550px) {
+        border-radius:0px 0px 0px 0px;
+        width: 100%;
+      }
 
       &:hover {
         background-color: $color-grey;
@@ -89,35 +175,7 @@
   }
 }
 
-.search-Div {
-  @include flexBox(row, center, space-around);
-  height: 50px;
-  width: 400px;
-  flex: 1;
-  .search-field {
-    display: block;
-    font-size: 20px;
-    padding: 20px;
-    height: 90%;
-    width: 60%;
-    border-radius: 10px;
-    border: none;
-  }
-  button {
-    border-radius: 10px;
-    font-weight: bold;
-    font-size: 20px;
-    color: white;
-    height: 90%;
-    width: 100px;
-    background-color: $color-secondary;
-    &:hover {
-      cursor: pointer;
-      background-color: white;
-      color: black;
-    }
-  }
-}
+
 
 .category-Heading {
   color: white;
@@ -169,13 +227,11 @@
     padding: 10px;
     font-size: 20px;
   }
-
   .productCard {
     h2 {
       font-size: 20px;
     }
   }
-
   .product-Footer {
     flex-wrap: wrap;
 
@@ -186,7 +242,6 @@
       width: 100%;
     }
   }
-
   .image {
     height: 200px;
     width: 200px;

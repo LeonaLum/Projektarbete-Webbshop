@@ -12,8 +12,12 @@
   font-size: 30px;
   width: 100%;
   text-align: center;
+  
   @media only screen and (max-width: 460px) {
     padding: 0px;
+  }
+  @media only screen and (max-width: 550px) {
+    font-size: 15px;
   }
   h2 {
     display: block;
@@ -183,6 +187,12 @@
   text-align: center;
   background-color: $color-primary;
   padding: 30px;
+  @media only screen and (max-width: 550px) {
+    font-size: 25px;
+  }
+  @media only screen and (max-width: 260px) {
+    font-size: 20px;
+  }
 }
 .categories-Container {
   @include flexBox(row, center, space-around);
@@ -213,9 +223,21 @@
       padding: 20px;
       .fa-solid {
         color: $color-primary;
+        @media only screen and (max-width: 550px) {
+          font-size: 50px;
+        }
+        @media only screen and (max-width: 260px) {
+          font-size: 40px;
+        }
       }
       .fa-brands {
         color: $color-primary;
+        @media only screen and (max-width: 550px) {
+          font-size: 50px;
+        }
+        @media only screen and (max-width: 260px) {
+          font-size: 40px;
+        }
       }
     }
   }

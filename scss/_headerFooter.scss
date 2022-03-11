@@ -4,8 +4,6 @@
   }
 
 header {
- 
-
   .logo-Div {
     a {
       color: white;
@@ -30,10 +28,13 @@ header {
   background-size: auto;
   background-position: right;
   background-repeat: no-repeat;
+  @media only screen and (max-width: 260px) {
+    height: 200px;
+  }
 }
 
 .hero-picture {
-  @include flexBox(column, center, space-around);
+  @include flexBox(column, center, center);
   text-align: center;
   color: white;
 
@@ -45,15 +46,33 @@ header {
 }
 
 .hero-Text {
- 
   width: 100%;
   padding: 40px;
+  background-color: #00236369;
+  @media only screen and (max-width: 460px) {
+    padding: 0px;
+  }
+  @media only screen and (max-width: 260px) {
+    padding: 0px;
+  }
   h2 {
     font-size: 35px;
+    font-weight: bold;
+    @media only screen and (max-width: 460px) {
+      font-size: 25px;
+    }
+    @media only screen and (max-width: 260px) {
+      font-size: 20px;
+    }
   }
   p {
+    @media only screen and (max-width: 460px) {
+      font-size: 20px;
+    }
     font-size: 1.5rem;
-    font-weight: bold;
+    @media only screen and (max-width: 260px) {
+      font-size: 15px;
+    }
   }
   .header-link {
     color: white;
@@ -163,14 +182,8 @@ header {
     }
     .logo,
     #logoTextFont,
-    a {
-      font-family: 'Nunito', sans-serif !important;
-      color: rgb(255, 255, 255);
-    }
-    a {
-      @include flexBox(row, center, space-around);
-      color: white;
-    }
+  
+  
     .selected {
       border-bottom: solid rgb(190, 190, 190) 4px;
     }
@@ -193,11 +206,16 @@ header {
       text-align: center;
       width: 100%;
     }
+    @media only screen and (max-width: 350px) {
+      font-size: 15px;
+      color: green;
+    }
+ 
   }
   .social-Media-Icons {
     @include flexBox(row, center, space-evenly);
-    border-top: $color-primary solid 2px;
-    border-bottom: $color-primary solid 2px;
+    border-top:  rgba(27, 99, 255, 0.205) solid 2px;
+    border-bottom: rgba(27, 99, 255, 0.205) solid 2px;
     padding:20px 0px 20px 0px;
     width: 100%;
     

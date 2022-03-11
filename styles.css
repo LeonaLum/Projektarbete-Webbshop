@@ -803,6 +803,13 @@ header .logo-Div .logo .fa-brands {
   }
 }
 
+@media only screen and (max-width: 350px) {
+  .navigation-wrapper .navMenu .navigation-shoppingcart .items-in-shoppingcart {
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+  }
+}
+
 .navigation-wrapper .navMenu .fa-braille {
   font-size: 2.5rem;
   color: #686868;
@@ -867,6 +874,12 @@ header .logo-Div .logo .fa-brands {
 @media only screen and (max-width: 260px) {
   .navigation-wrapper .navMenu .fa-cart-shopping {
     font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .navigation-wrapper .navMenu .fa-cart-shopping {
+    font-size: 35px;
   }
 }
 
@@ -1769,7 +1782,7 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
   width: 100%;
   padding: 20px;
   min-height: 500px;
-  background-color: red;
+  background-color: white;
 }
 
 @media only screen and (max-width: 350px) {
@@ -2035,7 +2048,6 @@ main.form-main .form-container #formPostalcode::-webkit-inner-spin-button {
 }
 
 .shopping-Cart-Footer .order-Button {
-  background-color: red;
   display: block;
 }
 

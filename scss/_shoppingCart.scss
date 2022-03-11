@@ -40,6 +40,12 @@
   height: 150px;
   width: 100%;
   text-align: center;
+  @media only screen and (max-width: 650px){
+    flex-direction: column;
+   }
+   @media only screen and (max-width: 350px){
+    font-size: 20px;
+  }
 }
 .shopping-Cart-Main {
   flex-wrap: wrap;
@@ -47,6 +53,11 @@
   padding: 20px;
   min-height: 500px;
   background-color: white;
+  @media only screen and (max-width: 350px){
+    padding: 0px;
+   }
+ 
+
 }
 
 .product-Card-ShoppingCart {
@@ -58,6 +69,9 @@
   height: 100px;
   margin-bottom: 20px;
   border-bottom: rgb(214, 214, 214) solid 2px;
+  @media only screen and (max-width: 350px){
+    padding: 0px;
+  }
 
   .product-ShoppingCart-Image {
     height: 100%;
@@ -74,15 +88,20 @@
     p {
       margin-right: 5px;
     }
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
+    padding: 10px;
     border-radius: 10px;
     @include flexBox(row, center, center);
     background-color: rgb(42, 116, 255);
     color: white;
-    height: 100%;
-    width: 200px;
+    height: 80%;
+    @media only screen and (max-width: 350px){
+      width: 100%;
+    }
+   
   }
+
   .amount-Container {
     @include flexBox(row, center, center);
     font-size: 17px;
@@ -150,11 +169,15 @@
   width: 100%;
   text-align: center;
   background-color: white;
+
   .footer-Content {
     @include flexBox(row, center, space-around);
     height: 100%;
     width: 100%;
     background-color: white;
+ 
+ 
+    
   }
   .total-Container {
     @include flexBox(row, center, space-around);
@@ -163,12 +186,21 @@
     .total {
       margin-left: 20px;
     }
+    @media only screen and (max-width: 350px){
+      font-size: 20px;
+    }
+  }
+
+  .order-Button{
+    display: block;
+    
   }
   a {
     height: 100px;
     width: 200px;
     z-index: 1;
     display: block;
+  
     .order-Button {
       @include flexBox(row, center, center);
       border-radius: 10px;
@@ -179,6 +211,18 @@
       height: 100%;
       width: 100%;
       cursor: pointer;
+
+      @media only screen and (max-width: 650px){
+       justify-content: flex-start;
+       align-items: flex-start;
+      }
+      @media only screen and (max-width: 460px) {
+        font-size: 25px;
+      }
+      @media only screen and (max-width: 350px){
+        font-size: 15px;
+      }
+     
       &:hover {
         background-color: $color-grey;
         color: white;
@@ -195,10 +239,7 @@
 @media only screen and (max-width: 650px){
 
   .shopping-Cart-Footer{
-
-  
     .footer-Content{
-
       @include flexBox(column, center, space-around);
       padding-bottom: 10px;
     }
@@ -238,7 +279,7 @@
     .button-Div {
       margin-top: 5px;
       margin-left: 0px;
-      width: 50%;
+      width: 20%;
       .plus-Minus-Buttons {
         height: 40px;
         font-size: 30px;

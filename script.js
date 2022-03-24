@@ -342,6 +342,8 @@ function showCardDetails(arr) {
 
        <button id="buttonPurchase" class="button-Purchase">
        <strong><p>Lägg till i kundvagnen</p></strong>
+       <i class="fa-solid fa-cart-shopping fa-1x">
+       </i>
        </button>
        </div>
        </div>

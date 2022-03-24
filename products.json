@@ -5,7 +5,7 @@
       "name": "Macbook Pro",
       "type": "computer",
       "price": "22999",
-      "description": "Kompromisslös prestanda för de mest krävande användarna, det är MacBook Pro 14 M1 Pro 2021. Dess hållbara chassi tillverkad av aluminium omsluter ett fantastiskt Apple M1 Pro-chip för att leverera blixtrande snabb prestanda.",
+      "description": "Kompromisslös prestanda för de mest krävande användarna, det är MacBook Pro 14 M1 Pro 2021. Dess hållbara chassi tillverkad av aluminium omsluter ett fantastiskt Apple M1 Pro-chip för att leverera blixtrande snabb prestanda.\r Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar elementum leo, nec varius nunc dapibus ut. Quisque eleifend id purus sed auctor. Nunc placerat auctor facilisis. In nisl sapien, efficitur vitae nunc iaculis, lobortis accumsan neque. Proin et odio suscipit, malesuada mi sit amet, consectetur est. Curabitur porta molestie justo sed congue. Ut in lorem posuere, congue quam ultricies, ornare eros. Morbi non justo non neque egestas convallis. Cras dapibus sed elit at auctor. In hac habitasse platea dictumst. Maecenas vitae quam sed ligula volutpat mollis sed ac felis.",
       "image": "url(../img/products/macbook_pro.png)",
       "amount": "1"
     },
@@ -14,7 +14,7 @@
       "name": "Lenovo Ideapad",
       "type": "computer",
       "price": "10995",
-      "description": "IdeaPad Gen 2 är konstruerad för avancerade användare som ofta är i farten, utrustad med AMD Ryzen™ PRO-processorer med upp till 8 kärnor. Inbyggt AMD Radeon™-grafikkort i proffsklass med 4 GB vRAM ger en extra kick vid renderingar och andra processorintensiva uppgifter.",
+      "description": "IdeaPad Gen 2 är konstruerad för avancerade användare som ofta är i farten, utrustad med AMD Ryzen™ PRO-processorer med upp till 8 kärnor. Inbyggt AMD Radeon™-grafikkort i proffsklass med 4 GB vRAM ger en extra kick vid renderingar och andra processorintensiva uppgifter.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar elementum leo, nec varius nunc dapibus ut. Quisque eleifend id purus sed auctor. Nunc placerat auctor facilisis. In nisl sapien, efficitur vitae nunc iaculis, lobortis accumsan neque. Proin et odio suscipit, malesuada mi sit amet, consectetur est. Curabitur porta molestie justo sed congue. Ut in lorem posuere, congue quam ultricies, ornare eros. Morbi non justo non neque egestas convallis. Cras dapibus sed elit at auctor. In hac habitasse platea dictumst. Maecenas vitae quam sed ligula volutpat mollis sed ac felis.",
       "image": "url(../img/products/lenovo-ideapad.jpg)",
       "amount": "1"
     },
@@ -23,7 +23,7 @@
       "name": "Macbook Air",
       "type": "computer",
       "price": "14999",
-      "description": "MacBook Air 13 M1 2020 kombinerar minimalism och kraftfull prestanda, levererad av det åttakärniga Apple M1-chipet. Den har en skarp 13-tums Retina-skärm med True Tone-teknik. När du köper en MacBook får du Apple TV+ gratis i 3 månader.",
+      "description": "MacBook Air 13 M1 2020 kombinerar minimalism och kraftfull prestanda, levererad av det åttakärniga Apple M1-chipet. Den har en skarp 13-tums Retina-skärm med True Tone-teknik. När du köper en MacBook får du Apple TV+ gratis i 3 månader. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar elementum leo, nec varius nunc dapibus ut. Quisque eleifend id purus sed auctor. Nunc placerat auctor facilisis. In nisl sapien, efficitur vitae nunc iaculis, lobortis accumsan neque. Proin et odio suscipit, malesuada mi sit amet, consectetur est. Curabitur porta molestie justo sed congue. Ut in lorem posuere, congue quam ultricies, ornare eros. Morbi non justo non neque egestas convallis. Cras dapibus sed elit at auctor. In hac habitasse platea dictumst. Maecenas vitae quam sed ligula volutpat mollis sed ac felis.",
       "image": "url(../img/products/macbookair.png)",
       "amount": "1"
     },
@@ -33,7 +33,7 @@
       "name": "iMac",
       "type": "computer",
       "price": "39899",
-      "description": "iMac 27 ”5K Retina MXWV2 har branschledande design och prestanda med sin fantastiska Retina 5K-skärm, kraftfulla 10:e generationens Intel Core i7-processor. När du köper en iMac får du Apple TV+ gratis i 3 månader.",
+      "description": "iMac 27 ”5K Retina MXWV2 har branschledande design och prestanda med sin fantastiska Retina 5K-skärm, kraftfulla 10:e generationens Intel Core i7-processor. När du köper en iMac får du Apple TV+ gratis i 3 månader. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar elementum leo, nec varius nunc dapibus ut. Quisque eleifend id purus sed auctor. Nunc placerat auctor facilisis. In nisl sapien, efficitur vitae nunc iaculis, lobortis accumsan neque. Proin et odio suscipit, malesuada mi sit amet, consectetur est. Curabitur porta molestie justo sed congue. Ut in lorem posuere, congue quam ultricies, ornare eros. Morbi non justo non neque egestas convallis. Cras dapibus sed elit at auctor. In hac habitasse platea dictumst. Maecenas vitae quam sed ligula volutpat mollis sed ac felis.",
       "image": "url(../img/products/imac.png)",
       "amount": "1"
     },
@@ -42,7 +42,7 @@
       "name": "Huawei P40",
       "type": "phone",
       "price": "3899",
-      "description": "Huawei P40 smartphone är utrustad med en vacker glaskonstruktion, en 6,1-tums ramlös OLED-pekskärm och är kompatibel med moderna 5G-nätverk. Tack vare IP53 skyddsgrad kommer den att överleva stänk eller en promenad i regnet.",
+      "description": "Huawei P40 smartphone är utrustad med en vacker glaskonstruktion, en 6,1-tums ramlös OLED-pekskärm och är kompatibel med moderna 5G-nätverk. Tack vare IP53 skyddsgrad kommer den att överleva stänk eller en promenad i regnet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar elementum leo, nec varius nunc dapibus ut. Quisque eleifend id purus sed auctor. Nunc placerat auctor facilisis. In nisl sapien, efficitur vitae nunc iaculis, lobortis accumsan neque. Proin et odio suscipit, malesuada mi sit amet, consectetur est. Curabitur porta molestie justo sed congue. Ut in lorem posuere, congue quam ultricies, ornare eros. Morbi non justo non neque egestas convallis. Cras dapibus sed elit at auctor. In hac habitasse platea dictumst. Maecenas vitae quam sed ligula volutpat mollis sed ac felis.",
       "image": "url(../img/products/huawei_p40.png)",
       "amount": "1"
     },
@@ -51,7 +51,7 @@
       "name": "Nokia 3310",
       "type": "phone",
       "price": "1337",
-      "description": "Nokia 3310 är tillbaka! Den efterlängtade och halvt bortglömda pansar-tegelstenen har en vikt på endast 133 g. Nokia 3310 kan användas för både samtal och SMS, men den kan även fungera som en ersättare till din borttappade hammare. Nokia 3310 är den enda telefonen som överlever ett kärnkraftskrig.",
+      "description": "Nokia 3310 är tillbaka! Den efterlängtade och halvt bortglömda pansar-tegelstenen har en vikt på endast 133 g. Nokia 3310 kan användas för både samtal och SMS, men den kan även fungera som en ersättare till din borttappade hammare. Nokia 3310 är den enda telefonen som överlever ett kärnkraftskrig. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar elementum leo, nec varius nunc dapibus ut. Quisque eleifend id purus sed auctor. Nunc placerat auctor facilisis. In nisl sapien, efficitur vitae nunc iaculis, lobortis accumsan neque. Proin et odio suscipit, malesuada mi sit amet, consectetur est. Curabitur porta molestie justo sed congue. Ut in lorem posuere, congue quam ultricies, ornare eros. Morbi non justo non neque egestas convallis. Cras dapibus sed elit at auctor. In hac habitasse platea dictumst. Maecenas vitae quam sed ligula volutpat mollis sed ac felis.",
       "image": "url(../img/products/nokia.png)",
       "amount": "1"
     },
@@ -60,7 +60,7 @@
       "name": "iPhone 13 PRO",
       "type": "phone",
       "price": "12899",
-      "description": "IPhone 13 Pro smartphone har en fantastisk 6,1” OLED-pekskärm med 120 Hz uppdateringsfrekvens, en kraftfull A15 Bionic-processor med 5G-dataanslutning och branschledande IP68 vattentäthet.",
+      "description": "IPhone 13 Pro smartphone har en fantastisk 6,1” OLED-pekskärm med 120 Hz uppdateringsfrekvens, en kraftfull A15 Bionic-processor med 5G-dataanslutning och branschledande IP68 vattentäthet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar elementum leo, nec varius nunc dapibus ut. Quisque eleifend id purus sed auctor. Nunc placerat auctor facilisis. In nisl sapien, efficitur vitae nunc iaculis, lobortis accumsan neque. Proin et odio suscipit, malesuada mi sit amet, consectetur est. Curabitur porta molestie justo sed congue. Ut in lorem posuere, congue quam ultricies, ornare eros. Morbi non justo non neque egestas convallis. Cras dapibus sed elit at auctor. In hac habitasse platea dictumst. Maecenas vitae quam sed ligula volutpat mollis sed ac felis.",
       "image": "url(../img/products/iphone13_pro.png)",
       "amount": "1"
     },
@@ -69,7 +69,7 @@
       "name": "Nintendo Switch",
       "type": "console",
       "price": "3899",
-      "description": "Innovativa Nintendo Switch gamingkonsol kan spelas överallt och på en rad olika sätt. De två avtagbara Joy-Con-kontrollerna gör att Switch både kan användas som en handhållen enhet och som en handkontroll.",
+      "description": "Innovativa Nintendo Switch gamingkonsol kan spelas överallt och på en rad olika sätt. De två avtagbara Joy-Con-kontrollerna gör att Switch både kan användas som en handhållen enhet och som en handkontroll. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar elementum leo, nec varius nunc dapibus ut. Quisque eleifend id purus sed auctor. Nunc placerat auctor facilisis. In nisl sapien, efficitur vitae nunc iaculis, lobortis accumsan neque. Proin et odio suscipit, malesuada mi sit amet, consectetur est. Curabitur porta molestie justo sed congue. Ut in lorem posuere, congue quam ultricies, ornare eros. Morbi non justo non neque egestas convallis. Cras dapibus sed elit at auctor. In hac habitasse platea dictumst. Maecenas vitae quam sed ligula volutpat mollis sed ac felis.",
       "image": "url(../img/products/nintendo_switch_2.png)",
       "amount": "1"
     },
@@ -78,7 +78,7 @@
       "name": "Playstation 5",
       "type": "console",
       "price": "5999",
-      "description": "PlayStation 5 (PS5) ger dig framtidens funktioner för en aldrig tidigare skådad spelupplevelse. Gör dig redo för supersmidig gameplay med upp till 120 fps i kompatibla spel, samt stöd för 120 Hz-utdata på 4K-skärmar. Känn varje explosion, varje skott och varje krasch tack vare den nydesignade DualSense trådlös handkontroll med haptiska återkopplingsvibrationer och adaptiva utlösare som tillsammans ger dig sensationell, realistisk feedback.",
+      "description": "PlayStation 5 (PS5) ger dig framtidens funktioner för en aldrig tidigare skådad spelupplevelse. Gör dig redo för supersmidig gameplay med upp till 120 fps i kompatibla spel, samt stöd för 120 Hz-utdata på 4K-skärmar. Känn varje explosion, varje skott och varje krasch tack vare den nydesignade DualSense trådlös handkontroll med haptiska återkopplingsvibrationer och adaptiva utlösare som tillsammans ger dig sensationell, realistisk feedback. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar elementum leo, nec varius nunc dapibus ut. Quisque eleifend id purus sed auctor. Nunc placerat auctor facilisis. In nisl sapien, efficitur vitae nunc iaculis, lobortis accumsan neque. Proin et odio suscipit, malesuada mi sit amet, consectetur est. Curabitur porta molestie justo sed congue. Ut in lorem posuere, congue quam ultricies, ornare eros. Morbi non justo non neque egestas convallis. Cras dapibus sed elit at auctor. In hac habitasse platea dictumst. Maecenas vitae quam sed ligula volutpat mollis sed ac felis.",
       "image": "url(../img/products/playstation_5.png)",
       "amount": "1"
     },
@@ -87,7 +87,7 @@
       "name": "Xbox series X",
       "type": "console",
       "price": "5499",
-      "description": "Ta din gaming till nästa nivå med Xbox Series X spelkonsol - Xbox Velocity Architecture, 12 teraflops grafisk processorkraft och 16 GB grafiskt minne ger dig oöverträffad prestanda. Spela och streama i äkta 4K-upplösning.",
+      "description": "Ta din gaming till nästa nivå med Xbox Series X spelkonsol - Xbox Velocity Architecture, 12 teraflops grafisk processorkraft och 16 GB grafiskt minne ger dig oöverträffad prestanda. Spela och streama i äkta 4K-upplösning. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar elementum leo, nec varius nunc dapibus ut. Quisque eleifend id purus sed auctor. Nunc placerat auctor facilisis. In nisl sapien, efficitur vitae nunc iaculis, lobortis accumsan neque. Proin et odio suscipit, malesuada mi sit amet, consectetur est. Curabitur porta molestie justo sed congue. Ut in lorem posuere, congue quam ultricies, ornare eros. Morbi non justo non neque egestas convallis. Cras dapibus sed elit at auctor. In hac habitasse platea dictumst. Maecenas vitae quam sed ligula volutpat mollis sed ac felis.",
       "image": "url(../img/products/xboxsx.png)",
       "amount": "1"
     },
@@ -96,7 +96,7 @@
       "name": "Horizon Forbidden West",
       "type": "game",
       "price": "799",
-      "description": "Upplev Horizon Forbidden Wests enorma värld i förbluffande 4K och HDR. Allt, från bergstoppar till små knoppande kvistar, har skapats med otroliga detaljer i oerhörd skala. Targeting 60FPS, Performance Mode förbättrar smidigheten i rörelser, animeringar och kontroller.",
+      "description": "Upplev Horizon Forbidden Wests enorma värld i förbluffande 4K och HDR. Allt, från bergstoppar till små knoppande kvistar, har skapats med otroliga detaljer i oerhörd skala. Targeting 60FPS, Performance Mode förbättrar smidigheten i rörelser, animeringar och kontroller. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar elementum leo, nec varius nunc dapibus ut. Quisque eleifend id purus sed auctor. Nunc placerat auctor facilisis. In nisl sapien, efficitur vitae nunc iaculis, lobortis accumsan neque. Proin et odio suscipit, malesuada mi sit amet, consectetur est. Curabitur porta molestie justo sed congue. Ut in lorem posuere, congue quam ultricies, ornare eros. Morbi non justo non neque egestas convallis. Cras dapibus sed elit at auctor. In hac habitasse platea dictumst. Maecenas vitae quam sed ligula volutpat mollis sed ac felis.",
       "image": "url(../img/products/Horizon_forbidden_west.png)",
       "amount": "1"
     },
@@ -105,7 +105,7 @@
       "name": "Elden Ring",
       "type": "game",
       "price": "799",
-      "description": "Den Gyllene Orden har brutits. ELDEN RING, utvecklat av FromSoftware Inc. och producerat av BANDAI NAMCO Entertainment Inc., är ett fantasy action-RPG och FromSoftwares största spel hittills, som utspelar sig i en värld full av mystik och fara.",
+      "description": "Den Gyllene Orden har brutits. ELDEN RING, utvecklat av FromSoftware Inc. och producerat av BANDAI NAMCO Entertainment Inc., är ett fantasy action-RPG och FromSoftwares största spel hittills, som utspelar sig i en värld full av mystik och fara. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar elementum leo, nec varius nunc dapibus ut. Quisque eleifend id purus sed auctor. Nunc placerat auctor facilisis. In nisl sapien, efficitur vitae nunc iaculis, lobortis accumsan neque. Proin et odio suscipit, malesuada mi sit amet, consectetur est. Curabitur porta molestie justo sed congue. Ut in lorem posuere, congue quam ultricies, ornare eros. Morbi non justo non neque egestas convallis. Cras dapibus sed elit at auctor. In hac habitasse platea dictumst. Maecenas vitae quam sed ligula volutpat mollis sed ac felis.",
       "image": "url(../img/products/Elden_ring.png)",
       "amount": "1"
     },
@@ -114,7 +114,7 @@
       "name": "Dying Light 2",
       "type": "game",
       "price": "599",
-      "description": "I Dying Light 2 kan du ta dig runt i parkourstil i en öppen värld där zombieapokalypsen brytit ut. Varje val du gör har en konsekvens under spelets gång.",
+      "description": "I Dying Light 2 kan du ta dig runt i parkourstil i en öppen värld där zombieapokalypsen brytit ut. Varje val du gör har en konsekvens under spelets gång. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar elementum leo, nec varius nunc dapibus ut. Quisque eleifend id purus sed auctor. Nunc placerat auctor facilisis. In nisl sapien, efficitur vitae nunc iaculis, lobortis accumsan neque. Proin et odio suscipit, malesuada mi sit amet, consectetur est. Curabitur porta molestie justo sed congue. Ut in lorem posuere, congue quam ultricies, ornare eros. Morbi non justo non neque egestas convallis. Cras dapibus sed elit at auctor. In hac habitasse platea dictumst. Maecenas vitae quam sed ligula volutpat mollis sed ac felis.",
       "image": "url(../img/products/Dying_light_2.png)",
       "amount": "1"
     },
@@ -123,7 +123,7 @@
       "name": "Pokemon Legends - Arceus",
       "type": "game",
       "price": "599",
-      "description": "Gör dig redo för en ny typ av stort Pokémon-äventyr i Pokémon Legends: Arceus, ett helt nytt spel från Game Freak som blandar action och utforskning med RPG-rötterna i Pokémon-serien.",
+      "description": "Gör dig redo för en ny typ av stort Pokémon-äventyr i Pokémon Legends: Arceus, ett helt nytt spel från Game Freak som blandar action och utforskning med RPG-rötterna i Pokémon-serien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar elementum leo, nec varius nunc dapibus ut. Quisque eleifend id purus sed auctor. Nunc placerat auctor facilisis. In nisl sapien, efficitur vitae nunc iaculis, lobortis accumsan neque. Proin et odio suscipit, malesuada mi sit amet, consectetur est. Curabitur porta molestie justo sed congue. Ut in lorem posuere, congue quam ultricies, ornare eros. Morbi non justo non neque egestas convallis. Cras dapibus sed elit at auctor. In hac habitasse platea dictumst. Maecenas vitae quam sed ligula volutpat mollis sed ac felis.",
       "image": "url(../img/products/Pokemon_Legends.png)",
       "amount": "1"
     },
@@ -132,7 +132,7 @@
       "name": "Mario Party Superstars",
       "type": "game",
       "price": "499",
-      "description": "Mario Party Superstars har fem klassiska spelbräden från Nintendo 64-eran och en samling på 100 minispel från hela Mario Party-serien och alla spellägen kan dessutom spelas online!",
+      "description": "Mario Party Superstars har fem klassiska spelbräden från Nintendo 64-eran och en samling på 100 minispel från hela Mario Party-serien och alla spellägen kan dessutom spelas online! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar elementum leo, nec varius nunc dapibus ut. Quisque eleifend id purus sed auctor. Nunc placerat auctor facilisis. In nisl sapien, efficitur vitae nunc iaculis, lobortis accumsan neque. Proin et odio suscipit, malesuada mi sit amet, consectetur est. Curabitur porta molestie justo sed congue. Ut in lorem posuere, congue quam ultricies, ornare eros. Morbi non justo non neque egestas convallis. Cras dapibus sed elit at auctor. In hac habitasse platea dictumst. Maecenas vitae quam sed ligula volutpat mollis sed ac felis.",
       "image": "url(../img/products/Mario_party_superstars.png)",
       "amount": "1"
     },
@@ -141,7 +141,7 @@
       "name": "Halo Infinite",
       "type": "game",
       "price": "599",
-      "description": "Halo Infinite är fortsättningen i Halo-serien. Följ Master Chiefs historia efter händelserna i Halo 5: Guardians.",
+      "description": "Halo Infinite är fortsättningen i Halo-serien. Följ Master Chiefs historia efter händelserna i Halo 5: Guardians. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar elementum leo, nec varius nunc dapibus ut. Quisque eleifend id purus sed auctor. Nunc placerat auctor facilisis. In nisl sapien, efficitur vitae nunc iaculis, lobortis accumsan neque. Proin et odio suscipit, malesuada mi sit amet, consectetur est. Curabitur porta molestie justo sed congue. Ut in lorem posuere, congue quam ultricies, ornare eros. Morbi non justo non neque egestas convallis. Cras dapibus sed elit at auctor. In hac habitasse platea dictumst. Maecenas vitae quam sed ligula volutpat mollis sed ac felis.",
       "image": "url(../img/products/Halo_infinite.png)",
       "amount": "1"
     },
@@ -150,7 +150,7 @@
       "name": "Acer Nitro 5 AN515 ",
       "type": "computer",
       "price": "10999",
-      "description": "ACER Nitro 5 (AN515-56-53X4) är en bärbar gamingdator med 15.6tum FHD IPS-skärm 144 Hz, Intel® Core™ i5-11300H-processor, 16 GB RAM, 512 GB SSD, NVIDIA GeForce RTX 3050-grafik och Windows 10. Med denna speldator kan du köra de senaste PC-spelen.",
+      "description": "ACER Nitro 5 (AN515-56-53X4) är en bärbar gamingdator med 15.6tum FHD IPS-skärm 144 Hz, Intel® Core™ i5-11300H-processor, 16 GB RAM, 512 GB SSD, NVIDIA GeForce RTX 3050-grafik och Windows 10. Med denna speldator kan du köra de senaste PC-spelen. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar elementum leo, nec varius nunc dapibus ut. Quisque eleifend id purus sed auctor. Nunc placerat auctor facilisis. In nisl sapien, efficitur vitae nunc iaculis, lobortis accumsan neque. Proin et odio suscipit, malesuada mi sit amet, consectetur est. Curabitur porta molestie justo sed congue. Ut in lorem posuere, congue quam ultricies, ornare eros. Morbi non justo non neque egestas convallis. Cras dapibus sed elit at auctor. In hac habitasse platea dictumst. Maecenas vitae quam sed ligula volutpat mollis sed ac felis.",
       "image": "url(../img/products/AcerNitro.jpg)",
       "amount": "1"
     },
@@ -159,7 +159,7 @@
       "name": "HP Chromebook 14a-na1003no",
       "type": "computer",
       "price": "3990",
-      "description": "Perfekt för arbete och spel på ett enda ställe. HP Chromebook levereras med en responsiv Intel®-processor, 14-tums bildskärm med extra skärmyta och lång batteritid, så att du enkelt kan klara av vilken uppgift som helst.",
+      "description": "Perfekt för arbete och spel på ett enda ställe. HP Chromebook levereras med en responsiv Intel®-processor, 14-tums bildskärm med extra skärmyta och lång batteritid, så att du enkelt kan klara av vilken uppgift som helst. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar elementum leo, nec varius nunc dapibus ut. Quisque eleifend id purus sed auctor. Nunc placerat auctor facilisis. In nisl sapien, efficitur vitae nunc iaculis, lobortis accumsan neque. Proin et odio suscipit, malesuada mi sit amet, consectetur est. Curabitur porta molestie justo sed congue. Ut in lorem posuere, congue quam ultricies, ornare eros. Morbi non justo non neque egestas convallis. Cras dapibus sed elit at auctor. In hac habitasse platea dictumst. Maecenas vitae quam sed ligula volutpat mollis sed ac felis.",
       "image": "url(../img/products/hpchromebook.jpg)",
       "amount": "1"
     },
@@ -168,7 +168,7 @@
       "name": "OnePlus 9 Pro",
       "type": "phone",
       "price": "9689",
-      "description": "OnePlus 9 Pro kombinerar en QHD 120Hz Amoled skärm på 6.7 tum med en snabb Snapdragon 888 CPU. Huvudkameran har en upplösning på 48 megapixar och batteriet med 4500 mAh ger kraft hela dagen.",
+      "description": "OnePlus 9 Pro kombinerar en QHD 120Hz Amoled skärm på 6.7 tum med en snabb Snapdragon 888 CPU. Huvudkameran har en upplösning på 48 megapixar och batteriet med 4500 mAh ger kraft hela dagen. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar elementum leo, nec varius nunc dapibus ut. Quisque eleifend id purus sed auctor. Nunc placerat auctor facilisis. In nisl sapien, efficitur vitae nunc iaculis, lobortis accumsan neque. Proin et odio suscipit, malesuada mi sit amet, consectetur est. Curabitur porta molestie justo sed congue. Ut in lorem posuere, congue quam ultricies, ornare eros. Morbi non justo non neque egestas convallis. Cras dapibus sed elit at auctor. In hac habitasse platea dictumst. Maecenas vitae quam sed ligula volutpat mollis sed ac felis.",
       "image": "url(../img/products/oneplus9.png)",
       "amount": "1"
     },
@@ -177,7 +177,7 @@
       "name": "SAMSUNG Galaxy S21 5G",
       "type": "phone",
       "price": "7949",
-      "description": "Missa aldrig det perfekta ögonblicket! Tack vare Galaxy S21 5G. 64MP, filma i 8K, Samsungs snabbaste chip någonsin och ett stort, intelligent batteri som räcker över 24 timmar. Det är vad vi kallar episkt.",
+      "description": "Missa aldrig det perfekta ögonblicket! Tack vare Galaxy S21 5G. 64MP, filma i 8K, Samsungs snabbaste chip någonsin och ett stort, intelligent batteri som räcker över 24 timmar. Det är vad vi kallar episkt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar elementum leo, nec varius nunc dapibus ut. Quisque eleifend id purus sed auctor. Nunc placerat auctor facilisis. In nisl sapien, efficitur vitae nunc iaculis, lobortis accumsan neque. Proin et odio suscipit, malesuada mi sit amet, consectetur est. Curabitur porta molestie justo sed congue. Ut in lorem posuere, congue quam ultricies, ornare eros. Morbi non justo non neque egestas convallis. Cras dapibus sed elit at auctor. In hac habitasse platea dictumst. Maecenas vitae quam sed ligula volutpat mollis sed ac felis.",
       "image": "url(../img/products/galaxys21.jpg)",
       "amount": "1"
     },
@@ -186,21 +186,21 @@
       "name": "A500 Mini",
       "type": "console",
       "price": "1299",
-      "description": "Välkommen tillbaka till 1980-talet och toppen av 16-bitars persondater. Amiga 500 släpptes 1987 och innehöll en 16/32-bitars CPU, 512 kb RAM och en rad anpassade chips för att producera ljud och video i sin klass.",
+      "description": "Välkommen tillbaka till 1980-talet och toppen av 16-bitars persondater. Amiga 500 släpptes 1987 och innehöll en 16/32-bitars CPU, 512 kb RAM och en rad anpassade chips för att producera ljud och video i sin klass. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar elementum leo, nec varius nunc dapibus ut. Quisque eleifend id purus sed auctor. Nunc placerat auctor facilisis. In nisl sapien, efficitur vitae nunc iaculis, lobortis accumsan neque. Proin et odio suscipit, malesuada mi sit amet, consectetur est. Curabitur porta molestie justo sed congue. Ut in lorem posuere, congue quam ultricies, ornare eros. Morbi non justo non neque egestas convallis. Cras dapibus sed elit at auctor. In hac habitasse platea dictumst. Maecenas vitae quam sed ligula volutpat mollis sed ac felis.",
       "image": "url(../img/products/a500mini.jpg)",
       "amount": "1"
     },
     {
-      "id": "21",
+      "id": "22",
       "name": "Retro-Bit Go Retro Portable",
       "type": "console",
       "price": "459",
-      "description": "Med Go Retro! portabla spelkonsol kommer retrospelen träffa dig som en boomerang, varsomhelst och närsomhelst. Denna lilla spelkonsol i fickformat är fullmatad med över 260 spel och har en batteritid på 10 timmar.",
+      "description": "Med Go Retro! portabla spelkonsol kommer retrospelen träffa dig som en boomerang, varsomhelst och närsomhelst. Denna lilla spelkonsol i fickformat är fullmatad med över 260 spel och har en batteritid på 10 timmar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum pulvinar elementum leo, nec varius nunc dapibus ut. Quisque eleifend id purus sed auctor. Nunc placerat auctor facilisis. In nisl sapien, efficitur vitae nunc iaculis, lobortis accumsan neque. Proin et odio suscipit, malesuada mi sit amet, consectetur est. Curabitur porta molestie justo sed congue. Ut in lorem posuere, congue quam ultricies, ornare eros. Morbi non justo non neque egestas convallis. Cras dapibus sed elit at auctor. In hac habitasse platea dictumst. Maecenas vitae quam sed ligula volutpat mollis sed ac felis.",
       "image": "url(../img/products/go_retro.jpg)",
       "amount": "1"
     },
     {
-      "id": "22",
+      "id": "23",
       "name": "Postal 2 PC",
       "type": "game",
       "price": "666",

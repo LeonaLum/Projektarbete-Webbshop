@@ -27,28 +27,31 @@
       display: block;
     }
     .fa-mobile-screen-button{
-      color: rgb(0, 69, 173);
+      color: $color-primary;
     }
     .fa-laptop{
-      color:white;
       display: block;
-      color: rgb(11, 109, 255);
+      color: $color-primary;
     }
     .fa-xbox{
-      color: rgb(1, 152, 212);
+      color: $color-primary;
     }
     .fa-gamepad{
-      color: rgb(0, 167, 159);
+      color: $color-primary;
     }
   }
 }
 
 .hamburger{
   cursor: pointer;
+ 
 }
 
 .fa-bars{
   color:rgb(104, 104, 104);
+  &:hover{
+    color:rgb(75, 75, 75);
+   }
 }
 
 .hide{

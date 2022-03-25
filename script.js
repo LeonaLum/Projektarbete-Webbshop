@@ -10,8 +10,6 @@ let iconConsole = document.getElementById("iconConsole");
 
 
 
-
-//Nyaste scriptet
 let productPrices = [];
 let shoppingCartArray = [];
 let savedProducts = JSON.parse(localStorage.getItem('cart'));
@@ -54,8 +52,6 @@ trashCan.addEventListener("click", () => {
   localStorage.removeItem("cart");
   location.reload();
 })
-
-
 
 
 let shoppingCartHead = document.getElementById("shoppingCartHead");
@@ -122,9 +118,6 @@ if (location.pathname == '/index.html'){
 }
 
 
-
-
-
 if (currentId) {
   getProductsForDetails();
 }
@@ -188,7 +181,6 @@ async function getProductsConsoles() {
 }
 
 
-
 async function getProductsGames() {
   const response = await fetch('./products.json');
   const productData = await response.json();
@@ -210,8 +202,6 @@ function createProductCard(arr) {
     let productCard = document.createElement("div");
     productCard.innerHTML = `<h2>${product.name}</h2>`;
 
-
-    
     let productFooter = document.createElement("div");
     productFooter.classList.add("product-Footer");
 
@@ -240,8 +230,6 @@ function createProductCard(arr) {
         let parent = e.target.parentElement.parentElement;
         let domProductName = parent.firstChild.innerText
 
-  
-        
         productsArray.forEach((product) => {
          if(domProductName == product.name){
           var currentProduct = product;
@@ -258,7 +246,7 @@ function createProductCard(arr) {
           
           localStorage.setItem('cart', JSON.stringify(shoppingCartArray));
           location.reload();
-        }     
+         }     
         })     
       }
     })
@@ -268,7 +256,6 @@ function createProductCard(arr) {
 
 
     productFooter.appendChild(buyNowButton);
-
 
     let productImage = document.createElement("div");
     productImage.classList.add("image");
@@ -309,10 +296,7 @@ function createProductCard(arr) {
         case 'game':
         listTitle.innerText = `Spel`;
         break;
-
-
     }
-
  })
 }
 
@@ -457,10 +441,6 @@ function addImage (div, product){
      div.style.backgroundRepeat = "no-repeat";
 }
 
-
-
-
-
 searchButton.addEventListener("click", search);
 
  function search(){
@@ -474,7 +454,6 @@ searchButton.addEventListener("click", search);
         card.remove();
       })
       createProductCard(matchingProducts);
-      
       }
       else{
       }
@@ -483,12 +462,7 @@ searchButton.addEventListener("click", search);
   }
   else{
   }
- 
-
  }
-
-
-
 
 //Hit skickas produkterna i shoppingcart
 function calculateTotal(array){
@@ -508,8 +482,6 @@ function calculateTotal(array){
  return total
 }
 
-
-
 function addProduct(button){
   let parent = button.target.parentElement;
   let productDiv = parent.parentElement;
@@ -527,7 +499,6 @@ function addProduct(button){
     })
     calcTotalAmountOfProducst()
 }
-
 
 function removeProduct(button){
   let parent = button.target.parentElement;

@@ -3,17 +3,27 @@
 }
 
 .reciept-wrapper {
-  padding: 30px;
+  padding: 10px;
   display: flex;
   flex-wrap: wrap-reverse;
   align-items: flex-end;
   border-top: 2px solid $color-primary;
+  @media only screen and (max-width: 500px){
+    padding: 0px;
+  }
+
+
+  @media only screen and (max-width: 550px){
+    flex-direction: column-reverse;
+  }
+
+
   .reciept-div {
     flex: 1;
     border-right: 2px solid rgb(199, 199, 199);
-    padding: 30px;
+    padding: 20px;
 
-    p {
+    h4 {
       font-size: 22px;
       padding-top: 5px;
     }
@@ -24,35 +34,48 @@
 
     h3 {
       text-align: left;
-      font-size: 30px;
+      font-size: 25px;
       padding-bottom: 10px;
     }
+
+    .total-Amount{
+      width: 100%;
+      p{
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+   
   }
   .reciept-second-div {
     flex: 1;
-    padding: 30px;
+    padding: 20px;
 
-    h3 {
-      font-size: 30px;
-      margin-bottom: 20px;
+    h3{
+      font-size: 25px;
+    }
+
+    h4 {
+      margin-top: 20px;
+      font-size: 20px;
     }
 
     p {
       font-size: 22px;
-      padding-top: 5px;
+
     }
     .recipe-bottom-product {
       padding-bottom: 15px;
     }
   }
-  @media only screen and (max-width: 500px){
-        .reciept-div {
-      flex: 1;
-      border-top: 2px solid rgb(199, 199, 199);
-      border-right: hidden;
-      padding: 30px;
+  @media only screen and (max-width: 550px){
+    .reciept-div {
+    flex: 1;
+    border-top: 2px solid rgb(199, 199, 199);
+    border-right: hidden;
+    padding: 30px;
+    }
   
-        }
   }
 }
 

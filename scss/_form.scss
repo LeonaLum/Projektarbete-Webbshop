@@ -1,6 +1,5 @@
 main.form-main {
   box-sizing: border-box;
-  background-color: red;
   min-height: 100%;
   width: 100%;
 
@@ -8,7 +7,6 @@ main.form-main {
     @include flexBox(row, center, center);
     width: 100%;
     height: 100%;
-    background-color: white;
     overflow: hidden;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     align-items: stretch;
@@ -71,7 +69,6 @@ main.form-main {
       .mini--full-price {
         @include flexBox(row, center, space-around);
         height: 100%;
-        font-weight: bold;
         @media only screen and (max-width: 350px) {
           flex-direction: column;
         }
@@ -107,6 +104,9 @@ main.form-main {
       width: 100%;
       background-color: white;
       padding: 20px 20px;
+      @media only screen and (max-width: 350px){
+        padding: 0px 0px 0px 0px;
+      }
 
       .form-control {
         margin-bottom: 10px;
@@ -160,6 +160,9 @@ main.form-main {
         font-size: 16px;
         border-radius: 10px;
         color: #fff;
+        @media only screen and (max-width: 350px){
+          border-radius: 0px 0px 0px 0px;
+        }
 
         // a {
         //   z-index: 1;
@@ -171,7 +174,7 @@ main.form-main {
 
         &:hover {
           cursor: pointer;
-          background-color: $color-grey;
+          background-color: $color-orange;
         }
         &:active {
           transform: translateY(2px);

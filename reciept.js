@@ -7,8 +7,8 @@ if (location.search == '?location=reciept') {
 
   let targetHeader = document.querySelector('.header');
   const recieptWrapper = document.createElement('div');
-  const recieptDiv = document.createElement('div');
-  const recieptSecondDiv = document.createElement('div');
+  const recieptDiv = document.createElement('section');
+  const recieptSecondDiv = document.createElement('ul');
   const recieptMainHeader = document.createElement('div');
   console.log(recieptDiv);
 
@@ -45,7 +45,9 @@ if (location.search == '?location=reciept') {
     <p> Telefon: ${getUser.phone} </p>
     <p> Övriga Kommentarer: ${getUser.message}</p>
     </br>
-    <h3> Total summa: ${totalPriceOfProducts}:-</p>
+    <div class="total-Amount">
+    <p> Total summa: ${totalPriceOfProducts}:-</p>
+    </div>
     `;
 
   recieptSecondDiv.innerHTML = `
@@ -55,9 +57,11 @@ if (location.search == '?location=reciept') {
   function showProductsFromCart() {
     shoppingCartArray.forEach((product) => {
       recieptSecondDiv.innerHTML += `
-        <p>${product.name}</p>
+      <li>
+        <h4><strong>${product.name}</strong></h4>
         <p>x${product.amount}</p>
-        <p class="recipe-bottom-product">${product.price} kr</p>`;
+        <p class="recipe-bottom-product">${product.price} kr</p>
+        </li>`;
     });
   }
   showProductsFromCart();

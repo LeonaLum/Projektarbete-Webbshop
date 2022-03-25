@@ -16,6 +16,7 @@
     width: 200%;
     @media only screen and (max-width: 550px) {
       padding:0px;
+      height: 300px;
      }
   }
   h2{
@@ -39,13 +40,12 @@
           padding:5px;
          }
       }
-      
     }
+
   .product-Detail-Desc-Bottom{
     @include flexBox(row, center, space-around);
     justify-self: flex-end;
-    margin-top: 20px;
-    
+    margin-top: 100px;
     @media only screen and (max-width: 550px) {
       flex-direction: column;
       width: 100%;
@@ -54,8 +54,6 @@
     }
   }
   
-
-
    .price-Container-Detail{
     @include flexBox(row, center, space-around);
     padding:40px;
@@ -78,15 +76,18 @@
     @include flexBox(row, center, center);
      flex:1;
      color: white;
-    background-color: rgb(0, 58, 167);
     padding:40px;
     font-size: 20px;
     height:100%;
     width: 150px;
     border-radius: 0px 10px 10px 0px;
+    word-wrap: none;
+    background-color: $color-secondary;
+    white-space: nowrap;
+
      cursor: pointer;
      &:hover {
-      background-color: $color-grey;
+      background-color: $color-orange;
     }
     @media only screen and (max-width: 550px) {
       width: 100%;

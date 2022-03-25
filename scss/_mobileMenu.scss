@@ -14,6 +14,10 @@
   height: 100vh;
   width: 100vw;
   background-color: white;
+  h2{
+    color:grey;
+  }
+
 
   a{
     @include flexBox(column, center, space-around);

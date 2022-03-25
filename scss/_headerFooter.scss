@@ -91,19 +91,25 @@ header {
       flex: 1;
     }
     .navigation-shoppingcart {
+      @include flexBox(row, center, center);
       position: relative;
-      margin-left: 10%;
+      margin-right: 70px;
+      @media only screen and (max-width: 550px) {
+        margin-right: 0px;
+        }
+    
+
       .items-in-shoppingcart {
         user-select: none;
         position: absolute;
         right: 10px;
         top: 0px;
         font-weight: bolder;
-        font-size: 25px;
+        font-size: 17px;
         color: rgb(255, 255, 255);
         background-color: rgb(255, 93, 93);
         border-radius: 100%;
-        padding: 3px 12px 3px 12px;
+        padding: 3px 9px 3px 9px;
         font-family: Arial, sans-serif;
         @media only screen and (max-width: 260px) {
           font-size: 15px;
@@ -124,35 +130,35 @@ header {
       color: grey;
 
       &:hover{
-        color: $color-secondary;
+        color: $color-orange;
       }
     }
     .fa-mobile-screen-button {
       font-size: 2.5rem;
       color: $color-primary;
       &:hover{
-        color: $color-secondary;
+        color: $color-orange;
       }
     }
     .fa-laptop {
       font-size: 2.5rem;
       color: $color-primary;
       &:hover{
-        color: $color-secondary;
+        color: $color-orange;
       }
     }
     .fa-xbox {
       font-size: 2.5rem;
       color: $color-primary;
       &:hover{
-        color: $color-secondary;
+        color: $color-orange;
       }
     }
     .fa-gamepad {
       font-size: 2.5rem;
       color: $color-primary;
       &:hover{
-       color: $color-secondary;
+       color: $color-orange;
       }
     }
     .fa-cart-shopping {
@@ -191,7 +197,7 @@ header {
   }
   .footer-title {
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 40px;
     @media only screen and (max-width: 520px) {
       text-align: center;

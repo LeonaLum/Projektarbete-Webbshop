@@ -205,7 +205,7 @@
       "type": "game",
       "price": "666",
       "description": "Lev i en vecka som 'The Postal Dude', en vanlig stackars man som bara försöker få saker gjorda. Köpa mjölk, lämna tillbaka en försenad bok till biblioteket, skaffa Gary Colemans autograf, vad skulle kunna gå fel? Skjut, hugg och pissa dig igenom en freakshow av amerikanska karikatyrer i detta förstapersonsäventyr med mörk humor. Möt Krotchy: Leksaksmaskoten som blivit elak, besök din farbror Dave hos hans belägrade religiösa kultförening och slåss mot kloakdväljande talibaner när du minst anar dem! Uthärda utmaningar som kommer få ringmuskeln att knipa ihop, såsom redneck-kannibaler, korrumperade poliser och elefanter som går bärsärkagång. Slåss genom öppna miljöer med otroligt oförutsägbart AI tillsammans med Champ, Dudes semilojala pitbull. Använd dig av ett arsenal av vapen, från den enkla spaden till den sällsynt roliga raketgeväret. Samla ihop en flock attackhundar! Använd katter som ljuddämpare! Pissa och häll bensin på allt och alla! DU VET ATT DU VILL!",
-      "image": "url(../img/products/Postal_2_CD.jpeg)",
+      "image": "url(./img/products/Postal_2_CD.jpeg)",
       "amount": "1"
     }
   ]

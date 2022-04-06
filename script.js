@@ -91,10 +91,10 @@ switch (currentCategory) {
     break;
 }
 
-if (location.pathname == '/index.html'){
+if (location.pathname == './index.html'){
   getAllProducts();
 }
-if (location.pathname == '/shoppingCart.html') {
+if (location.pathname == './shoppingCart.html') {
   if(shoppingCartArray.length != 0){
     divEmptyCart.classList.add("hide");
   }
@@ -106,12 +106,12 @@ if (location.pathname == '/shoppingCart.html') {
   }
 }
 
-if (location.pathname == '/products.html'){
+if (location.pathname == './products.html'){
   searchDiv.appendChild(searchField);
   searchDiv.appendChild(searchButton);
   productListHead.appendChild(searchDiv)
 }
-if (location.pathname == '/index.html'){
+if (location.pathname == './index.html'){
   searchDiv.appendChild(searchField);
   searchDiv.appendChild(searchButton);
   productListHead.appendChild(searchDiv)

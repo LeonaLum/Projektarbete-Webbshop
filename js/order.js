@@ -1,9 +1,6 @@
 'use strict';
 
-//Notes:
-//Få bort ID i sass?????? hur??
 
-//Kalla på alla element
 const orderFormBtn = document.getElementById('order-form');
 const firstName = document.getElementById('firstname');
 const lastName = document.getElementById('lastname');
@@ -14,17 +11,18 @@ const email = document.getElementById('email');
 const phoneNumber = document.getElementById('formPhone-number');
 const extraMessage = document.getElementById('formText-area');
 
-//Skapa funktion för submit av formulär
+
 orderFormBtn.addEventListener('submit', (e) => {
   e.preventDefault();
   if (validateInputs() && saveUserData()) {
     moveToReciept();
+    shoppingCartArray = [];
   } else {
     return null;
   }
 });
 
-//Skapa funktionen för att se värdet av inputs
+
 function validateInputs() {
   let errors = 0;
   const firstNameValue = firstName.value.trim();
@@ -33,7 +31,7 @@ function validateInputs() {
   const postalCodeValue = postalCode.value.trim();
   const cityValue = city.value.trim();
   const emailValue = email.value.trim();
-  //Skapa felmeddelanden eller styling för input
+
 
   if (firstNameValue === '') {
     setErrorFor(firstName, 'Du måste fylla i ditt förnamn');
@@ -79,11 +77,11 @@ function validateInputs() {
   } else {
     setSuccessFor(email);
   }
-  //Detta gör så att funktionen returnerar true!
+
   return errors === 0;
 }
 
-//Funktion för styling error
+
 
 function setErrorFor(input, message) {
   const formControl = input.parentElement;
@@ -92,7 +90,7 @@ function setErrorFor(input, message) {
   formControl.className = 'form-control error';
 }
 
-//Funktion för styling success
+
 
 function setSuccessFor(input) {
   const formControl = input.parentElement;
@@ -107,13 +105,11 @@ function isEmailValid(email) {
   );
 }
 
-//Funktion för att gå till kvittosidan
 
 function moveToReciept() {
   window.location.search = '?location=reciept';
 }
 
-//Funktion för att spara persondata i local storage
 
 function saveUserData() {
   const firstNameValue = firstName.value.trim();
@@ -153,7 +149,6 @@ function saveUserData() {
   }
 }
 
-//För att se vilka produkter man har i varukorgen när man klickar på beställ
 
 const recieptAmount = document.getElementById('reciept-amount');
 const formTitle = document.getElementById('formTitle');
@@ -161,15 +156,6 @@ const formAmount = document.getElementById('formAmount');
 const formPrice = document.getElementById('formPrice');
 const totalPrice = document.getElementById('form-TotalPrice');
 
-//Samma funktion som nedan fast på ett annat sätt
-// let cartComponent = (product) => `
-// <h2>${product.name}</h2>
-//     <p>${product.amount}</p>
-//     <p>${product.price}</p>
-// `;
-
-// recieptAmount.innerHTML = shoppingCartArray.map(cartComponent).join('');
-//
 
 function showProductsFromCart() {
   shoppingCartArray.forEach((product) => {
@@ -183,8 +169,6 @@ function showProductsFromCart() {
 }
 
 showProductsFromCart();
-
-//Funktion för att se totalsumma för alla varor
 
 let totalPriceOfProducts = calculateTotal(shoppingCartArray);
 totalPrice.innerHTML = `

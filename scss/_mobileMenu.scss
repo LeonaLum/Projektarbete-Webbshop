@@ -13,20 +13,19 @@
   position: fixed;
   height: 100vh;
   width: 100vw;
-  background-color: white;
+  background-color:  $color-white;
   h2{
     color:grey;
   }
 
 
   a{
-    @include flexBox(column, center, space-around);
+    @include flexBox(column, center, center);
     display: block;
-    height: 100px;
-    width: 100px;
+    width: 100%;
     text-align: center;
+    margin-bottom: 5px;
     .fa-braille{
-      margin-top:25px;
       color: rgb(104, 104, 104);
       display: block;
     }
@@ -48,7 +47,6 @@
 
 .hamburger{
   cursor: pointer;
- 
 }
 
 .fa-bars{

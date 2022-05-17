@@ -1,11 +1,11 @@
 .productsList {
   @include flexBox(column, center, space-around);
   width: 100%;
-  background-color: white;
+  background-color:  $color-white;
 }
 .products-List-Head {
   @include flexBox(row, center, space-around);
-  color: white;
+  color:  $color-white;
   background-color: $color-primary;
   flex-wrap: wrap;
   padding: 30px;
@@ -60,7 +60,7 @@
       border-radius: 10px;
       font-weight: bold;
       font-size: 20px;
-      color: white;
+      color:  $color-white;
       height: 90%;
       width: 100px;
       background-color: $color-secondary;
@@ -71,6 +71,9 @@
       &:hover {
         cursor: pointer;
         background-color: $color-orange;
+      }
+      &:active{
+        background-color: $color-secondary;
       }
     }
   }
@@ -87,9 +90,9 @@
 
 .productCard {
   @include flexBox(column, center, flex-end);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   margin-bottom: 30px;
-  border: solid rgb(206, 206, 206) 1px;
-  background-color: rgb(255, 255, 255);
+  background-color:  $color-white;
   border-radius: 10px;
   height: 600px;
   color: rgb(0, 0, 0);
@@ -138,7 +141,7 @@
     }
 
     .priceContainer {
-      color: white;
+      color:  $color-white;
       background-color: $color-primary;
       padding: 30px;
       text-align: center;
@@ -158,7 +161,7 @@
       text-align: center;
       font-weight: bold;
       font-size: 30px;
-      color: white;
+      color:  $color-white;
       display: block;
       padding: 30px;
       background-color: $color-secondary;
@@ -177,6 +180,7 @@
       }
       &:active {
         transform: translateY(2px);
+        background-color: $color-secondary;
       }
     }
   }
@@ -185,7 +189,7 @@
 
 
 .category-Heading {
-  color: white;
+  color:  $color-white;
   font-size: 30px;
   text-align: center;
   background-color: $color-primary;

@@ -1,9 +1,9 @@
 if (location.search == '?location=reciept') {
-  const getUser = JSON.parse(window.localStorage.getItem('user')); //parsar json data från localstorage, hämtar & lägger dessa i en variabel
+  const getUser = JSON.parse(window.localStorage.getItem('user')); 
   console.log(getUser);
 
-  let hideOrderform = document.querySelector('.form-main'); //display none
-  hideOrderform.classList.add('hide'); // --
+  let hideOrderform = document.querySelector('.form-main'); 
+  hideOrderform.classList.add('hide');
 
   let targetHeader = document.querySelector('.header');
   const recieptWrapper = document.createElement('div');

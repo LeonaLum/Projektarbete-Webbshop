@@ -1,14 +1,9 @@
-// För att nå produkterna så behöver du gå in på products i json objektet.
-
-//added icons
 
 let iconAll = document.getElementById("iconAll");
 let iconPhone = document.getElementById("iconPhone");
 let iconComputer = document.getElementById("iconComputer");
 let iconGame = document.getElementById("iconGame");
 let iconConsole = document.getElementById("iconConsole");
-
-
 
 let productPrices = [];
 let shoppingCartArray = [];
@@ -67,34 +62,35 @@ let currentCategory = params.get('category');
 let currentId = params.get('id');
 
 let searchableArray = [];
+let category;
 
 switch (currentCategory) {
   case 'phones':
-    getProductsPhones();
-    iconPhone.classList.add("selected");
-    console.log(iconPhone)
+    category = "phone";
+    getAllProducts(category);
     break;
   case 'computers':
-    getProductsComputers();
-    iconComputer.classList.add("selected");
+    category = 'computer';
+    getAllProducts(category);
     break;
   case 'consoles':
-    getProductsConsoles();
-    iconConsole.classList.add("selected");
+    category = 'console';
+    getAllProducts(category);
     break;
-    case 'game':
-      getProductsGames();
-      iconGame.classList.add("selected");
-      break;
+  case 'game':
+    category = 'game';
+    getAllProducts(category);
+    break;
   case 'all':
-    getAllProducts();
+    category = 'all';
+    getAllProducts(category);
     break;
 }
 
-if (location.pathname == './index.html'){
-  getAllProducts();
+if (location.pathname == '/index.html'){
+  getAllProducts('all');
 }
-if (location.pathname == './shoppingCart.html') {
+if (location.pathname == '/shoppingCart.html') {
   if(shoppingCartArray.length != 0){
     divEmptyCart.classList.add("hide");
   }
@@ -106,21 +102,21 @@ if (location.pathname == './shoppingCart.html') {
   }
 }
 
-if (location.pathname == './products.html'){
+if (location.pathname == '/products.html'){
   searchDiv.appendChild(searchField);
   searchDiv.appendChild(searchButton);
   productListHead.appendChild(searchDiv)
 }
-if (location.pathname == './index.html'){
+if (location.pathname == '/index.html'){
   searchDiv.appendChild(searchField);
   searchDiv.appendChild(searchButton);
   productListHead.appendChild(searchDiv)
 }
-
-
 if (currentId) {
   getProductsForDetails();
 }
+
+
 
 async function getProductsForDetails() {
   const response = await fetch('./products.json');
@@ -129,72 +125,51 @@ async function getProductsForDetails() {
   showCardDetails(productsArray);
 }
 
-async function getAllProducts() {
-  const response = await fetch('./products.json');
+async function getAllProducts(category) {
+  const response = await fetch('/products.json');
   const productData = await response.json();
   const productsArray = [...productData.products];
-  createProductCard(productsArray);
-  searchableArray = productsArray;
-  allProducts = productsArray;
+  
+  let chosenCategory;
+  let categoryArray = [];
+
+  switch(category){
+    case 'phone':
+      chosenCategory = 'phone';
+      let phoneProducts = [];
+      categoryArray = phoneProducts;
+        break;
+    case 'computer':
+      chosenCategory = 'computer';
+      let computerProducts = [];
+      categoryArray = computerProducts;
+        break;
+    case 'console':
+      chosenCategory = 'console';
+      let consoleProducts = [];
+      categoryArray = consoleProducts;
+        break;
+    case 'game':
+      chosenCategory = 'game';
+      let gameProducts = [];
+      categoryArray = gameProducts;
+        break;
+  }
+      if(category == 'all'){
+        allProducts = productsArray;
+        createProductCard(productsArray);
+        searchableArray = productsArray;
+      }
+      else{
+        productsArray.filter((product) => {
+          if(product.type == chosenCategory){
+            categoryArray.push(product);
+          }
+        })
+        createProductCard(categoryArray);
+        searchableArray = categoryArray;
+      }
 }
-
-async function getProductsPhones() {
-  const response = await fetch('./products.json');
-  const productData = await response.json();
-  const productsArray = [...productData.products];
-  const phoneProducts = [];
-  productsArray.filter((product) => {
-    if (product.type == 'phone') {
-      phoneProducts.push(product);
-    }
-  });
-  createProductCard(phoneProducts);
-  searchableArray = phoneProducts;
-}
-
-async function getProductsComputers() {
-  const response = await fetch('./products.json');
-  const productData = await response.json();
-  const productsArray = [...productData.products];
-  const computerProducts = [];
-  productsArray.filter((product) => {
-    if (product.type == 'computer') {
-      computerProducts.push(product);
-    }
-  });
-  createProductCard(computerProducts);
-  searchableArray = computerProducts;
-}
-
-async function getProductsConsoles() {
-  const response = await fetch('./products.json');
-  const productData = await response.json();
-  const productsArray = [...productData.products];
-  const consoleProducts = [];
-  productsArray.filter((product) => {
-    if (product.type == 'console') {
-      consoleProducts.push(product);
-    }
-  });
-  createProductCard(consoleProducts);
-  searchableArray = consoleProducts;
-}
-
-
-async function getProductsGames() {
-  const response = await fetch('./products.json');
-  const productData = await response.json();
-  const productsArray = [...productData.products];
-  const gameProducts = [];
-  productsArray.filter((product) => {
-    if (product.type == 'game') {
-      gameProducts.push(product);
-    }
-  });
-  createProductCard(gameProducts);
-  searchableArray = gameProducts;
-}
-
 
 
 function createProductCard(arr) {
@@ -218,13 +193,11 @@ function createProductCard(arr) {
     </i>`;
 
 
-    ///////////////////////////////////////////////////////////////////////////7777
-    /////////////////////////////DIREKTKKÖP/////////////////////////77
 
     buyNowButton.addEventListener("click", (e) => {
       all();
       async function all(){
-        const response = await fetch('./products.json');
+        const response = await fetch('/products.json');
         const productData = await response.json();
         const productsArray = [...productData.products];
         let parent = e.target.parentElement.parentElement;
@@ -251,10 +224,6 @@ function createProductCard(arr) {
       }
     })
 
-    ///////////////////////////////////////////////////////////////////////////////77
-    /////////////////////////////////////////////////////////////////////////////
-
-
     productFooter.appendChild(buyNowButton);
 
     let productImage = document.createElement("div");
@@ -269,7 +238,6 @@ function createProductCard(arr) {
     productCard.appendChild(productImage);
     productCard.appendChild(productFooter);
     
-
     addImage(productImage,product);
      
 
@@ -455,13 +423,9 @@ searchButton.addEventListener("click", search);
       })
       createProductCard(matchingProducts);
       }
-      else{
-      }
     })
-    
   }
-  else{
-  }
+
  }
 
 //Hit skickas produkterna i shoppingcart
